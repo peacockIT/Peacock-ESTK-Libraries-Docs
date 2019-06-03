@@ -16,7 +16,7 @@ else:
 
 
 # LIBRARYFOLDERS = ['./docs/source/Peacock ESTK Library/library']
-MODULESFOLDERS = ['./docs/source/Peacock ESTK Library/modules']
+MODULESFOLDERS = ['./docs/source/modules']
 
 # OTHER_FOLDERS = ['./', './patches']
 # OTHER_FOLDERS = []

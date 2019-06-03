@@ -1,2 +1,0 @@
-Peacock Midiparser
-------------------

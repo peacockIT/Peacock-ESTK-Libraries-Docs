@@ -9,9 +9,6 @@ Peacock ESTK Library
 Quick References
 ~~~~~~~~~~~~~~~~
 
-.. include:: ../../QuickReferences.rst
-
-
 .. toctree::
     :caption: Getting Started
     :maxdepth: 2
