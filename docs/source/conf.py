@@ -10,9 +10,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('./_extensions'))
 
 
 # -- Project information -----------------------------------------------------
@@ -31,7 +31,7 @@ release = '0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-	# 'rst2pdf.pdfbuilder'
+	'rst2pdf.pdfbuilder'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -64,7 +64,7 @@ html_theme = 'sphinx_rtd_theme'
 html_title = "Peacock ESTK Library Documentation"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = 'BpmSlicer Docs'
+html_short_title = 'Peacock Docs'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -82,7 +82,7 @@ html_show_sphinx = False
 #html_show_copyright = True
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'BpmSlicer Documentation'
+htmlhelp_basename = 'Peacock ESTK Library Documentation'
 
 html_theme_options = {
 	'canonical_url': '',
@@ -112,7 +112,7 @@ latex_elements = {
 	'babel' : '\\usepackage[ngerman]{babel}'
 }
 latex_documents = [
-	(master_doc, 'ProjektLoremIpsum.tex', u'Lorem Ipsum Dokumentation', u'Daniel Kreth', 'manual'),
+	(master_doc, 'Peacock-ESTK-Library.tex', u'Lorem Ipsum Dokumentation', u'Daniel Kreth', 'manual'),
 ]
 latex_logo = '_static/AE_Preferences.png'
 
@@ -136,11 +136,11 @@ latex_logo = '_static/AE_Preferences.png'
 # regardless of the global pdf_compressed setting.
 
 pdf_documents = [
-	('index', u'MyProject', u'My Project', u'Author Name'),
+	('index', u'Peacock-ESTK-Library', u'Peacock ESTK Library', u'Daniel Kreth'),
 ]
 
 # A comma-separated list of custom stylesheets. Example:
-pdf_stylesheets = ['sphinx','kerning','a4']
+pdf_stylesheets = ['_peacock_default','_peacock_code','a4']
 
 # A list of folders to search for stylesheets. Example:
 pdf_style_path = ['.', '_styles']

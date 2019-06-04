@@ -1,0 +1,34 @@
+# USAGE
+# This .txt file determines which modules are converted to pdf when executing the script 'createpdf.py'
+# The output path is .pdf/..
+
+# ae_utils
+# ai_utils
+# base64
+# beatmanager
+# binarycreator
+# comp_template
+console
+# estk_tester
+expressionmeister
+# favorites
+# filesearch
+# in_utils
+# jsxbinaryconverter
+# keyframes
+# layertools
+# library
+# logger
+# markers
+# midiparser
+# performance
+# preferences
+# progressbar
+# ps_utils
+# session
+# slices
+# textparser
+# timeanalyser
+# transitions
+# ui_utils
+# utils

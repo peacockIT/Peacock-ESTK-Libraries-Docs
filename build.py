@@ -1,5 +1,19 @@
 #! /usr/bin/env python3
 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#	DESCRIPTION
+#
+# 	1 *	Replaces the existing 'modules' folder in the docs with the
+#		original 'modules' folder from the 'Peacock ESTK Library'
+#
+# 	2 * Removes the 'lib' folder from each module in the docs so
+#		that only the 'readme.rst' remains
+#
+# 	3 * Rebuilds the docs by calling 'make html'.
+#		If option 'clean' is set the build dir is cleaned before
+#		rebuilding
+#
+
 import os
 from subprocess import call
 
@@ -13,26 +27,7 @@ if not os.path.exists(ORIGINAL_MODULES):
 else:
 	print('\nChecking\t folder exists ',ORIGINAL_MODULES)
 
-
-
-# LIBRARYFOLDERS = ['./docs/source/Peacock ESTK Library/library']
 MODULESFOLDERS = ['./docs/source/modules']
-
-# OTHER_FOLDERS = ['./', './patches']
-# OTHER_FOLDERS = []
-
-
-# Is not used yet
-# def _document_this():
-# 	folders = OTHER_FOLDERS
-# 	for packagefolder in MODULESFOLDERS:
-# 		for folder in os.listdir(packagefolder):
-# 			if not folder.startswith("."):
-# 				folder = Folder(packagefolder + "/" + folder)
-# 				folder.package = "/lib"
-# 				folders.append(folder)
-# 	return folders
-
 
 
 # Replaces the existing 'modules' folder in the docs with the original 'modules' folder from the 'Peacock ESTK Library'
@@ -80,3 +75,8 @@ def build():
 
 
 build()
+
+
+call(['./createpdf.py'])
+
+
