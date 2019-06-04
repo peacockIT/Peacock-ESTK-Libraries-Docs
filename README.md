@@ -27,8 +27,14 @@ pip install rst2pdf # rst2pdf should be installed: ~/python2/lib/python2.7/site-
 
 ```
 
+### rst2pdf Fonts
+Install the following otherwise rst2pdf can't find any custom fonts.
 
-### Pdf Styles and Configuration
+``` bash
+brew install fontconfig
+```
+
+### PDF Styles and Configuration
 By default the rst2pdf package is scanning the folder ``~/.rst2pdf`` for a config file and styles.
 I created a symbolic link from ``~/.rst2pdf`` to ``~/dotfiles/settings/rst2pdf`` which makes it easy to modify the files and keep it backuped.
 

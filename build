@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+echo 'Copy modules from Peacock ESTK Library ...'
+"${DIR}/copy_modules.py"
+
+echo 'Building sphinx html ...'
+"${DIR}/build_sphinx_html.py"
+
+echo 'Building sphinx pdf ...'
+"${DIR}/build_sphinx_pdf.py"
+
+echo 'Building pdf files for modules ...'
+"${DIR}/build_pdf.py"

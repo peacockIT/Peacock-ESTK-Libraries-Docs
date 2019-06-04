@@ -144,9 +144,6 @@ def build_pdf():
 					counter+=1
 
 
-# Builds one single pdf from the whole sphinx documentation
-def build_sphinx_pdf():
-	call("sphinx-build -d 'build pdf/doctrees' -b 'pdf' './source' 'build pdf/pdf'", shell=True, cwd="./docs")
 
 
 # Updates the 'modules' folder and refreshes the docs with 'make html'
@@ -157,7 +154,6 @@ def make_latexpdf():
 
 # make_latexpdf()
 build_pdf()
-build_sphinx_pdf()
 
 print('Finished creating pdf files')
 
