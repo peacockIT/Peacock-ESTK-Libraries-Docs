@@ -97,7 +97,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../console/readme.html">Peacock Console</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../estk_tester/readme.html">Peacock Estk Tester</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../expressionmeister/readme.html">Peacock Expression Meister</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../expressionmeister/readme.html#preparations">Preparations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../favorites/readme.html">Peacock Favorites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../filesearch/readme.html">Peacock File Search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../in_utils/readme.html">Peacock InDesign Utility</a></li>
@@ -106,7 +105,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../layertools/readme.html">Peacock Layertools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../library/readme.html">Peacock Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../logger/readme.html">Peacock Logger</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Peacock Markers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Peacock Markers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#comp-layer-dropdown">Comp/Layer Dropdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#read">Read</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add">Add</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#show">Show</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quantize">Quantize</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../midiparser/readme.html">Peacock Midiparser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../performance/readme.html">Peacock Performance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../preferences/readme.html">Peacock Preferences</a></li>
@@ -190,6 +196,37 @@
             
   <div class="section" id="peacock-markers">
 <h1>Peacock Markers<a class="headerlink" href="#peacock-markers" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="comp-layer-dropdown">
+<h2>Comp/Layer Dropdown<a class="headerlink" href="#comp-layer-dropdown" title="Permalink to this headline">¶</a></h2>
+<p>Choose whether you want to address comp markers or layer markers.</p>
+</div>
+<div class="section" id="read">
+<h2>Read<a class="headerlink" href="#read" title="Permalink to this headline">¶</a></h2>
+<p>Read all markers from the selected layer or the active composition and
+save them as slices to the sliceArray and as markers to the markerArray.
+If you choose to click the <code class="docutils literal notranslate"><span class="pre">Slice</span></code> button right after reading markers
+with this function, the selected layer is sliced at the points in the
+timeline where the markers were positioned.</p>
+</div>
+<div class="section" id="add">
+<h2>Add<a class="headerlink" href="#add" title="Permalink to this headline">¶</a></h2>
+<p>Create layer markers on the selected layer which represent the in points
+of the slices in the sliceArray.</p>
+</div>
+<div class="section" id="show">
+<h2>Show<a class="headerlink" href="#show" title="Permalink to this headline">¶</a></h2>
+<p>Shows the markerArray.</p>
+</div>
+<div class="section" id="quantize">
+<h2>Quantize<a class="headerlink" href="#quantize" title="Permalink to this headline">¶</a></h2>
+<p>The markers of the selected layer are getting quantized to the currently
+set bpm and bars value in the region that is set by the <code class="docutils literal notranslate"><span class="pre">Workarea</span></code>
+dropdown list.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function doesn‘t work with composition markers yet.</p>
+</div>
+</div>
 </div>
 
 

@@ -5,7 +5,7 @@
 # ae_utils
 # ai_utils
 # base64
-# beatmanager
+beatmanager
 # binarycreator
 # comp_template
 console
@@ -16,19 +16,19 @@ expressionmeister
 # in_utils
 # jsxbinaryconverter
 # keyframes
-# layertools
+layertools
 # library
 # logger
-# markers
-# midiparser
+markers
+midiparser
 # performance
-# preferences
+preferences
 # progressbar
 # ps_utils
 # session
-# slices
+slices
 # textparser
 # timeanalyser
-# transitions
+transitions
 # ui_utils
 # utils

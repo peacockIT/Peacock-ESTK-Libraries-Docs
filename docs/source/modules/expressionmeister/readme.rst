@@ -99,9 +99,9 @@ which is light-giving, active, strong, and of the spirit. The hexagram is consis
 and since it is without weakness, its essence is power or energy. Its image is heaven.
 Its energy is represented as unrestricted by any fixed conditions in space and is therefore conceived of as motion.
 
-
+~~~~~~~~~~~~
 Preparations
-------------
+~~~~~~~~~~~~
 
 ``After Effects -> Preferences -> General -> Allow Scripts To Write Files And Access Network``
 (``Skripte können Dateien schreiben und haben Netwerkzugang``)

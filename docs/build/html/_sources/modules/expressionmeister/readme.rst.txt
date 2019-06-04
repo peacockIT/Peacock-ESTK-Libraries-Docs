@@ -3,7 +3,7 @@ Peacock Expression Meister
 
 .. sidebar:: Main Window
 
-    .. image:: images/ExpressionMeister_01.png
+    .. image:: images/ExpressionMeister_01_400px.png
 
     Main Window
 
@@ -26,7 +26,7 @@ Its energy is represented as unrestricted by any fixed conditions in space and i
 
 .. sidebar:: Edit Expression Window
 
-    .. image:: images/ExpressionMeister_02.png
+    .. image:: images/ExpressionMeister_02_400px.png
 
     Edit Expression Window
 
@@ -53,7 +53,7 @@ and since it is without weakness, its essence is power or energy.
 
 .. sidebar:: Preferences Window
 
-    .. image:: images/ExpressionMeister_03.png
+    .. image:: images/ExpressionMeister_03_400px.png
 
     Preferences Window
 
@@ -75,7 +75,7 @@ Its energy is represented as unrestricted by any fixed conditions in space
 
 .. sidebar:: Help Window
 
-    .. image:: images/ExpressionMeister_04.png
+    .. image:: images/ExpressionMeister_04_400px.png
 
     Help Window
 
@@ -99,9 +99,9 @@ which is light-giving, active, strong, and of the spirit. The hexagram is consis
 and since it is without weakness, its essence is power or energy. Its image is heaven.
 Its energy is represented as unrestricted by any fixed conditions in space and is therefore conceived of as motion.
 
-
+~~~~~~~~~~~~
 Preparations
-------------
+~~~~~~~~~~~~
 
 ``After Effects -> Preferences -> General -> Allow Scripts To Write Files And Access Network``
 (``Skripte können Dateien schreiben und haben Netwerkzugang``)

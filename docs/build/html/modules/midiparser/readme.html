@@ -97,7 +97,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../console/readme.html">Peacock Console</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../estk_tester/readme.html">Peacock Estk Tester</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../expressionmeister/readme.html">Peacock Expression Meister</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../expressionmeister/readme.html#preparations">Preparations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../favorites/readme.html">Peacock Favorites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../filesearch/readme.html">Peacock File Search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../in_utils/readme.html">Peacock InDesign Utility</a></li>
@@ -107,7 +106,22 @@
 <li class="toctree-l1"><a class="reference internal" href="../library/readme.html">Peacock Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../logger/readme.html">Peacock Logger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../markers/readme.html">Peacock Markers</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Peacock Midiparser</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Peacock Midiparser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#load-midi">Load Midi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#save-midi">Save Midi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#midiconverter-external">Midiconverter (external)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#midi-converter-button">Midi converter button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bpm-editor">Bpm editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fps-editor">Fps editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clipboard">Clipboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preparations">Preparations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#song-preparation">Song preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preparing-the-midi-clip">Preparing the midi clip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preparing-your-footage">Preparing your footage</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../performance/readme.html">Peacock Performance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../preferences/readme.html">Peacock Preferences</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../progressbar/readme.html">Peacock Progressbar</a></li>
@@ -189,7 +203,163 @@
            <div itemprop="articleBody">
             
   <div class="section" id="peacock-midiparser">
-<h1>Peacock Midiparser<a class="headerlink" href="#peacock-midiparser" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id1">Peacock Midiparser</a><a class="headerlink" href="#peacock-midiparser" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="load-midi">
+<h2><a class="toc-backref" href="#id2">Load Midi</a><a class="headerlink" href="#load-midi" title="Permalink to this headline">¶</a></h2>
+<p>Load a txt file that contains midi note on and off information and
+import them as slices into the sliceArray (The in points of the slices
+are getting added to the markerArray which could be added as markers to
+a layer or the composition by clicking the <code class="docutils literal notranslate"><span class="pre">Add</span></code> button).</p>
+</div>
+<div class="section" id="save-midi">
+<h2><a class="toc-backref" href="#id3">Save Midi</a><a class="headerlink" href="#save-midi" title="Permalink to this headline">¶</a></h2>
+<p>Save a txt file that contains all slices from the sliceArray.</p>
+<div class="section" id="midiconverter-external">
+<h3><a class="toc-backref" href="#id4">Midiconverter (external)</a><a class="headerlink" href="#midiconverter-external" title="Permalink to this headline">¶</a></h3>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#peacock-midiparser" id="id1">Peacock Midiparser</a><ul>
+<li><a class="reference internal" href="#load-midi" id="id2">Load Midi</a></li>
+<li><a class="reference internal" href="#save-midi" id="id3">Save Midi</a><ul>
+<li><a class="reference internal" href="#midiconverter-external" id="id4">Midiconverter (external)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#midi-converter-button" id="id5">Midi converter button</a></li>
+<li><a class="reference internal" href="#bpm-editor" id="id6">Bpm editor</a></li>
+<li><a class="reference internal" href="#fps-editor" id="id7">Fps editor</a></li>
+<li><a class="reference internal" href="#clipboard" id="id8">Clipboard</a></li>
+<li><a class="reference internal" href="#preparations" id="id9">Preparations</a></li>
+<li><a class="reference internal" href="#song-preparation" id="id10">Song preparation</a></li>
+<li><a class="reference internal" href="#preparing-the-midi-clip" id="id11">Preparing the midi clip</a></li>
+<li><a class="reference internal" href="#preparing-your-footage" id="id12">Preparing your footage</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<img alt="modules/midiparser/../_static/midiconverter.png" src="modules/midiparser/../_static/midiconverter.png" />
+</div>
+</div>
+<div class="section" id="midi-converter-button">
+<h2><a class="toc-backref" href="#id5">Midi converter button</a><a class="headerlink" href="#midi-converter-button" title="Permalink to this headline">¶</a></h2>
+<p>The Midi converter interprets 12 note values in the range of C3 - B3.
+Please make sure that the midinotes are placed in exactly that range,
+otherwise the notes won‘t be recognized.</p>
+<p>The chosen .mid file is converted to a .txt file with a assigned
+videotrack a note-on and note-off value and a velocity value that can be
+imported by the Premiere Pro extension <code class="docutils literal notranslate"><span class="pre">BpmSlicer</span></code>.</p>
+<dl class="docutils">
+<dt>for example:</dt>
+<dd><ul class="first last simple">
+<li>1 0 2.5 0.5</li>
+<li>2 2.5 3.4 1.0</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="bpm-editor">
+<h2><a class="toc-backref" href="#id6">Bpm editor</a><a class="headerlink" href="#bpm-editor" title="Permalink to this headline">¶</a></h2>
+<p>Before the midi clip is converted, a tempo event with the given ‚bpm‘
+rate is added to the midi clip.</p>
+<p>If the midi clip has a tempo event already and you want to use it
+instead of a new one, set the bpm value to <code class="docutils literal notranslate"><span class="pre">-1</span></code>.</p>
+<p>If the bpm editor is empty the default bpm value of 120 is used.</p>
+</div>
+<div class="section" id="fps-editor">
+<h2><a class="toc-backref" href="#id7">Fps editor</a><a class="headerlink" href="#fps-editor" title="Permalink to this headline">¶</a></h2>
+<p>The fps value (Frames per seconds) is only needed if you want to use the
+clipboard to copy keyframes directly onto one of After Effects layer
+properties. With help of the fps value the time of the midi note-on
+values can be transformed to frame values.</p>
+</div>
+<div class="section" id="clipboard">
+<h2><a class="toc-backref" href="#id8">Clipboard</a><a class="headerlink" href="#clipboard" title="Permalink to this headline">¶</a></h2>
+<p>The velocity values of all midi note-on messages are mapped to the range
+of 0.0 - 1.0 and copied to the systems clipboard so that you can simply
+paste the values as keyframes onto a selected <code class="docutils literal notranslate"><span class="pre">expression</span> <span class="pre">slider</span></code>
+property in After Effects. A <code class="docutils literal notranslate"><span class="pre">expression</span> <span class="pre">slider</span></code> with those keyframes
+can then be used to manipulate different properties and effects.</p>
+</div>
+<div class="section" id="preparations">
+<h2><a class="toc-backref" href="#id9">Preparations</a><a class="headerlink" href="#preparations" title="Permalink to this headline">¶</a></h2>
+<p>NOTE: The following description is confusing because it describs the preparation
+for the premier pro version of the BpmSlicer which is not yet finished.</p>
+<p>Before you can take full advantage of the functionality of the BpmSlicer
+you need to prepare your footage as follows.</p>
+</div>
+<div class="section" id="song-preparation">
+<h2><a class="toc-backref" href="#id10">Song preparation</a><a class="headerlink" href="#song-preparation" title="Permalink to this headline">¶</a></h2>
+<p>You have to ensure that the following two conditions are met: You need
+to know the exact bpm value of the song you want to work with and set
+this value in the bpm input field. You need to make sure that the 1st
+beat of the song sits exactly at the 0 point in time. Some songs may not
+have an intro that fits the bpm rate of the actual song, then you need
+to find the first beat and place it accordingly. If you have the exact
+bpm rate of the song then it won‘t be too difficult to make it fit.</p>
+</div>
+<div class="section" id="preparing-the-midi-clip">
+<h2><a class="toc-backref" href="#id11">Preparing the midi clip</a><a class="headerlink" href="#preparing-the-midi-clip" title="Permalink to this headline">¶</a></h2>
+<p>Please make sure that the midinotes in the midi file are placed in the
+range between C3 - B3, otherwise the notes won‘t be recognized. Note
+that the notes of C3 are placed onto videotrack 1, the notes of C#3 onto
+videotrack 2 and so on.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="28%" />
+<col width="72%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Note</th>
+<th class="head">Track</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>C3</td>
+<td>videotrack 1</td>
+</tr>
+<tr class="row-odd"><td>C#3</td>
+<td>videotrack 2</td>
+</tr>
+<tr class="row-even"><td>D3</td>
+<td>videotrack 3</td>
+</tr>
+<tr class="row-odd"><td>…</td>
+<td>…</td>
+</tr>
+<tr class="row-even"><td>B3</td>
+<td>videotrack 12</td>
+</tr>
+</tbody>
+</table>
+<img alt="modules/midiparser/../_static/MidinoteRange.png" src="modules/midiparser/../_static/MidinoteRange.png" />
+</div>
+<div class="section" id="preparing-your-footage">
+<h2><a class="toc-backref" href="#id12">Preparing your footage</a><a class="headerlink" href="#preparing-your-footage" title="Permalink to this headline">¶</a></h2>
+<p>If there is no BpmSlicer folder structure already you can create one by
+clicking the <code class="docutils literal notranslate"><span class="pre">create</span> <span class="pre">folders</span></code> Button. The next step is to put all your
+footage you want to be placed into the active sequence, according to the
+notes in the midi file, into the <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">source</span></code> folder and assign the
+appropriate prefix for each footage item. Make sure the prefix is a
+number between 1 - 12 and make sure there is a white space between the
+prefix number and the footage name.</p>
+<p>The next thing you want to make sure is that you add as much videotracks
+to the active sequence as your highest assigned prefix is. In the
+following example the highest assigned prefix is 4, so you need to make
+sure there are at least 4 videotracks available.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BpmSlicer</span>
+  <span class="mi">1</span> <span class="n">source</span>
+    <span class="mi">1</span> <span class="n">VideoClip2</span><span class="o">.</span><span class="n">mov</span>
+    <span class="mi">2</span> <span class="n">LensFlare2</span><span class="o">.</span><span class="n">mov</span>
+    <span class="mi">3</span> <span class="n">Transition_1</span><span class="o">.</span><span class="n">mov</span>
+    <span class="mi">4</span> <span class="n">PaperTexture_9</span><span class="o">.</span><span class="n">png</span>
+    <span class="mi">4</span> <span class="n">PaperTexture_1</span><span class="o">.</span><span class="n">mov</span>
+</pre></div>
+</div>
+<p>As you notice in the example it‘s possible to assign the same prefix to
+as many footage items as you like. If you assign the same prefix to more
+then one footage items, this function selects a random footage item each
+time it finds a midi note for the appropriate videotrack.</p>
+</div>
 </div>
 
 
