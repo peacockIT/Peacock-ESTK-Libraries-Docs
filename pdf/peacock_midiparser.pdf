@@ -2,7 +2,7 @@
 %ìåãû ReportLab Generated PDF document http://www.reportlab.com
 1 0 obj
 <<
-/F1+0 32 0 R /F2+0 36 0 R /F3 2 0 R
+/F1+0 34 0 R /F2+0 38 0 R /F3 2 0 R
 >>
 endobj
 2 0 obj
@@ -13,158 +13,172 @@ endobj
 3 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (load-midi-4429379728)
->> /Border [ 0 0 0 ] /Rect [ 62.69291 531.0236 111.3599 543.0236 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (dependencies-4495964176)
+>> /Border [ 0 0 0 ] /Rect [ 62.69291 456.0236 132.6929 468.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 4 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (load-midi-4429379728)
->> /Border [ 0 0 0 ] /Rect [ 526.8747 531.7736 532.5827 543.7736 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (dependencies-4495964176)
+>> /Border [ 0 0 0 ] /Rect [ 526.8747 456.7736 532.5827 468.7736 ] /Subtype /Link /Type /Annot
 >>
 endobj
 5 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (save-midi-4429379856)
->> /Border [ 0 0 0 ] /Rect [ 62.69291 513.0236 110.2955 525.0236 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (load-midi-4495965008)
+>> /Border [ 0 0 0 ] /Rect [ 62.69291 438.0236 111.3599 450.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 6 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (save-midi-4429379856)
->> /Border [ 0 0 0 ] /Rect [ 526.8747 513.7736 532.5827 525.7736 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (load-midi-4495965008)
+>> /Border [ 0 0 0 ] /Rect [ 526.8747 438.7736 532.5827 450.7736 ] /Subtype /Link /Type /Annot
 >>
 endobj
 7 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (midiconverter-external-4429380304)
->> /Border [ 0 0 0 ] /Rect [ 82.69291 495.0236 194.5874 507.0236 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (save-midi-4495965136)
+>> /Border [ 0 0 0 ] /Rect [ 62.69291 420.0236 110.2955 432.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 8 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (midiconverter-external-4429380304)
->> /Border [ 0 0 0 ] /Rect [ 526.8649 495.7736 532.5827 507.7736 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (save-midi-4495965136)
+>> /Border [ 0 0 0 ] /Rect [ 526.8747 420.7736 532.5827 432.7736 ] /Subtype /Link /Type /Annot
 >>
 endobj
 9 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (midi-converter-button-4429380112)
->> /Border [ 0 0 0 ] /Rect [ 62.69291 477.0236 172.9273 489.0236 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (midiconverter-external-4495965968)
+>> /Border [ 0 0 0 ] /Rect [ 82.69291 402.0236 194.5874 414.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 10 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (midi-converter-button-4429380112)
->> /Border [ 0 0 0 ] /Rect [ 526.8747 477.7736 532.5827 489.7736 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (midiconverter-external-4495965968)
+>> /Border [ 0 0 0 ] /Rect [ 526.8649 402.7736 532.5827 414.7736 ] /Subtype /Link /Type /Annot
 >>
 endobj
 11 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (bpm-editor-4433413520)
->> /Border [ 0 0 0 ] /Rect [ 62.69291 459.0236 118.5181 471.0236 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (midi-converter-button-4495965776)
+>> /Border [ 0 0 0 ] /Rect [ 62.69291 384.0236 172.9273 396.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 12 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (bpm-editor-4433413520)
->> /Border [ 0 0 0 ] /Rect [ 526.8747 459.7736 532.5827 471.7736 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (midi-converter-button-4495965776)
+>> /Border [ 0 0 0 ] /Rect [ 526.8747 384.7736 532.5827 396.7736 ] /Subtype /Link /Type /Annot
 >>
 endobj
 13 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (fps-editor-4433414288)
->> /Border [ 0 0 0 ] /Rect [ 62.69291 441.0236 112.439 453.0236 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (bpm-editor-4504553808)
+>> /Border [ 0 0 0 ] /Rect [ 62.69291 366.0236 118.5181 378.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 14 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (fps-editor-4433414288)
->> /Border [ 0 0 0 ] /Rect [ 526.8747 441.7736 532.5827 453.7736 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (bpm-editor-4504553808)
+>> /Border [ 0 0 0 ] /Rect [ 526.8747 366.7736 532.5827 378.7736 ] /Subtype /Link /Type /Annot
 >>
 endobj
 15 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (clipboard-4433414544)
->> /Border [ 0 0 0 ] /Rect [ 62.69291 423.0236 110.9253 435.0236 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (fps-editor-4504554640)
+>> /Border [ 0 0 0 ] /Rect [ 62.69291 348.0236 112.439 360.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 16 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (clipboard-4433414544)
->> /Border [ 0 0 0 ] /Rect [ 526.8747 423.7736 532.5827 435.7736 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (fps-editor-4504554640)
+>> /Border [ 0 0 0 ] /Rect [ 526.8747 348.7736 532.5827 360.7736 ] /Subtype /Link /Type /Annot
 >>
 endobj
 17 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (preparations-4433414608)
->> /Border [ 0 0 0 ] /Rect [ 62.69291 405.0236 127.4976 417.0236 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (clipboard-4504554896)
+>> /Border [ 0 0 0 ] /Rect [ 62.69291 330.0236 110.9253 342.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 18 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (preparations-4433414608)
->> /Border [ 0 0 0 ] /Rect [ 526.8747 405.7736 532.5827 417.7736 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (clipboard-4504554896)
+>> /Border [ 0 0 0 ] /Rect [ 526.8747 330.7736 532.5827 342.7736 ] /Subtype /Link /Type /Annot
 >>
 endobj
 19 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (song-preparation-4433415184)
->> /Border [ 0 0 0 ] /Rect [ 62.69291 387.0236 149.0943 399.0236 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (preparations-4504554960)
+>> /Border [ 0 0 0 ] /Rect [ 62.69291 312.0236 127.4976 324.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 20 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (song-preparation-4433415184)
->> /Border [ 0 0 0 ] /Rect [ 526.8747 387.7736 532.5827 399.7736 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (preparations-4504554960)
+>> /Border [ 0 0 0 ] /Rect [ 526.8747 312.7736 532.5827 324.7736 ] /Subtype /Link /Type /Annot
 >>
 endobj
 21 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (preparing-the-midi-clip-4433415376)
->> /Border [ 0 0 0 ] /Rect [ 62.69291 369.0236 176.0425 381.0236 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (song-preparation-4496887888)
+>> /Border [ 0 0 0 ] /Rect [ 62.69291 294.0236 149.0943 306.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 22 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (preparing-the-midi-clip-4433415376)
->> /Border [ 0 0 0 ] /Rect [ 526.8747 369.7736 532.5827 381.7736 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (song-preparation-4496887888)
+>> /Border [ 0 0 0 ] /Rect [ 526.8747 294.7736 532.5827 306.7736 ] /Subtype /Link /Type /Annot
 >>
 endobj
 23 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (preparing-your-footage-4433416080)
->> /Border [ 0 0 0 ] /Rect [ 62.69291 351.0236 177.9859 363.0236 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (preparing-the-midi-clip-4496888080)
+>> /Border [ 0 0 0 ] /Rect [ 62.69291 276.0236 176.0425 288.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 24 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (preparing-your-footage-4433416080)
->> /Border [ 0 0 0 ] /Rect [ 526.8747 351.7736 532.5827 363.7736 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (preparing-the-midi-clip-4496888080)
+>> /Border [ 0 0 0 ] /Rect [ 526.8747 276.7736 532.5827 288.7736 ] /Subtype /Link /Type /Annot
 >>
 endobj
 25 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (preparing-your-footage-4496888784)
+>> /Border [ 0 0 0 ] /Rect [ 62.69291 258.0236 177.9859 270.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+26 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (preparing-your-footage-4496888784)
+>> /Border [ 0 0 0 ] /Rect [ 526.8747 258.7736 532.5827 270.7736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+27 0 obj
 <<
 /BitsPerComponent 8 /ColorSpace /DeviceRGB /Filter [ /ASCII85Decode /DCTDecode ] /Height 128 /Length 6363 /Subtype /Image 
   /Type /XObject /Width 128
@@ -172,13 +186,13 @@ endobj
 stream
 s4IA0!"_al8O`[\!<N7E!-S>Bs4[N@!!<9(!WiE*!WiE*!s8W."p>&3"9\u7"pG2;#RUnF#RLeE$kEaR$P!ON#n7IU%M'*^&J,9X&eblh'+YWc&HCJb6NI8k!sA]/#Qt89&.8dP&.fBa&.fBa&.fBa&.fBa&.fBa&.fBa&.fBa&.fBa&.fBa&.fBa&.fBa&.fBa&.nlW!"fJ:J,k*%!?qLF&HMtG!WU(<*WQ0@!sJ]+zz!!!?+!XSr3"U>;;!WU(<;%N^.!X&Q-"q(kD"UP//!!!$$!rrH-"pY_G&g8tC3'gDc[0[Nb+u35.EMg"j(aC:^6;gcbEfu`^dhNX>OcpSjA'sd&6UZKXU9_Vos24mW!<E0%!WrH'zz!!!3.!<iN,":5%G!&kJi!<NB+!so28!rr<$!!!!"!!36*&Kq;^0bQcl'I#;0@=aQWn-9UB,Z8ZV'k2dB,I-5-g&MN`!<<05!tbMt!0oO&%`eld$N%^\8#tQSNil9Uk3*_He[q[/fq36tfs]n:jP(tsVh+qc]O!qT_C<t;1o>n`PP?'@/9oY(-V,$a=MFuC=1XHjB9,8HB`?*]\rWb%O$?*IrlGh?4Ztusq37UroVF1A!$!*]$&5=#U%IT1lDsj@YuM"ae9sD@H29<ep./K=I60Q:qD1Y88=\2T:]30N!9tE$-KfiFrrD^#&ul=dW;:[^oCQXUm#\iXqK@,ToOa0NOZK4OF6RUm:r@t9kL,t!jp>#k*RoL!4F-cZ8+oJZe9sD@H29<ep.1a:1H4s(^A3NjM8,k"pWO8M#s5*^G'NWNArl;?];YRLGk:Q>O6hujSZt'EQ[\ak]s0HeQ[\a^<C%FD+&:-'IZ2\QOr&6_:<su1N7%Te-[3!G^6%g@0iD0MP;(?^mLWE\6!5F[(0#2F5Plj1hBubq-N`ptEg8XD?e:U<>qItYK8Z>G`tL*cfI1<9-n&Yiaq1]f/Kgb;3a>(F^t*1i`h*J35e">DLa>#):c4\DnYaB%O=hTZIL/aRZV)>rprUqf_q$KW&J*0^3Vf<-0E2"s%728uEBar#r[RkY)O/'X?P8a)PfM:N.O?c:e=mur%`p.;W.7"87EV/YO,fcB5';Z*Xq;-LM@<JKYP_Ac.e>2[l9J1j,SB*hb,;3\66`?rIFNiu3hB-i.SHNcL5oUm4J#Z(UcjrQo7(G"i.u>o:?,-&I3;bM@`/nL%;(IPC%-&:$[\sWJl@9D:c4\DnYaB%O=hTZIL/aRZV)>rprUqf_q$KW&JWKf3QM."MQ^0DM+gp<:Vu#g,/%rYQnBg61#Od!)_A'6UFN6`<)SFL6+.Uq.s:"cJqP:-WCf:gITp5jFtM)qHHD\fWln7;'<8r%NFs;T7jK5aj\h=.*dtXVN[L]m`I>J^-K7D0B&f90>dV)oY0@i<DJ>fS0/!dZjQ6Y64T%"!S=c1l\Gc_9nf-)N04ja4P9++t_.faREV`nLIck'K&Rs`$f_'&na';3*1D2jS@8I_flqOh@'h;3DXoo<j,Au#4Q#,9b/u^Y4[&4Wn4$?WG9Imtbr;)Z3O"'";eH<q)2,u-c`#MdX]l2iR%Ct'BF+Ka^c4VCj="7DVCT8FMK4]H?EOBKV&7QAoTf7;X--0[<g8=+p,"83de4Na,NFXtAb]DH=G*>5Jrr<)ZVXmNu0S/X=$R$UgXY51p2g'T42#bk-'g'.#5*hG`3QcEf!!BM_NjL]bQI8)qROfbirr<e<p3EX'Ut'b;5s;I,!A2fg:HDZ,<T2/d*GELLRMK72I6(iBCZAF3KeS+c2cXu6XV*W":eo@0[PWE!LfY<lTi.W:)3UHePii*_eE*:PI:IS$'EK['V)aSpbgBnDbIDoA[%/fTp"eK88P*="]I0+QR&t&b!nT0B)Zg>U^6EX78?.e'+3,<:)/)aq/S_>(k&hYX?0dJ$DaMlqV*gW1A%7.1*$QU$p8rMk\XLH!4IGM?Na4qL;TMn625Z,VbFi\1GNq2SH(9n?Jg:F"EIrn((*nmk7<G+=)*6LF/Z05%=qit2Pl_JcAn*7Baj+paZ1`/7Nj7_*E)<(DQVJ)[H#d0o`g>5Rl#eOod;Yat#/S*/Yk8Db[!UdCpOkV-_iPA>I,[<3/r&7OmPO\tdKR>8/3t`#enCVoT*G-W\%9P7,rd)F24@Y;VoDJn/fq9H#u1]29-,qbajL@1eh=iO(sFAd:O`s_\3hNnUUU`kmuN.6p=8Je>,.Xl9UU7i1o'k4@;nDo\'p]+3O`h,rH^VkbB'^tGUo^SX;][e%>(kH=H<O&,.3>q]djBP1Cl1q74)cU1=(WtMG@?JngVP%^-T5Ac9/L<[,^o"o2L.T[jJ87k-`=TPVAcY8!jDj,GR=Bf)%=/^A>M):_r=G%8rWl*XW`q$HRMBo!@pU?%\HfQFfIXGW+(Eg9*uo4s.Sp&e@QmBQ)c('(-mPTAn_(f/RDt<n83oE`<AL0o8r->"`R&BuhP0:]BqRO&]#KPGLl34$)Y2Bs:/Sa4c56;O&Zkm-CWf[aI_m`unl0P#V:?Gqr,A@[b`0M-4f#p3FLFQ2V'h!5.[fHmo3:`$mZmDm8'r"]sZmADT7%+M\0+EOj\,jS8"@2bG&qS%Ye^>7rebRWTZg,m;COW;PCsN^nD"412PuPJ,\QDNo0:QRL*6QRmk;f`;O=f[rF4q0/48XB]m`R]PTBlcr4"c**4@8NVGBK:#,<$h1=^a%Mt(V6K9edA:++X-KQ+&"P4%Xi4flrQWFhB-sugdkN5FeY93-%\`2dY6\5uY#N:sAfM`:G94)g&pFid"kT'+^18VVP>o(_<40lE.to&\i<LY3+-ijH"HIsWD`n];(&L'1`='+@./1mpc6]Rhf'7):LVcRVNKh#%];!2:S/8U&Ak'S(\#!;jQ'HdO9(`588f_>Ub^l4JP*sWZV_V#q@mK"M-.1m1'$6?2Wcc?rf0l*_Fju//'/6+4iXhX&MGsq(;Mn$G%8e.`DG"S"k+ideLKKUC92bN"bZH\mYZO7tf@\r6Pp"[NeY(YkU+a5oduok.%`1#W,sCbPb8.I?7)^o]n".s'jVNaU1$=BsUla8CS]79+qEVO$`J>g")U/r*e)9+S(ACq9"K)Ap#.$rD2#,2@"iJnE_(!1NBk,/T)*1$mHH#Y',DV&k*W'UE`N<.#*gne0c=oZ:MoS?)*;aLD_h%rQ;F\MYK#3.fHkkCK'(1$Z=in30e]C]A+V#q'-WZS\8DU[+&gOUW**A+oV9`H>C;iKG)3ZXVCb8d=@HLIC#j9<GjEZS%n_lPPQod5o`2-_%ZFNM3D)Tf^"(H"="d[$9#7ARN#F2R>,F5HhpLr%3AT`:`Hd+8*R`)0S>i_Z;$='i;a;X:J5%:2sa2^/EnT2Mh'B&2;c'@fP+n::kA/Sn'k)KVP*_41m*g_1\9]@&9jbnoe7j[PJG82bq;O:]_W2pu(0.rstmu_JsrWq39F"=`ud8PH3WL)2X/[U2;Xf;T@O;(B6AA9p#R;E4?%=tAnBg(_pnkb"#oOE"$-3;oSc#`mQ:j?,XI&hh0h.<js?ft&).rq4(pWM8%%k/VA9PF$B][1FO3Xs=T[6)p$LLHP\ZWn0.:/JZoqG)62p"1$Y!jK!Cn_2uCgnrCM<fYV<)V&"t?+0MbS@,1q>#ViW4>g_;!TbR/.6(C_G.&)gdT4>l94h(.;4uW@g37W*hFT_j:=;]]11=Td'\^&mC<9ZQ]e,($Bf:TX9535.[s97]8NTKhSB6OqVCGbO:MEV\2bdUb8leNK3469/]YG!;PE5c],_,nB-Q%:S%h=:ce_A4=@(pC#)4kb(cBsV+AU1?q%Dp"]rj3WdidT"gh^IRQZ"Z,e<91XQC@;.GTe*FFPFjaKQiMDm1iZ!F<+kK`UMI*O$?8jHPjM;0R3@ipoq*p2@$o1&#E%&j<P9lKD,n&IRB.)]0.+#ojJh?'[*j^SMbu)XEY8U&DgoaP&5?2F0O43ITZC;r36Ia9@]E4W(BRAc"NX1GQ,CgT5%=MdLt3W4*Y#YCj]O1$3Emq[c(<kR:=iP(Ol3&[NmDLhj]TbY7Zota]GokS5*USZFodgj\U^NQ+R^F@`DMG/1f!(,K7+kHh.";8S.0(eghH7rU^MON=FsJ',m.;HNuECVklTi0(Z:P9CG`<V:Q1he>WlQo&J=&uhq\*Af+1--NXpS[m@RWH!XQ3J4lF9])XJp=;RFlgFW/K:d^<@le=C,0KlSUl!C679\W"Hp4t9tMf4/+8<o(_;=KaJ\Uu^C-<JFHP!#%$,=-c:pJ_!E:N5:@i)rk.42?;B3fg/mZm%h)`8e//t8T!$a:P.VE,_[COk9P\eNPpY(@T[CnfhcAPU%1@<JsKt1fe\oUIH*?7cE6[YWYakt1/1;6aVi-5[28f/\aBiY%3ss^+@;/bdB58J*J-A:7VsMd<X#U$Zj"-YdTMfQK1V6*.E%;YKG%Jrbs^]:M,>O]8^,53`I.l/>1]6i@Y$*_HW*`sBi>ZcV,]e:Wa8:*0B>;qM*^4Hmu8XlLYcjl\L0URhNX@']hM#\C77Ef!37`K,ssfgNL==)OVEKW'Z&Yd$6<p8Zk%DT*#6R[5EbX12T3N\T*?DV'4JZq0'L5*3"73?eu1C5lAD'3UT9r,=UN>aD=Cr(]R`qs34FlkIO8,\CL)-7[J?\*/!4Bo(+JfH4-\1sPrR\)JE)<FRE.hnE$"@h@C^)FDXOL8idsO6:n3hCcZd+;;M=G\C"OYJ@=Ej]V/a_c0jg63ZK]LL\>ab6h5[Q(hAJimZ*T_&XR]s^a(*qaikOMp93]-b,JL%QK(-U1m/I&4r6-"tAgl*7o!7HV2T!YGqn-(*d:HB:E(mAd345Ehh'ob%bfn2b_I]-&7-c8g3<9c5JQPc8_-7OAeY9LRg.&Eo\?0BbF[oSP/R5;RM,?CuAj[^YS2eAZ4hs-m;m#>#9I)$to?'p7O#hY9**T[He9P#f:;Adh)2-uVWc"+NoXX5:o1R9/cVTHV)29pXA^+P(5!uST=gL$1k)#Y<NL44MhsG4n4oOTD00\)26JZc46<"Z,.9Qe)]T^D]_)kJs1tQPCg-gNJbVlk_3W+WJrr=jIOs=VF,GugBl=q.<Ksem7&?0H2UFbOm%EaiN6[:ba,BhRTf)o]\99"$gj%k;U+C!Z2`"JS-?Xcr$qX*[+np3u:QJSI+C[fKU'f^j\eLLqg)I@9Y)cm<h^V6b&"U-\1B2M8Q3g<=6&L\RB/9oY(-V,$a=MG!:"'MI])LQ)[!o`G]i/!HLpuaigou0<d(\,]GAh#$I&Nqi<\eq!bn[]!r:mI#?,S57\ebUR=@r'Tf(["&A_7i+6_(\<6<?dVV$"fdG4NJ+C1u_=;8,s-5b>'QrN!0"J"phX9+fXajZ4pG_n!!?ZbG9QoK`;&?2I4^O1JM:p[c#`[C!JTHEOFV3X"j-D[a_Zsb3FOMIur5FI%uHRj6V<>fW1X^4=-r44*@T,RHfZMELKZH8p?!'3OYah_T\!A,%kEg:)2F*:#RuK<O9:">Lf[u1;*VeAMUOKJi>lhSXcWMf%<T)PB7kmHM,_koj%.\Z]n]WU<KE<(B@"b*HN?u,q)_"=#-SM&u#_98qPV.<7=V<%2\YD`D&*B;9Nk3H/qSkd62R+o>t4\e!Y2dQWtefoBm1(%BX$9'GO,2&EAQhbUULl<sJ0Rgqqeq;mkhtbrr(S[^0hEa0c/$qn*gYKfnYCS8hs^?,`p6AtoK1Fp3G/iFSKM_sBRrV'pN[%U;XtaNF[adPE/38LdonU8=u,-#6\KV%kFIT0Weu&L\RB/9oY(-V,$a=MG!:&FJ-dlu_7J^+NZ8jajj>h:HIKEsettl'-k(@\ZYr]!Neoi9FL;R7#:[Vnlmb%p@D]%CX\aZ71$&:@QFh)R:h?FAtnNA`,*75hu7#[&<c-iih:oO6FIT-YZBLBuOGq[3*eJ,"MuG?31%%n<ISCTB-/hmS;3&lI1X*K5*WG$f%;L5LlYHIg4DP7L4i5".nNp<">lF5hGms[&<c-iih:oO6FIT-YZBLBuOGq[3*eJ,!hZ/eIM8[+##F#WCfj\QQ99?,m[(?PYsb;)p(4h4.bO#.K6G/X8"TJqCoV)g/IrREEDXH8+^2IZ?4phKs[am=Abj\?n5Aq@]=EA0/,C#gmWuhaBfejaNW_MTQD7%HM,_koj%.\Z]n]WU<KE<(B@"b*HN?u,q)_"=#-SM&u#_98qPV.<7=V29b7+6R#cSqB_UYQ']7_n0cIBU[hUYs=K3`G[i0,5\,OCip!f<0QC3u'QJVno;I)]*>1T7F@o0"=CF\#6>P)&MIb(DpjI;C!@pNhQobqWm$.`;0UQF3+&pBHA<ji0_B&R<j8]0mY\"tKroaY5"8BAsVW7!IIP"@-,e=reAC*dY!Pbf*D7%ZaP'G2`iTg9Lpf`~>endstream
 endobj
-26 0 obj
+28 0 obj
 <<
 /Annots [ 3 0 R 4 0 R 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 
   13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 
-  23 0 R 24 0 R ] /Contents 52 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 51 0 R /Resources <<
+  23 0 R 24 0 R 25 0 R 26 0 R ] /Contents 55 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 54 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
-/FormXob.4c1ebc9f6e21dba7b36b1daa427e417c 25 0 R
+/FormXob.4c1ebc9f6e21dba7b36b1daa427e417c 27 0 R
 >>
 >> /Rotate 0 
   /Trans <<
@@ -186,21 +200,9 @@ endobj
 >> /Type /Page
 >>
 endobj
-27 0 obj
+29 0 obj
 <<
-/Contents 53 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 51 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
-/FormXob.4c1ebc9f6e21dba7b36b1daa427e417c 25 0 R
->>
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
-endobj
-28 0 obj
-<<
-/Contents 54 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 51 0 R /Resources <<
+/Contents 56 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 54 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 /Trans <<
 
@@ -208,7 +210,19 @@ endobj
   /Type /Page
 >>
 endobj
-29 0 obj
+30 0 obj
+<<
+/Contents 57 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 54 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
+/FormXob.4c1ebc9f6e21dba7b36b1daa427e417c 27 0 R
+>>
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+31 0 obj
 <<
 /Length 1891
 >>
@@ -361,7 +375,7 @@ CMapName currentdict /CMap defineresource pop
 end
 endendstream
 endobj
-30 0 obj
+32 0 obj
 <<
 /Length 17676 /Length1 17676
 >>
@@ -496,16 +510,16 @@ H
 ‘
 ÍVvº¯:z–$Ñ™‡n∞‰<Z|®¿‰>íŒ"x∫Vî¿˛F^∫ˆ:êÊp≤Ó |¬Hî¨¸<      ` ä  X    / \        >        9         	 9        B       # F        Q        i        u       R Ç        ‘        Ë       .       .2       *`  	   rä  	  ¸  	    	  F  	  ,  	  \  	  t  	  §é  	  (2  	  8Z  	  \í  	  \Ó  	  TJDigitized data copyright © 2010-2011, Google Corporation.Open SansBoldAscender - Open Sans Bold Build 100Version 1.10OpenSans-BoldOpen Sans is a trademark of Google and may be registered in certain jurisdictions.Ascender Corporationhttp://www.ascendercorp.com/http://www.ascendercorp.com/typedesigners.htmlLicensed under the Apache License, Version 2.0http://www.apache.org/licenses/LICENSE-2.0 D i g i t i z e d   d a t a   c o p y r i g h t   ©   2 0 1 0 - 2 0 1 1 ,   G o o g l e   C o r p o r a t i o n . O p e n   S a n s B o l d A s c e n d e r   -   O p e n   S a n s   B o l d   B u i l d   1 0 0 V e r s i o n   1 . 1 0 O p e n S a n s - B o l d O p e n   S a n s   i s   a   t r a d e m a r k   o f   G o o g l e   a n d   m a y   b e   r e g i s t e r e d   i n   c e r t a i n   j u r i s d i c t i o n s . A s c e n d e r   C o r p o r a t i o n h t t p : / / w w w . a s c e n d e r c o r p . c o m / h t t p : / / w w w . a s c e n d e r c o r p . c o m / t y p e d e s i g n e r s . h t m l L i c e n s e d   u n d e r   t h e   A p a c h e   L i c e n s e ,   V e r s i o n   2 . 0 h t t p : / / w w w . a p a c h e . o r g / l i c e n s e s / L I C E N S E - 2 . 0       ˇf f                    @ã	!H U UHUˇPLOMdNLd&4U%3$UˇˇˇMLdLLF3UU3U?ØKFÀF€F#3"U3U3UU3UØœ03 Uo  Ø Ô  Ä∏ê±TS++K∏ˇRK∞	P[∞à∞%S∞à∞@QZ∞à∞ UZ[X±éYÖçç BK∞2SX∞ YK∞dSX∞± BYss+ss+++++s^st++++t+++++++++++++^endstream
 endobj
-31 0 obj
+33 0 obj
 <<
-/Ascent 765.1367 /CapHeight 713.8672 /Descent -240.2344 /Flags 262148 /FontBBox [ -619.1406 -292.9688 1318.848 1068.848 ] /FontFile2 30 0 R 
+/Ascent 765.1367 /CapHeight 713.8672 /Descent -240.2344 /Flags 262148 /FontBBox [ -619.1406 -292.9688 1318.848 1068.848 ] /FontFile2 32 0 R 
   /FontName /AAAAAA+OpenSans-Bold /ItalicAngle 0 /StemV 165 /Type /FontDescriptor
 >>
 endobj
-32 0 obj
+34 0 obj
 <<
-/BaseFont /AAAAAA+OpenSans-Bold /FirstChar 0 /FontDescriptor 31 0 R /LastChar 127 /Name /F1+0 /Subtype /TrueType 
-  /ToUnicode 29 0 R /Type /Font /Widths [ 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 
+/BaseFont /AAAAAA+OpenSans-Bold /FirstChar 0 /FontDescriptor 33 0 R /LastChar 127 /Name /F1+0 /Subtype /TrueType 
+  /ToUnicode 31 0 R /Type /Font /Widths [ 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 
   600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 
   600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 
   600.0977 600.0977 259.7656 286.1328 472.168 645.9961 570.8008 900.8789 750 266.1133 
@@ -520,7 +534,7 @@ endobj
   578.125 568.8477 487.793 394.043 550.7812 394.043 570.8008 600.0977 ]
 >>
 endobj
-33 0 obj
+35 0 obj
 <<
 /Length 1912
 >>
@@ -667,8 +681,8 @@ endcodespacerange
 <7D> <007D>
 <7E> <007E>
 <7F> <007F>
-<80> <2018>
-<81> <2022>
+<80> <2022>
+<81> <2018>
 <82> <201A>
 endbfchar
 endcmap
@@ -676,14 +690,14 @@ CMapName currentdict /CMap defineresource pop
 end
 endendstream
 endobj
-34 0 obj
+36 0 obj
 <<
 /Length 16936 /Length1 16936
 >>
 stream
      Ä  POS/2°>û…   ‹   `cmap	ª
 ﬂ  <  cvt M§  X   ¢fpgm~a∂  ¸  ¥glyf‘6  
-∞  -¥head˜v‚¶  8d   6hheaÃ2  8ú   $hmtxù‡*e  8¿  äloca@¬Lƒ  :L   »maxp¸
+∞  -¥head˜v‚¶  8d   6hheaÃ2  8ú   $hmtxù‡*e  8¿  äloca@¬L∆  :L   »maxp¸
   ;    names∞àÖ  ;4  «postˇi f  @¸    prepC∑ñ§  A  	 ∂ê  ö3  ö3  — fÒ‡ Ô@  [   (    1ASC @  ˇ˝˛ ÑçX  ü    H∂                    É                                                                         	 
                         ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _   ` a b  N∂  u∂Õ              H  ë  ˇÏ    ˇÏ    ˇÏ  ˛ˇÏ  ∂ ¸îˇÌ˛ÖˇÍ˛©ˇÏ ˛º                                                            ã Å › ò è é ô à Å ä  @G[ZYXUTSRQPONMLKJIHGFEDCBA@?>=<;:9876510/.-,('&%$#"!
 	 , ∞`E∞% Fa#E#aH-, EhD-,E#F`∞ a ∞F`∞&#HH-,E#F#a∞ ` ∞&a∞ a∞&#HH-,E#F`∞@a ∞f`∞&#HH-,E#F#a∞@` ∞&a∞@a∞&#HH-, < <-, E# ∞ÕD# ∏ZQX# ∞çD#Y ∞ÌQX# ∞MD#Y ∞&QX# ∞D#Y!!-,  EhD ∞` E∞FvhäE`D-,±
@@ -772,24 +786,24 @@ BC55FY;GY
 	  ??399910!3363†˛`≤ÏPuÃ≤˛`H˝v‰D5M0˚∏      #H  ,@		  ?3?339933339910!&'##3366733663/…4(œ¿˛’Æjo1…¥ƒ8#ø¨˛—É;—Ø_˝H˛c˛PK9µ5u˝ã¨u$ñ‹˚∏     '  H  "@ 	 ?3?39991033##∏˛ÉΩ! ª˛Éëº˛Õ˛ º1˛\§˝È˝œº˛D  ˛H  $@	  FY  ?2?+ 991033663#"'53277≤OSÊ≤˛)FªàLJ7D´I=H˝è÷_3˜|˚ πõÖ¿ú     R  mH 	 +@ 
 GYGY ?+ ?+93310!!5!5!!m¸ÂV˝œÁ˝≤]qVÅÅ¸∫  =˛º¡∂  ,@  ' ??933333310%&&54&#5665463€uqæ–~xÇtÿ∂Êﬂﬂf\å™ö/hYç\`2õ¨ã¡˛Ÿ◊''◊ Ó˛{  @	   ??93103#Óçç˜¸  H˛ºÀ∂  ,@
  ' ??933333310&54'52"5665467
-ﬂ„∏”vÇz~Õæotnq?'◊'¡ãÆô˛Œa[çYh˛—ô´å\f)rx     hP)T  $@PY PY /+ ƒ/ƒ+9910"56323267#"&'&&R56dêDqYBb/6Ä6féH~HKZ…C6óm&@9ñn!     ¡D∂  ∂	  ?Õ9910'673%b8{B%¡Zy˛˜     §Ù^„  ∂  	 /Õ93104632#"&§qlitsjkrÏy~|{wÅÉ ˇˇ ?˛¯m Ó       ö_‹>_<ı 	     …51ã    …ËLL˚ö˝’	¢b   	          ç˝®  	¨˚ö˛{	¢                bÕ ¡  # ò5 Ö+ 3ì Éñ h◊ q≈ Ö^ R^ =j Vì hˆ ?ì T! ò ì fì ºì dì ^ì +ì Öì uì ^ì hì j! ò! ?ì hì wì ho 1 y  / … }’ …s …! …” }Á …; …#ˇ`È …' …9 … …; }— …; }Ú …d jm ” ∫√  h û {  ë R¢ ¶ ¢ 3V 1ñˇ¸ûâs ^Á ∞œ sÁ s} s∂ b 'È ∞ ¢ˇë3 ∞ ∞q ∞È ∞’ sÁ ∞Á sD ∞— j” È §  9 1 ' æ R =hÓ Hì h\  § ?         R x |ÓlÜ≤ﬁFdzú∂¯"d¬PÆ–@û‘(Rr PêÏ	*	f	ú	 
+ﬂ„∏”vÇz~Õæotnq?'◊'¡ãÆô˛Œa[çYh˛—ô´å\f)rx     hP)T  $@PY PY /+ ƒ/ƒ+9910"56323267#"&'&&R56dêDqYBb/6Ä6féH~HKZ…C6óm&@9ñn!     §Ù^„  ∂  	 /Õ93104632#"&§qlitsjkrÏy~|{wÅÉ   ¡D∂  ∂	  ?Õ9910'673%b8{B%¡Zy˛˜   ˇˇ ?˛¯m Ó       ö_‹:_<ı 	     …51ã    …ËLL˚ö˝’	¢b   	          ç˝®  	¨˚ö˛{	¢                bÕ ¡  # ò5 Ö+ 3ì Éñ h◊ q≈ Ö^ R^ =j Vì hˆ ?ì T! ò ì fì ºì dì ^ì +ì Öì uì ^ì hì j! ò! ?ì hì wì ho 1 y  / … }’ …s …! …” }Á …; …#ˇ`È …' …9 … …; }— …; }Ú …d jm ” ∫√  h û {  ë R¢ ¶ ¢ 3V 1ñˇ¸ûâs ^Á ∞œ sÁ s} s∂ b 'È ∞ ¢ˇë3 ∞ ∞q ∞È ∞’ sÁ ∞Á sD ∞— j” È §  9 1 ' æ R =hÓ Hì h §\  ?         R x |ÓlÜ≤ﬁFdzú∂¯"d¬PÆ–@û‘(Rr PêÏ	*	f	ú	 
 
 L
 b
 ä
 ∫
-ÿNî“&t»Ï Håº‰4Nrî™ &|∏Zö.löÿ.Ü¿X¨‡2r∞ÿ$Té∫¸Zî≤“⁄    c ä  V    / \   ¯     >        9         	 9        B        I       	 9        g        s       R {        Õ        ·       . ˝       .+       *Y  	   rÉ  	  ı  	    	  <  	  ı  	  Q  	  i  	  §y  	  (  	  8E  	  \}  	  \Ÿ  	  T5Digitized data copyright © 2010-2011, Google Corporation.Open SansRegularAscender - Open Sans Build 100Version 1.10OpenSansOpen Sans is a trademark of Google and may be registered in certain jurisdictions.Ascender Corporationhttp://www.ascendercorp.com/http://www.ascendercorp.com/typedesigners.htmlLicensed under the Apache License, Version 2.0http://www.apache.org/licenses/LICENSE-2.0 D i g i t i z e d   d a t a   c o p y r i g h t   ©   2 0 1 0 - 2 0 1 1 ,   G o o g l e   C o r p o r a t i o n . O p e n   S a n s R e g u l a r A s c e n d e r   -   O p e n   S a n s   B u i l d   1 0 0 V e r s i o n   1 . 1 0 O p e n S a n s O p e n   S a n s   i s   a   t r a d e m a r k   o f   G o o g l e   a n d   m a y   b e   r e g i s t e r e d   i n   c e r t a i n   j u r i s d i c t i o n s . A s c e n d e r   C o r p o r a t i o n h t t p : / / w w w . a s c e n d e r c o r p . c o m / h t t p : / / w w w . a s c e n d e r c o r p . c o m / t y p e d e s i g n e r s . h t m l L i c e n s e d   u n d e r   t h e   A p a c h e   L i c e n s e ,   V e r s i o n   2 . 0 h t t p : / / w w w . a p a c h e . o r g / l i c e n s e s / L I C E N S E - 2 . 0        ˇf f                    @ô	!H U UHU?ØMK&LK3KF%&4U%3$UˇˇˇJI3IF%3UU3U?ØGFÎF#3"U3U3UU3UOœˇ U3 Uo  Ø Ô  Ä∏ê±TS++K∏ˇRK∞	P[∞à∞%S∞à∞@QZ∞à∞ UZ[X±éYÖçç BK∞2SX∞ YK∞dSX∞± BYss++^stu+++++t+st+++++++++++++st+++^   endstream
+ÿNî“&t»Ï Håº‰4Nrî™ &|∏Zö.löÿ.Ü¿X¨‡2r∞ÿ$Té∫¸Zî¥“⁄    c ä  V    / \   ¯     >        9         	 9        B        I       	 9        g        s       R {        Õ        ·       . ˝       .+       *Y  	   rÉ  	  ı  	    	  <  	  ı  	  Q  	  i  	  §y  	  (  	  8E  	  \}  	  \Ÿ  	  T5Digitized data copyright © 2010-2011, Google Corporation.Open SansRegularAscender - Open Sans Build 100Version 1.10OpenSansOpen Sans is a trademark of Google and may be registered in certain jurisdictions.Ascender Corporationhttp://www.ascendercorp.com/http://www.ascendercorp.com/typedesigners.htmlLicensed under the Apache License, Version 2.0http://www.apache.org/licenses/LICENSE-2.0 D i g i t i z e d   d a t a   c o p y r i g h t   ©   2 0 1 0 - 2 0 1 1 ,   G o o g l e   C o r p o r a t i o n . O p e n   S a n s R e g u l a r A s c e n d e r   -   O p e n   S a n s   B u i l d   1 0 0 V e r s i o n   1 . 1 0 O p e n S a n s O p e n   S a n s   i s   a   t r a d e m a r k   o f   G o o g l e   a n d   m a y   b e   r e g i s t e r e d   i n   c e r t a i n   j u r i s d i c t i o n s . A s c e n d e r   C o r p o r a t i o n h t t p : / / w w w . a s c e n d e r c o r p . c o m / h t t p : / / w w w . a s c e n d e r c o r p . c o m / t y p e d e s i g n e r s . h t m l L i c e n s e d   u n d e r   t h e   A p a c h e   L i c e n s e ,   V e r s i o n   2 . 0 h t t p : / / w w w . a p a c h e . o r g / l i c e n s e s / L I C E N S E - 2 . 0        ˇf f                    @ô	!H U UHU?ØMK&LK3KF%&4U%3$UˇˇˇJI3IF%3UU3U?ØGFÎF#3"U3U3UU3UOœˇ U3 Uo  Ø Ô  Ä∏ê±TS++K∏ˇRK∞	P[∞à∞%S∞à∞@QZ∞à∞ UZ[X±éYÖçç BK∞2SX∞ YK∞dSX∞± BYss++^stu+++++t+st+++++++++++++st+++^   endstream
 endobj
-35 0 obj
+37 0 obj
 <<
-/Ascent 765.1367 /CapHeight 713.8672 /Descent -240.2344 /Flags 4 /FontBBox [ -549.8047 -270.9961 1204.102 1047.852 ] /FontFile2 34 0 R 
+/Ascent 765.1367 /CapHeight 713.8672 /Descent -240.2344 /Flags 4 /FontBBox [ -549.8047 -270.9961 1204.102 1047.852 ] /FontFile2 36 0 R 
   /FontName /AAAAAA+OpenSans /ItalicAngle 0 /StemV 87 /Type /FontDescriptor
 >>
 endobj
-36 0 obj
+38 0 obj
 <<
-/BaseFont /AAAAAA+OpenSans /FirstChar 0 /FontDescriptor 35 0 R /LastChar 130 /Name /F2+0 /Subtype /TrueType 
-  /ToUnicode 33 0 R /Type /Font /Widths [ 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 
+/BaseFont /AAAAAA+OpenSans /FirstChar 0 /FontDescriptor 37 0 R /LastChar 130 /Name /F2+0 /Subtype /TrueType 
+  /ToUnicode 35 0 R /Type /Font /Widths [ 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 
   600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 
   600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 
   600.0977 600.0977 259.7656 267.0898 400.8789 645.9961 571.7773 823.2422 729.9805 221.1914 
@@ -801,90 +815,95 @@ endobj
   570.8008 329.1016 367.1875 329.1016 541.9922 448.2422 577.1484 556.1523 612.793 476.0742 
   612.793 561.0352 338.8672 547.8516 613.7695 252.9297 252.9297 524.9023 252.9297 930.1758 
   613.7695 604.0039 612.793 612.793 408.2031 477.0508 353.0273 613.7695 500.9766 777.832 
-  523.9258 503.9062 467.7734 378.9062 550.7812 378.9062 571.7773 600.0977 169.9219 375.9766 
+  523.9258 503.9062 467.7734 378.9062 550.7812 378.9062 571.7773 600.0977 375.9766 169.9219 
   245.1172 ]
->>
-endobj
-37 0 obj
-<<
-/Outlines 39 0 R /PageLabels 55 0 R /PageMode /UseNone /Pages 51 0 R /Type /Catalog
->>
-endobj
-38 0 obj
-<<
-/Author () /CreationDate (D:20190604191308-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20190604191308-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
-  /Subject (\(unspecified\)) /Title (Peacock Midiparser) /Trapped /False
 >>
 endobj
 39 0 obj
 <<
-/Count 12 /First 40 0 R /Last 50 0 R /Type /Outlines
+/Outlines 41 0 R /PageLabels 58 0 R /PageMode /UseNone /Pages 54 0 R /Type /Catalog
 >>
 endobj
 40 0 obj
 <<
-/Dest [ 26 0 R /XYZ 62.69291 729.0236 0 ] /Next 41 0 R /Parent 39 0 R /Title (Load Midi)
+/Author () /CreationDate (D:20190606194035-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20190606194035-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Peacock Midiparser) /Trapped /False
 >>
 endobj
 41 0 obj
 <<
-/Count 1 /Dest [ 26 0 R /XYZ 62.69291 654.0236 0 ] /First 42 0 R /Last 42 0 R /Next 43 0 R /Parent 39 0 R 
-  /Prev 40 0 R /Title (Save Midi)
+/Count 13 /First 42 0 R /Last 53 0 R /Type /Outlines
 >>
 endobj
 42 0 obj
 <<
-/Dest [ 26 0 R /XYZ 62.69291 603.0236 0 ] /Parent 41 0 R /Title (Midiconverter \(external\))
+/Dest [ 28 0 R /XYZ 62.69291 729.0236 0 ] /Next 43 0 R /Parent 41 0 R /Title (Dependencies)
 >>
 endobj
 43 0 obj
 <<
-/Dest [ 26 0 R /XYZ 62.69291 299.3036 0 ] /Next 44 0 R /Parent 39 0 R /Prev 41 0 R /Title (Midi converter button)
+/Dest [ 28 0 R /XYZ 62.69291 654.0236 0 ] /Next 44 0 R /Parent 41 0 R /Prev 42 0 R /Title (Load Midi)
 >>
 endobj
 44 0 obj
 <<
-/Dest [ 26 0 R /XYZ 62.69291 151.3036 0 ] /Next 45 0 R /Parent 39 0 R /Prev 43 0 R /Title (Bpm editor)
+/Count 1 /Dest [ 28 0 R /XYZ 62.69291 579.0236 0 ] /First 45 0 R /Last 45 0 R /Next 46 0 R /Parent 41 0 R 
+  /Prev 43 0 R /Title (Save Midi)
 >>
 endobj
 45 0 obj
 <<
-/Dest [ 27 0 R /XYZ 62.69291 741.0236 0 ] /Next 46 0 R /Parent 39 0 R /Prev 44 0 R /Title (Fps editor)
+/Dest [ 28 0 R /XYZ 62.69291 528.0236 0 ] /Parent 44 0 R /Title (Midiconverter \(external\))
 >>
 endobj
 46 0 obj
 <<
-/Dest [ 27 0 R /XYZ 62.69291 666.0236 0 ] /Next 47 0 R /Parent 39 0 R /Prev 45 0 R /Title (Clipboard)
+/Dest [ 28 0 R /XYZ 62.69291 206.3036 0 ] /Next 47 0 R /Parent 41 0 R /Prev 44 0 R /Title (Midi converter button)
 >>
 endobj
 47 0 obj
 <<
-/Dest [ 27 0 R /XYZ 62.69291 579.0236 0 ] /Next 48 0 R /Parent 39 0 R /Prev 46 0 R /Title (Preparations)
+/Dest [ 29 0 R /XYZ 62.69291 714.0236 0 ] /Next 48 0 R /Parent 41 0 R /Prev 46 0 R /Title (Bpm editor)
 >>
 endobj
 48 0 obj
 <<
-/Dest [ 27 0 R /XYZ 62.69291 486.0236 0 ] /Next 49 0 R /Parent 39 0 R /Prev 47 0 R /Title (Song preparation)
+/Dest [ 29 0 R /XYZ 62.69291 615.0236 0 ] /Next 49 0 R /Parent 41 0 R /Prev 47 0 R /Title (Fps editor)
 >>
 endobj
 49 0 obj
 <<
-/Dest [ 27 0 R /XYZ 62.69291 387.0236 0 ] /Next 50 0 R /Parent 39 0 R /Prev 48 0 R /Title (Preparing the midi clip)
+/Dest [ 29 0 R /XYZ 62.69291 540.0236 0 ] /Next 50 0 R /Parent 41 0 R /Prev 48 0 R /Title (Clipboard)
 >>
 endobj
 50 0 obj
 <<
-/Dest [ 28 0 R /XYZ 62.69291 765.0236 0 ] /Parent 39 0 R /Prev 49 0 R /Title (Preparing your footage)
+/Dest [ 29 0 R /XYZ 62.69291 453.0236 0 ] /Next 51 0 R /Parent 41 0 R /Prev 49 0 R /Title (Preparations)
 >>
 endobj
 51 0 obj
 <<
-/Count 3 /Kids [ 26 0 R 27 0 R 28 0 R ] /Type /Pages
+/Dest [ 29 0 R /XYZ 62.69291 360.0236 0 ] /Next 52 0 R /Parent 41 0 R /Prev 50 0 R /Title (Song preparation)
 >>
 endobj
 52 0 obj
 <<
-/Length 6099
+/Dest [ 29 0 R /XYZ 62.69291 261.0236 0 ] /Next 53 0 R /Parent 41 0 R /Prev 51 0 R /Title (Preparing the midi clip)
+>>
+endobj
+53 0 obj
+<<
+/Dest [ 30 0 R /XYZ 62.69291 722.3036 0 ] /Parent 41 0 R /Prev 52 0 R /Title (Preparing your footage)
+>>
+endobj
+54 0 obj
+<<
+/Count 3 /Kids [ 28 0 R 29 0 R 30 0 R ] /Type /Pages
+>>
+endobj
+55 0 obj
+<<
+/Length 5944
 >>
 stream
 1 0 0 1 0 0 cm 
@@ -898,43 +917,112 @@ Q
 q
 1 0 0 1 62.69291 708.0236 cm
 q
-BT 1 0 0 1 0 3.5 Tm 21 TL 0 0 0 rg /F1+0 17.5 Tf 21 TL (Load Midi) Tj T* ET
+BT 1 0 0 1 0 3.5 Tm 21 TL 0 0 0 rg /F1+0 17.5 Tf 21 TL (Dependencies) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 696.0236 cm
+Q
+q
+1 0 0 1 62.69291 696.0236 cm
+Q
+q
+1 0 0 1 62.69291 684.0236 cm
+0 0 0 rg
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm 10.24023 0 Td /F2+0 10 Tf 12 TL (\200) Tj T* -10.24023 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL 0 0 0 rg /F2+0 10 Tf 12 TL (Peacock AE Utility ) Tj 1 0 0 rg (:doc:`../ae_utils/readme`) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 678.0236 cm
+Q
+q
+1 0 0 1 62.69291 666.0236 cm
+0 0 0 rg
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm 10.24023 0 Td /F2+0 10 Tf 12 TL (\200) Tj T* -10.24023 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL 0 0 0 rg /F2+0 10 Tf 12 TL (Peacock UI Utility ) Tj 1 0 0 rg (:doc:`../ui_utils/readme`) Tj T* ET
+Q
+Q
+q
 Q
 Q
 q
 1 0 0 1 62.69291 666.0236 cm
+Q
+q
+1 0 0 1 62.69291 633.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL 0 0 0 rg /F1+0 17.5 Tf 21 TL (Load Midi) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 591.0236 cm
 q
 BT 1 0 0 1 0 26 Tm 1.517856 Tw 12 TL 0 0 0 rg /F2+0 10 Tf 12 TL (Load a txt file that contains midi note on and off information and import them as slices into the) Tj T* 0 Tw .424639 Tw (sliceArray \(The in points of the slices are getting added to the markerArray which could be added as) Tj T* 0 Tw (markers to a layer or the composition by clicking the ) Tj /F3 10 Tf 0 0 0 rg (Add) Tj 0 0 0 rg /F2+0 10 Tf 12 TL ( button\).) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 633.0236 cm
+1 0 0 1 62.69291 558.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL 0 0 0 rg /F1+0 17.5 Tf 21 TL (Save Midi) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 615.0236 cm
+1 0 0 1 62.69291 540.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (Save a txt file that contains all slices from the sliceArray.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 585.0236 cm
+1 0 0 1 62.69291 510.0236 cm
 q
 BT 1 0 0 1 0 3 Tm 18 TL 0 0 0 rg /F1+0 15 Tf 18 TL (Midiconverter \(external\)) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 552.0236 cm
+1 0 0 1 62.69291 477.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL 0 0 0 rg /F1+0 17.5 Tf 21 TL (Table of Contents) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 348.0236 cm
+1 0 0 1 62.69291 255.0236 cm
 0 0 0 rg
+q
+1 0 0 1 0 201 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL 0 0 .501961 rg /F1+0 10 Tf 12 TL (Dependencies) Tj T* ET
+Q
+Q
+q
+1 0 0 1 397.8898 201 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm 66.29199 0 Td /F1+0 10 Tf 12 TL (1) Tj T* -66.29199 0 Td ET
+Q
+Q
 q
 1 0 0 1 0 183 cm
 q
@@ -997,7 +1085,7 @@ q
 1 0 0 1 397.8898 111 cm
 q
 0 0 .501961 rg
-BT 1 0 0 1 0 2 Tm 66.29199 0 Td /F1+0 10 Tf 12 TL (1) Tj T* -66.29199 0 Td ET
+BT 1 0 0 1 0 2 Tm 66.29199 0 Td /F1+0 10 Tf 12 TL (2) Tj T* -66.29199 0 Td ET
 Q
 Q
 q
@@ -1082,40 +1170,49 @@ q
 Q
 Q
 q
-1 0 0 1 282.2778 311.3036 cm
+1 0 0 1 282.2778 218.3036 cm
 q
 30.72 0 0 30.72 0 0 cm
 /FormXob.4c1ebc9f6e21dba7b36b1daa427e417c Do
 Q
 Q
 q
-1 0 0 1 62.69291 278.3036 cm
+1 0 0 1 62.69291 185.3036 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL 0 0 0 rg /F1+0 17.5 Tf 21 TL (Midi converter button) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 248.3036 cm
+1 0 0 1 62.69291 155.3036 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 14 Tm 1.754401 Tw /F2+0 10 Tf 12 TL (The Midi converter interprets 12 note values in the range of C3 - B3. Please make sure that the) Tj T* 0 Tw (midinotes are placed in exactly that range, otherwise the notes won\200t be recognized.) Tj T* ET
+BT 1 0 0 1 0 14 Tm 1.754401 Tw /F2+0 10 Tf 12 TL (The Midi converter interprets 12 note values in the range of C3 - B3. Please make sure that the) Tj T* 0 Tw (midinotes are placed in exactly that range, otherwise the notes won\201t be recognized.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 218.3036 cm
+1 0 0 1 62.69291 125.3036 cm
 q
 BT 1 0 0 1 0 14 Tm .112691 Tw 12 TL 0 0 0 rg /F2+0 10 Tf 12 TL (The chosen .mid file is converted to a .txt file with a assigned videotrack a note-on and note-off value) Tj T* 0 Tw (and a velocity value that can be imported by the Premiere Pro extension ) Tj /F3 10 Tf 0 0 0 rg (BpmSlicer) Tj 0 0 0 rg /F2+0 10 Tf 12 TL (.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 202.3036 cm
+1 0 0 1 62.69291 109.3036 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1+0 10 Tf 12 TL (for example:) Tj T* ET
 Q
 Q
+ 
+endstream
+endobj
+56 0 obj
+<<
+/Length 6613
+>>
+stream
+1 0 0 1 0 0 cm 
 q
-1 0 0 1 62.69291 163.3036 cm
+1 0 0 1 62.69291 726.0236 cm
 0 0 0 rg
 BT 1 0 0 1 0 26 Tm  T* ET
 q
@@ -1131,7 +1228,7 @@ q
 1 0 0 1 6 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm 10.24023 0 Td /F2+0 10 Tf 12 TL (\201) Tj T* -10.24023 0 Td ET
+BT 1 0 0 1 0 2 Tm 10.24023 0 Td /F2+0 10 Tf 12 TL (\200) Tj T* -10.24023 0 Td ET
 Q
 Q
 q
@@ -1154,7 +1251,7 @@ q
 1 0 0 1 6 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm 10.24023 0 Td /F2+0 10 Tf 12 TL (\201) Tj T* -10.24023 0 Td ET
+BT 1 0 0 1 0 2 Tm 10.24023 0 Td /F2+0 10 Tf 12 TL (\200) Tj T* -10.24023 0 Td ET
 Q
 Q
 q
@@ -1174,116 +1271,107 @@ q
 Q
 Q
 q
-1 0 0 1 62.69291 130.3036 cm
+1 0 0 1 62.69291 693.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL 0 0 0 rg /F1+0 17.5 Tf 21 TL (Bpm editor) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 112.3036 cm
+1 0 0 1 62.69291 675.0236 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (Before the midi clip is converted, a tempo event with the given \202bpm\200 rate is added to the midi clip.) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (Before the midi clip is converted, a tempo event with the given \202bpm\201 rate is added to the midi clip.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 82.30362 cm
+1 0 0 1 62.69291 645.0236 cm
 q
 BT 1 0 0 1 0 14 Tm .537647 Tw 12 TL 0 0 0 rg /F2+0 10 Tf 12 TL (If the midi clip has a tempo event already and you want to use it instead of a new one, set the bpm) Tj T* 0 Tw (value to ) Tj /F3 10 Tf 0 0 0 rg (-1) Tj 0 0 0 rg /F2+0 10 Tf 12 TL (.) Tj T* ET
 Q
 Q
- 
-endstream
-endobj
-53 0 obj
-<<
-/Length 5470
->>
-stream
-1 0 0 1 0 0 cm 
 q
-1 0 0 1 62.69291 753.0236 cm
+1 0 0 1 62.69291 627.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F2+0 10 Tf 12 TL (If the bpm editor is empty the default bpm value of 120 is used.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 720.0236 cm
+1 0 0 1 62.69291 594.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL 0 0 0 rg /F1+0 17.5 Tf 21 TL (Fps editor) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 678.0236 cm
+1 0 0 1 62.69291 552.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 26 Tm -0.085877 Tw /F2+0 10 Tf 12 TL (The fps value \(Frames per seconds\) is only needed if you want to use the clipboard to copy keyframes) Tj T* 0 Tw 1.381408 Tw (directly onto one of After Effects layer properties. With help of the fps value the time of the midi) Tj T* 0 Tw (note-on values can be transformed to frame values.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 645.0236 cm
+1 0 0 1 62.69291 519.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL 0 0 0 rg /F1+0 17.5 Tf 21 TL (Clipboard) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 591.0236 cm
+1 0 0 1 62.69291 465.0236 cm
 q
 BT 1 0 0 1 0 38 Tm .536704 Tw 12 TL 0 0 0 rg /F2+0 10 Tf 12 TL (The velocity values of all midi note-on messages are mapped to the range of 0.0 - 1.0 and copied to) Tj T* 0 Tw 3.00795 Tw (the systems clipboard so that you can simply paste the values as keyframes onto a selected) Tj T* 0 Tw 1.377451 Tw /F3 10 Tf 0 0 0 rg (expression) Tj ( ) Tj (slider) Tj 0 0 0 rg /F2+0 10 Tf 12 TL ( property in After Effects. A ) Tj /F3 10 Tf 0 0 0 rg (expression) Tj ( ) Tj (slider) Tj 0 0 0 rg /F2+0 10 Tf 12 TL ( with those keyframes can) Tj T* 0 Tw (then be used to manipulate different properties and effects.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 558.0236 cm
+1 0 0 1 62.69291 432.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL 0 0 0 rg /F1+0 17.5 Tf 21 TL (Preparations) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 528.0236 cm
+1 0 0 1 62.69291 402.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm .236615 Tw /F2+0 10 Tf 12 TL (NOTE: The following description is confusing because it describs the preparation for the premier pro) Tj T* 0 Tw (version of the BpmSlicer which is not yet finished.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 498.0236 cm
+1 0 0 1 62.69291 372.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm 1.085945 Tw /F2+0 10 Tf 12 TL (Before you can take full advantage of the functionality of the BpmSlicer you need to prepare your) Tj T* 0 Tw (footage as follows.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 465.0236 cm
+1 0 0 1 62.69291 339.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL 0 0 0 rg /F1+0 17.5 Tf 21 TL (Song preparation) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 399.0236 cm
+1 0 0 1 62.69291 273.0236 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 50 Tm -0.006124 Tw /F2+0 10 Tf 12 TL (You have to ensure that the following two conditions are met: You need to know the exact bpm value) Tj T* 0 Tw .559994 Tw (of the song you want to work with and set this value in the bpm input field. You need to make sure) Tj T* 0 Tw -0.102223 Tw (that the 1st beat of the song sits exactly at the 0 point in time. Some songs may not have an intro that) Tj T* 0 Tw .78941 Tw (fits the bpm rate of the actual song, then you need to find the first beat and place it accordingly. If) Tj T* 0 Tw (you have the exact bpm rate of the song then it won\200t be too difficult to make it fit.) Tj T* ET
+BT 1 0 0 1 0 50 Tm -0.006124 Tw /F2+0 10 Tf 12 TL (You have to ensure that the following two conditions are met: You need to know the exact bpm value) Tj T* 0 Tw .559994 Tw (of the song you want to work with and set this value in the bpm input field. You need to make sure) Tj T* 0 Tw -0.102223 Tw (that the 1st beat of the song sits exactly at the 0 point in time. Some songs may not have an intro that) Tj T* 0 Tw .78941 Tw (fits the bpm rate of the actual song, then you need to find the first beat and place it accordingly. If) Tj T* 0 Tw (you have the exact bpm rate of the song then it won\201t be too difficult to make it fit.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 366.0236 cm
+1 0 0 1 62.69291 240.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL 0 0 0 rg /F1+0 17.5 Tf 21 TL (Preparing the midi clip) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 324.0236 cm
+1 0 0 1 62.69291 198.0236 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 26 Tm 2.25082 Tw /F2+0 10 Tf 12 TL (Please make sure that the midinotes in the midi file are placed in the range between C3 - B3,) Tj T* 0 Tw .21554 Tw (otherwise the notes won\200t be recognized. Note that the notes of C3 are placed onto videotrack 1, the) Tj T* 0 Tw (notes of C#3 onto videotrack 2 and so on.) Tj T* ET
+BT 1 0 0 1 0 26 Tm 2.25082 Tw /F2+0 10 Tf 12 TL (Please make sure that the midinotes in the midi file are placed in the range between C3 - B3,) Tj T* 0 Tw .21554 Tw (otherwise the notes won\201t be recognized. Note that the notes of C3 are placed onto videotrack 1, the) Tj T* 0 Tw (notes of C#3 onto videotrack 2 and so on.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 318.0236 cm
+1 0 0 1 62.69291 192.0236 cm
 Q
 q
-1 0 0 1 62.69291 210.0236 cm
+1 0 0 1 62.69291 84.02362 cm
 1 1 1 rg
 n 0 108 469.8898 -18 re f*
 .878431 .878431 .878431 rg
@@ -1410,45 +1498,45 @@ n 469.8898 0 m 469.8898 108 l S
 Q
 Q
 q
-1 0 0 1 62.69291 210.0236 cm
+1 0 0 1 62.69291 84.02362 cm
 Q
+ 
+endstream
+endobj
+57 0 obj
+<<
+/Length 2269
+>>
+stream
+1 0 0 1 0 0 cm 
 q
-1 0 0 1 282.2778 173.3036 cm
+1 0 0 1 282.2778 734.3036 cm
 q
 30.72 0 0 30.72 0 0 cm
 /FormXob.4c1ebc9f6e21dba7b36b1daa427e417c Do
 Q
 Q
- 
-endstream
-endobj
-54 0 obj
-<<
-/Length 2164
->>
-stream
-1 0 0 1 0 0 cm 
 q
-1 0 0 1 62.69291 744.0236 cm
+1 0 0 1 62.69291 701.3036 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL 0 0 0 rg /F1+0 17.5 Tf 21 TL (Preparing your footage) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 678.0236 cm
+1 0 0 1 62.69291 635.3036 cm
 q
 BT 1 0 0 1 0 50 Tm .213691 Tw 12 TL 0 0 0 rg /F2+0 10 Tf 12 TL (If there is no BpmSlicer folder structure already you can create one by clicking the ) Tj /F3 10 Tf 0 0 0 rg (create) Tj ( ) Tj (folders) Tj 0 0 0 rg  T* 0 Tw 1.697706 Tw /F2+0 10 Tf 12 TL (Button. The next step is to put all your footage you want to be placed into the active sequence,) Tj T* 0 Tw .047478 Tw (according to the notes in the midi file, into the ) Tj /F3 10 Tf 0 0 0 rg (1) Tj ( ) Tj (source) Tj 0 0 0 rg /F2+0 10 Tf 12 TL ( folder and assign the appropriate prefix for) Tj T* 0 Tw .483746 Tw (each footage item. Make sure the prefix is a number between 1 - 12 and make sure there is a white) Tj T* 0 Tw (space between the prefix number and the footage name.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 636.0236 cm
+1 0 0 1 62.69291 593.3036 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 26 Tm .253758 Tw /F2+0 10 Tf 12 TL (The next thing you want to make sure is that you add as much videotracks to the active sequence as) Tj T* 0 Tw .073938 Tw (your highest assigned prefix is. In the following example the highest assigned prefix is 4, so you need) Tj T* 0 Tw (to make sure there are at least 4 videotracks available.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 531.4236 cm
+1 0 0 1 62.69291 488.7036 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -1469,106 +1557,109 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 487.4236 cm
+1 0 0 1 62.69291 444.7036 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 26 Tm .392019 Tw /F2+0 10 Tf 12 TL (As you notice in the example it\200s possible to assign the same prefix to as many footage items as you) Tj T* 0 Tw 1.137243 Tw (like. If you assign the same prefix to more then one footage items, this function selects a random) Tj T* 0 Tw (footage item each time it finds a midi note for the appropriate videotrack.) Tj T* ET
+BT 1 0 0 1 0 26 Tm .392019 Tw /F2+0 10 Tf 12 TL (As you notice in the example it\201s possible to assign the same prefix to as many footage items as you) Tj T* 0 Tw 1.137243 Tw (like. If you assign the same prefix to more then one footage items, this function selects a random) Tj T* 0 Tw (footage item each time it finds a midi note for the appropriate videotrack.) Tj T* ET
 Q
 Q
  
 endstream
 endobj
-55 0 obj
+58 0 obj
 <<
-/Nums [ 0 56 0 R 1 57 0 R 2 58 0 R ]
+/Nums [ 0 59 0 R 1 60 0 R 2 61 0 R ]
 >>
 endobj
-56 0 obj
+59 0 obj
 <<
 /S /D /St 1
 >>
 endobj
-57 0 obj
+60 0 obj
 <<
 /S /D /St 2
 >>
 endobj
-58 0 obj
+61 0 obj
 <<
 /S /D /St 3
 >>
 endobj
 xref
-0 59
+0 62
 0000000000 65535 f 
 0000000073 00000 n 
 0000000130 00000 n 
 0000000235 00000 n 
-0000000407 00000 n 
-0000000579 00000 n 
-0000000751 00000 n 
-0000000923 00000 n 
-0000001108 00000 n 
-0000001293 00000 n 
-0000001477 00000 n 
-0000001662 00000 n 
-0000001836 00000 n 
-0000002010 00000 n 
-0000002183 00000 n 
-0000002357 00000 n 
-0000002530 00000 n 
-0000002703 00000 n 
-0000002879 00000 n 
+0000000410 00000 n 
+0000000585 00000 n 
+0000000757 00000 n 
+0000000929 00000 n 
+0000001101 00000 n 
+0000001273 00000 n 
+0000001458 00000 n 
+0000001644 00000 n 
+0000001829 00000 n 
+0000002014 00000 n 
+0000002188 00000 n 
+0000002362 00000 n 
+0000002535 00000 n 
+0000002709 00000 n 
+0000002882 00000 n 
 0000003055 00000 n 
-0000003235 00000 n 
-0000003415 00000 n 
-0000003602 00000 n 
-0000003789 00000 n 
-0000003975 00000 n 
-0000004161 00000 n 
-0000010714 00000 n 
-0000011149 00000 n 
-0000011419 00000 n 
-0000011625 00000 n 
-0000013568 00000 n 
-0000031312 00000 n 
-0000031557 00000 n 
-0000032910 00000 n 
-0000034874 00000 n 
-0000051878 00000 n 
-0000052112 00000 n 
-0000053497 00000 n 
-0000053603 00000 n 
-0000053879 00000 n 
-0000053954 00000 n 
-0000054065 00000 n 
-0000054228 00000 n 
-0000054343 00000 n 
-0000054479 00000 n 
-0000054604 00000 n 
-0000054729 00000 n 
-0000054853 00000 n 
-0000054980 00000 n 
-0000055111 00000 n 
-0000055249 00000 n 
-0000055373 00000 n 
-0000055448 00000 n 
-0000061599 00000 n 
-0000067121 00000 n 
-0000069337 00000 n 
-0000069396 00000 n 
-0000069430 00000 n 
-0000069464 00000 n 
+0000003231 00000 n 
+0000003407 00000 n 
+0000003587 00000 n 
+0000003767 00000 n 
+0000003954 00000 n 
+0000004141 00000 n 
+0000004327 00000 n 
+0000004513 00000 n 
+0000011066 00000 n 
+0000011515 00000 n 
+0000011721 00000 n 
+0000011991 00000 n 
+0000013934 00000 n 
+0000031678 00000 n 
+0000031923 00000 n 
+0000033276 00000 n 
+0000035240 00000 n 
+0000052244 00000 n 
+0000052478 00000 n 
+0000053863 00000 n 
+0000053969 00000 n 
+0000054245 00000 n 
+0000054320 00000 n 
+0000054434 00000 n 
+0000054558 00000 n 
+0000054721 00000 n 
+0000054836 00000 n 
+0000054972 00000 n 
+0000055097 00000 n 
+0000055222 00000 n 
+0000055346 00000 n 
+0000055473 00000 n 
+0000055604 00000 n 
+0000055742 00000 n 
+0000055866 00000 n 
+0000055941 00000 n 
+0000061937 00000 n 
+0000068602 00000 n 
+0000070923 00000 n 
+0000070982 00000 n 
+0000071016 00000 n 
+0000071050 00000 n 
 trailer
 <<
 /ID 
-[<31cb38ed6e69baf8ca7d55c0f853a71c><31cb38ed6e69baf8ca7d55c0f853a71c>]
+[<859d416d46df4c30c59e8900307f3b2c><859d416d46df4c30c59e8900307f3b2c>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
-/Info 38 0 R
-/Root 37 0 R
-/Size 59
+/Info 40 0 R
+/Root 39 0 R
+/Size 62
 >>
 startxref
-69498
+71084
 %%EOF

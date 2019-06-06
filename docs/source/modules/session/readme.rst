@@ -1,2 +1,6 @@
 Peacock Session
 ---------------
+
+~~~~~~~~~~~~
+Dependencies
+~~~~~~~~~~~~

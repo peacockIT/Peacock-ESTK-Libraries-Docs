@@ -1,2 +1,6 @@
 Peacock Composition Template
 ----------------------------
+
+~~~~~~~~~~~~
+Dependencies
+~~~~~~~~~~~~

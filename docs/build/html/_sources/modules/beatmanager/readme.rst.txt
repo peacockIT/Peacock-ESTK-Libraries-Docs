@@ -3,6 +3,14 @@ Peacock BeatManager
 
 .. contents:: Table of Contents
 
+~~~~~~~~~~~~
+Dependencies
+~~~~~~~~~~~~
+
+* Peacock Univarsal Utility :doc:`../utils/readme`
+* Peacock AE Utility :doc:`../ae_utils/readme`
+* Peacock Preferences :doc:`../preferences/readme`
+
 ~~~
 Bpm
 ~~~

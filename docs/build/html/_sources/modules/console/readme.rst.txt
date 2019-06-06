@@ -2,6 +2,15 @@
 Peacock Console
 ***************
 
+~~~~~~~~~~~~
+Dependencies
+~~~~~~~~~~~~
+
+* Peacock Univarsal Utility :doc:`../utils/readme`
+* Peacock AE Utility :doc:`../ae_utils/readme`
+* Peacock UI Utility :doc:`../ui_utils/readme`
+* Peacock Preferences :doc:`../preferences/readme`
+
 .. contents:: Table of Contents
 
 The console is like a command line. Three different types of input are

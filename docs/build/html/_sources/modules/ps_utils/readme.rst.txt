@@ -1,2 +1,6 @@
 Peacock Photoshop Utility
 -------------------------
+
+~~~~~~~~~~~~
+Dependencies
+~~~~~~~~~~~~

@@ -1,6 +1,13 @@
 Peacock Midiparser
 ------------------
 
+~~~~~~~~~~~~
+Dependencies
+~~~~~~~~~~~~
+
+* Peacock AE Utility :doc:`../ae_utils/readme`
+* Peacock UI Utility :doc:`../ui_utils/readme`
+
 ~~~~~~~~~
 Load Midi
 ~~~~~~~~~

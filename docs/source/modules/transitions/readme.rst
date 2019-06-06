@@ -1,6 +1,13 @@
 Peacock Transitions
 -------------------
 
+~~~~~~~~~~~~
+Dependencies
+~~~~~~~~~~~~
+
+* Peacock AE Utility :doc:`../ae_utils/readme`
+* Peacock UI Utility :doc:`../ui_utils/readme`
+
 ~~~~~~
 A (In)
 ~~~~~~

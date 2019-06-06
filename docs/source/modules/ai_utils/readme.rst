@@ -1,2 +1,6 @@
 Peacock Illustrator Utility
 ---------------------------
+
+~~~~~~~~~~~~
+Dependencies
+~~~~~~~~~~~~

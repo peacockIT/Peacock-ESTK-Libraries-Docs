@@ -6,6 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
+ALLSPHINXOPTS = build
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -18,3 +19,7 @@ help:
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
+# pdf:
+#     $(SPHINXBUILD) -b pdf $(ALLSPHINXOPTS) "build pdf/pdf"
+#     @echo
+#     @echo "Build finished. The PDF files are in _build/pdf."

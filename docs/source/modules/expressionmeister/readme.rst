@@ -1,6 +1,16 @@
 Peacock Expression Meister
 --------------------------
 
+~~~~~~~~~~~~
+Dependencies
+~~~~~~~~~~~~
+
+* Peacock Univarsal Utility :doc:`../utils/readme`
+* Peacock AE Utility :doc:`../ae_utils/readme`
+* Peacock UI Utility :doc:`../ui_utils/readme`
+* Peacock Preferences :doc:`../preferences/readme`
+
+
 .. sidebar:: Main Window
 
     .. image:: images/ExpressionMeister_01_400px.png

@@ -1,2 +1,6 @@
 Peacock Binary Creator
 ----------------------
+
+~~~~~~~~~~~~
+Dependencies
+~~~~~~~~~~~~
