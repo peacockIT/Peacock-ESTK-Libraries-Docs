@@ -1,6 +1,8 @@
 Peacock Midiparser
 ------------------
 
+.. contents:: Table of Contents
+
 ~~~~~~~~~~~~
 Dependencies
 ~~~~~~~~~~~~
@@ -29,12 +31,6 @@ Save a txt file that contains all slices from the sliceArray.
 ************************
 Midiconverter (external)
 ************************
-
-
-.. contents:: Table of Contents
-
-
-.. image:: ../_static/midiconverter.png
 
 ~~~~~~~~~~~~~~~~~~~~~
 Midi converter button
@@ -125,7 +121,7 @@ D3     videotrack 3
 B3     videotrack 12
 =====  ============
 
-.. image:: ../_static/MidinoteRange.png
+.. image:: images/MidinoteRange.png
 
 ~~~~~~~~~~~~~~~~~~~~~~
 Preparing your footage

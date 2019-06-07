@@ -19,6 +19,28 @@ Quick References
 
 
 .. toctree::
+    :caption: Scripts
+    :maxdepth: 2
+
+    scripts/Peacock-AE-BinaryIconCreator/readme
+    scripts/Peacock-AE-BpmSlicer/readme
+    scripts/Peacock-AE-ChordProgressions/readme
+    scripts/Peacock-AE-CopyAndChange/readme
+    scripts/Peacock-AE-DuplicateAnd/readme
+    scripts/Peacock-AE-EssentialLinker/readme
+    scripts/Peacock-AE-ExpressionMeister/readme
+    scripts/Peacock-AE-InsertsFile/readme
+    scripts/Peacock-AE-LabelsErstellen/readme
+    scripts/Peacock-AE-MoveInTime/readme
+    scripts/Peacock-AE-PictoSearch/readme
+    scripts/Peacock-AI-Exporter/readme
+    scripts/Peacock-ESTK-ConvertJsxToBinary/readme
+    scripts/Peacock-IN-AnkiParser/readme
+    scripts/Peacock-PS-Converter/readme
+    scripts/Peacock-PS-PhotoSearch/readme
+
+
+.. toctree::
     :caption: Modules
     :maxdepth: 2
 
@@ -27,12 +49,14 @@ Quick References
     modules/base64/readme
     modules/beatmanager/readme
     modules/binarycreator/readme
+    modules/colorpresets/readme
     modules/comp_template/readme
     modules/console/readme
     modules/estk_tester/readme
     modules/expressionmeister/readme
     modules/favorites/readme
     modules/filesearch/readme
+    modules/header/readme
     modules/in_utils/readme
     modules/jsxbinaryconverter/readme
     modules/keyframes/readme
