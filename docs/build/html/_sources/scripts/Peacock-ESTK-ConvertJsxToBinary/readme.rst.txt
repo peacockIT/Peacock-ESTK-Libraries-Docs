@@ -7,8 +7,8 @@ Peacock ESTK ConvertJsxToBinary
 Dependencies
 ~~~~~~~~~~~~
 
-* Peacock Universal Utility :doc:`../../modules/utils/readme`
-* Peacock UI Utility :doc:`../../modules/ui_utils/readme`
-* Peacock Preferences :doc:`../../modules/preferences/readme`
-* Peacock Jsx Binary Converter :doc:`../../modules/jsxbinaryconverter/readme`
+* :doc:`../../modules/utils/readme`
+* :doc:`../../modules/ui_utils/readme`
+* :doc:`../../modules/preferences/readme`
+* :doc:`../../modules/jsxbinaryconverter/readme`
 

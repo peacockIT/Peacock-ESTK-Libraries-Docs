@@ -7,10 +7,10 @@ Peacock IN AnkiParser
 Dependencies
 ~~~~~~~~~~~~
 
-* Peacock Logger :doc:`../../modules/logger/readme`
-* Peacock Universal Utility :doc:`../../modules/utils/readme`
-* Peacock UI Utility :doc:`../../modules/ui_utils/readme`
-* Peacock IN Utils :doc:`../../modules/in_utils/readme`
-* Peacock Preferences :doc:`../../modules/preferences/readme`
-* Peacock Header :doc:`../../modules/header/readme`
+* :doc:`../../modules/logger/readme`
+* :doc:`../../modules/utils/readme`
+* :doc:`../../modules/ui_utils/readme`
+* :doc:`../../modules/in_utils/readme`
+* :doc:`../../modules/preferences/readme`
+* :doc:`../../modules/header/readme`
 

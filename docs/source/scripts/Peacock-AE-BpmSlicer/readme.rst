@@ -7,21 +7,21 @@ Peacock AE BpmSlicer
 Dependencies
 ~~~~~~~~~~~~
 
-* Peacock Logger :doc:`../../modules/logger/readme`
-* Peacock Universal Utility :doc:`../../modules/utils/readme`
-* Peacock Preferences :doc:`../../modules/preferences/readme`
-* Peacock UI Utility :doc:`../../modules/ui_utils/readme`
-* Peacock Base64 :doc:`../../modules/base64/readme`
-* Peacock AE Utils :doc:`../../modules/ae_utils/readme`
-* Peacock Console :doc:`../../modules/console/readme`
-* Peacock comp_template :doc:`../../modules/comp_template/readme`
-* Peacock Midiparser :doc:`../../modules/midiparser/readme`
-* Peacock Textparser :doc:`../../modules/textparser/readme`
-* Peacock Keyframes :doc:`../../modules/keyframes/readme`
-* Peacock Beatmanager :doc:`../../modules/beatmanager/readme`
-* Peacock Slices :doc:`../../modules/slices/readme`
-* Peacock Markers :doc:`../../modules/markers/readme`
-* Peacock Transitions :doc:`../../modules/transitions/readme`
-* Peacock Layertools :doc:`../../modules/layertools/readme`
-* Peacock Header :doc:`../../modules/header/readme`
+* :doc:`../../modules/logger/readme`
+* :doc:`../../modules/utils/readme`
+* :doc:`../../modules/preferences/readme`
+* :doc:`../../modules/ui_utils/readme`
+* :doc:`../../modules/base64/readme`
+* :doc:`../../modules/ae_utils/readme`
+* :doc:`../../modules/console/readme`
+* :doc:`../../modules/comp_template/readme`
+* :doc:`../../modules/midiparser/readme`
+* :doc:`../../modules/textparser/readme`
+* :doc:`../../modules/keyframes/readme`
+* :doc:`../../modules/beatmanager/readme`
+* :doc:`../../modules/slices/readme`
+* :doc:`../../modules/markers/readme`
+* :doc:`../../modules/transitions/readme`
+* :doc:`../../modules/layertools/readme`
+* :doc:`../../modules/header/readme`
 

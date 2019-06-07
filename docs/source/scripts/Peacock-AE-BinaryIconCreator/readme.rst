@@ -7,9 +7,9 @@ Peacock AE BinaryIconCreator
 Dependencies
 ~~~~~~~~~~~~
 
-* Peacock Universal Utility :doc:`../../modules/utils/readme`
-* Peacock UI Utility :doc:`../../modules/ui_utils/readme`
-* Peacock Preferences :doc:`../../modules/preferences/readme`
-* Peacock Binary Creator :doc:`../../modules/binarycreator/readme`
-* Peacock Header :doc:`../../modules/header/readme`
+* :doc:`../../modules/utils/readme`
+* :doc:`../../modules/ui_utils/readme`
+* :doc:`../../modules/preferences/readme`
+* :doc:`../../modules/binarycreator/readme`
+* :doc:`../../modules/header/readme`
 

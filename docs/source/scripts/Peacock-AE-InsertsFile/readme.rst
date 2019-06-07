@@ -7,10 +7,10 @@ Peacock AE InsertsFile
 Dependencies
 ~~~~~~~~~~~~
 
-* Peacock Universal Utility :doc:`../../modules/utils/readme`
-* Peacock UI Utility :doc:`../../modules/ui_utils/readme`
-* Peacock AE Utils :doc:`../../modules/ae_utils/readme`
-* Peacock Preferences :doc:`../../modules/preferences/readme`
-* Peacock Expression Meister :doc:`../../modules/expressionmeister/readme`
-* Peacock Header :doc:`../../modules/header/readme`
+* :doc:`../../modules/utils/readme`
+* :doc:`../../modules/ui_utils/readme`
+* :doc:`../../modules/ae_utils/readme`
+* :doc:`../../modules/preferences/readme`
+* :doc:`../../modules/expressionmeister/readme`
+* :doc:`../../modules/header/readme`
 

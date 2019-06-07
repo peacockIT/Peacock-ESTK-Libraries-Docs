@@ -7,11 +7,11 @@ Peacock AE PictoSearch
 Dependencies
 ~~~~~~~~~~~~
 
-* Peacock Logger :doc:`../../modules/logger/readme`
-* Peacock Universal Utility :doc:`../../modules/utils/readme`
-* Peacock UI Utility :doc:`../../modules/ui_utils/readme`
-* Peacock AE Utils :doc:`../../modules/ae_utils/readme`
-* Peacock Library :doc:`../../modules/library/readme`
-* Peacock Preferences :doc:`../../modules/preferences/readme`
-* Peacock Header :doc:`../../modules/header/readme`
+* :doc:`../../modules/logger/readme`
+* :doc:`../../modules/utils/readme`
+* :doc:`../../modules/ui_utils/readme`
+* :doc:`../../modules/ae_utils/readme`
+* :doc:`../../modules/library/readme`
+* :doc:`../../modules/preferences/readme`
+* :doc:`../../modules/header/readme`
 
