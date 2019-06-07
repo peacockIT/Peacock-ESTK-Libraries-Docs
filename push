@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# Calls git add, commit and push for the repository in the current directory
+#
+# 	git add .;
+# 	git commit -m "work in progress";
+# 	git push origin develop;
+#
+
+source .functions
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+if [ "$#" -ne 2 ]; then
+	echo "Usage: push <branch, commit message>"
+	exit 1
+else
+	BRANCH="${1}"
+	COMMIT_MSG="${2}"
+fi
+
+echo "${BRANCH}"
+echo "${COMMIT_MSG}"
+
+
+git add .;
+git commit -m "${COMMIT_MSG}";
+git push origin "${BRANCH}";
+pwd
