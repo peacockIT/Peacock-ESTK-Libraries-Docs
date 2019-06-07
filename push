@@ -18,11 +18,8 @@ else
 	COMMIT_MSG="${2}"
 fi
 
-echo "${BRANCH}"
-echo "${COMMIT_MSG}"
-
+echo "${BRANCH} ${COMMIT_MSG}"
 
 git add .;
 git commit -m "${COMMIT_MSG}";
 git push origin "${BRANCH}";
-pwd
