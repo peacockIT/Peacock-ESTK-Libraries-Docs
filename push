@@ -18,8 +18,11 @@ else
 	COMMIT_MSG="${2}"
 fi
 
-echo "${BRANCH} ${COMMIT_MSG}"
-
+echo_ok "Adding all files"
 git add .;
+
+echo_ok "Commiting with message '${COMMIT_MSG}'"
 git commit -m "${COMMIT_MSG}";
+
+echo_ok "Pushing to branch ${BRANCH}"
 git push origin "${BRANCH}";
