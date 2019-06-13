@@ -38,6 +38,7 @@ Quick References
     scripts/Peacock-IN-AnkiParser/readme
     scripts/Peacock-PS-Converter/readme
     scripts/Peacock-PS-PhotoSearch/readme
+    scripts/Peacock-PPRO-BpmSlicer/readme
 
 
 .. toctree::

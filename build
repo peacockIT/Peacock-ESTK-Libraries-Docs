@@ -6,8 +6,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 echo_ok 'Copy modules from Peacock ESTK Library ...'
 "${DIR}/copy_modules.py"
 
-echo_ok 'Copy scripts from the SCRIPTS folder ...'
-"/Volumes/LACIE/1 PROJECTS/3 programming/ESTK/SCRIPTS/sync_scripts_with_docs.py"
+# echo_ok 'Copy scripts from the SCRIPTS folder ...'
+# "/Volumes/LACIE/1 PROJECTS/3 programming/ESTK/SCRIPTS/sync_scripts_with_docs.py"
 
 echo_ok 'Building sphinx html ...'
 "${DIR}/build_sphinx_html.py"

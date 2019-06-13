@@ -1,9 +1,11 @@
+.. Look here for more:
+.. https://sphinx-rtd-theme.readthedocs.io/en/stable/
+
 BeatManager
 =====================================
-
 This is the beatManager
 
-.. this file is from docutils: docs/user/demo.rst (see also 
+.. this file is from docutils: docs/user/demo.rst (see also
    http://docutils.sourceforge.net/docs/user/rst/demo.html)
 
 .. This is a comment. Note how any initial comments are moved by
@@ -482,7 +484,7 @@ Topics, Sidebars, and Rubrics
    :subtitle: Optional Subtitle
 
    This is a sidebar.  It is for text outside the flow of the main
-   text.  
+   text.
 
    .. rubric:: This is a rubric inside a sidebar
 
@@ -517,7 +519,7 @@ Compound Paragraph
        Connecting... OK
        Transmitting data... OK
        Disconnecting... OK
-      
+
    and thus consists of a simple paragraph, a literal block, and
    another simple paragraph.  Nonetheless it is semantically *one*
    paragraph.
