@@ -1,32 +1,13 @@
-Peacock PPRO Bpm Slicer
------------------------
-
-A manual for the Premiere Pro extension
-
-.. contents:: Table of Contents
-
-
-.. _Dependencies:
-
-~~~~~~~~~~~~
-Dependencies
-~~~~~~~~~~~~
-
-No dependencies.
-
-
-
-.. _Description:
-
-~~~~~~~~~~~
-Description
-~~~~~~~~~~~
+Peacock PPRO BpmSlicer
+----------------------
 
 .. figure:: ../../modules/ppro_bpmslicer/images/BpmSlicer.png
     :align: right
-    :figwidth: 300px
+    :figwidth: 350px
 
     Premiere Pro BpmSlicer.
+
+A manual for the Premiere Pro extension
 
 This extension is designed for creatively making music videos by developing a special midiclip along with your music production that helps you later in the video editing process.
 
@@ -36,11 +17,126 @@ Nevertheless you are not into music production and don't know how to create midi
 
 But you need to take a deeper look at the Preparations_.
 
+Here you can find the |Premiere_Scripting_Guide|.
+
+.. |Premiere_Scripting_Guide| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/" target="_blank">Premiere Scripting Guide</a>
+
+
+---------
+
+.. contents:: Table of Contents
+
+---------
+
+.. _Installation:
+
+************
+Installation
+************
+
+
+.. _Download the extension (.zxp file):
+
+Download the extension (.zxp file)
+==================================
+When you download the extension, it comes as a zxp file to your computer's Downloads folder.
+Enter any passwords, or accept any notices your computer’s operating system presents.
+
+.. _Extension Install Utility:
+
+Extension Install Utility
+=========================
+If you were unable to install your extension using the Creative Cloud desktop app,
+please follow the instructions below to use an extension install utility.
+In addition to Adobe's Manage Extensions utility there are various third party utilites
+available that work with Adobe .zxp files, such as Anastasiy’s Extension Manager or |ZXPInstaller|.
+
+Open the Extension Install Utility.
+If you don’t have it on your computer, below are download links for alternative utilities.
+Once downloaded and installed, use an extension install utility to install your .zxp files.
+
+- Manage Extensions utility
+- Anastasiy’s Extension Manager
+- |ZXPInstaller|
+
+After selecting either the Mac or Windows version of your chosen Extension Install Utility,
+download it to your computer and follow the installation instructions from the installer,
+which should be in your Downloads folder.
+
+Install your extension from Adobe Exchange by selecting File > Install extension or
+following the instructions within the install utility and selecting the extension
+from within your computer’s Downloads folder.
+
+Do not use Adobe Extension Manager for CC2015 or later compatible Adobe apps.
+It is no longer supported and may create install issues. Use a third party utility
+for extension installation, such as those mentioned above for installation,
+if installation via the Creative Cloud desktop app is not successful.
+
+.. |ZXPInstaller| raw:: html
+
+   <a href="https://zxpinstaller.com/" target="_blank">ZXPInstaller</a>
+
+
+.. _ExMan Command Line Tool:
+
+ExMan Command Line Tool
+=========================
+
+You can even go a step further and use the command line tool |ExManCmd|.
+
+1. Copy the ZXP package to ExMan_root. Let’s call it myextension.zxp.
+
+2. Close any Adobe applications that are compatible with the Extension.
+
+3. In a command shell (Mac OS Terminal or Windows Command Prompt), go to the ExMan_root folder and run this command for your extension:
+
+  - In Mac OS: ``./Contents/MacOS/ExManCmd ––install myextension.zxp``
+  - In Windows: ``ExManCmd.exe /install myextension.zxp``
+
+    .. Note:: Currently, ExManCmd does not support encrypted extensions for enterprise use cases.
+
+4. Check Where to Find it - Follow the instructions in the “Where to find it” section on the detail page. Some extensions may require you to carry out further steps to install.
+
+This should install the add-on. You can verify the installation with this command:
+
+- In Mac OS: ``./Contents/MacOS/ExManCmd ––list all``
+- In Windows: ``ExManCmd.exe /list all``
+
+.. |ExManCmd| raw:: html
+
+   <a href="https://partners.adobe.com/exchangeprogram/creativecloud/support/exman-com-line-tool.html" target="_blank">ExManCmd</a>
+
+
+.. _Where to Find it:
+
+Where to Find it
+================
+After the installation you can find the extension placed in the extension folder.
+
+- Windows: ``C:\Program Files (x86)\Common Files\Adobe\CEP\extensions``
+- Mac: ``/Library/Application Support/Adobe/CEP/extensions``
+
+**Resources:**
+
+-  |adobeexchange_install_instructions|
+
+.. |adobeexchange_install_instructions| raw:: html
+
+   <a href="https://www.adobeexchange.com/creativecloud/install-instructions.20513.html" target="_blank">https://www.adobeexchange.com/creativecloud/install-instructions.20513.html</a>
+
+
+
+
+
+---------
+
 .. _Preparations:
 
-~~~~~~~~~~~~
+************
 Preparations
-~~~~~~~~~~~~
+************
 
 Before you can take full advantage of the functionality of the BpmSlicer you need to prepare your footage as follows.
 
@@ -72,18 +168,19 @@ Please make sure that the midinotes in the midi file are placed in the range bet
 
 .. figure:: ../../modules/ppro_bpmslicer/images/MidinoteRange.png
     :align: center
-    :figwidth: 500px
 
     Midinote range
 
-.. Note:: The notes of C3 are placed onto videotrack 1, the notes of C#3 onto videotrack 2 and so on.
+.. code-block:: text
 
-   - C3  ->  videotrack 1
-   - C#3 ->  videotrack 2
-   - D3  ->  videotrack 3
-   - D#3 ->  videotrack 4
-   - ... ->  ...
-   - B3  ->  videotrack 12
+    C3  ->  videotrack 1
+    C#3 ->  videotrack 2
+    D3  ->  videotrack 3
+    D#3 ->  videotrack 4
+    ... ->  ...
+    B3  ->  videotrack 12
+
+.. Note:: The notes of C3 are placed onto videotrack 1, the notes of C#3 onto videotrack 2 and so on.
 
 
 
@@ -117,11 +214,13 @@ If you assign the same prefix to more then one footage items, this function sele
 
 
 
-.. _Generel:
+---------
 
-~~~~~~~
-Generel
-~~~~~~~
+.. _Functionality:
+
+*************
+Functionality
+*************
 
 
 
@@ -211,9 +310,8 @@ the out points of the subclips are still inside the duration of the source foota
 
 .. _Create subclips:
 
-~~~~~~~~~~~~~~~
 Create subclips
-~~~~~~~~~~~~~~~
+===============
 
 This function considers all markers in the active sequence and places random clips from
 the ``1 source`` folder onto videotrack 1 so that between each marker sits a subclip.
@@ -222,7 +320,7 @@ the ``1 source`` folder onto videotrack 1 so that between each marker sits a sub
     :align: center
     :figwidth: 200px
 
-    The ``1 source`` folder
+    The **1 source** folder
 
 In this case the assigned prefixes that were discussed in chapter `Preparing your footage`_
 are immaterial.
@@ -230,7 +328,7 @@ are immaterial.
 .. figure:: ../../modules/ppro_bpmslicer/images/BpmSlicer_createSubclips.png
     :align: center
 
-    Random clips from the ``1 source`` folder placed in the sequence
+    Random clips from the **1 source** folder placed in the sequence
 
 The starttime of the subclip is randomly set and it is made sure that the out point of
 the subclip is inside the duration of the source footage.
@@ -245,9 +343,8 @@ the subclip is inside the duration of the source footage.
 
 .. _Sequence markers:
 
-~~~~~~~~~~~~~~~~~
 Sequence markers
-~~~~~~~~~~~~~~~~~
+================
 
 There are two ways to create markers with the adjusted bpm- and bars-value:
 
@@ -266,7 +363,7 @@ Clip markers
 ============
 
 To create markers on one or more clips you need to place the clips into
-the ``1 source`` folder and give it the prefix ``0 `` (e.g. ``0 video.mov``).
+the ``1 source`` folder and give it the prefix '0 ' (e.g. ``0 video.mov``).
 
 If you then press the ``clip markers`` button, clip markers will be created according
 to the adjusted ``Bpm`` and ``Bars`` value for the duration of the whole clip.
@@ -316,12 +413,13 @@ If you have more then one blendmodes selected, a random blendmode out of your bl
 selection is assigned to the selection of clips in your active sequence.
 
 
+---------
 
 .. _Midiconverter (external):
 
-~~~~~~~~~~~~~~~~~~~~~~~~
+************************
 Midiconverter (external)
-~~~~~~~~~~~~~~~~~~~~~~~~
+************************
 
 
 
@@ -385,86 +483,13 @@ A ``expression slider`` with those keyframes can then be used to manipulate diff
 
 
 
-.. _Install Instructions:
-
-~~~~~~~~~~~~~~~~~~~~
-Install Instructions
-~~~~~~~~~~~~~~~~~~~~
-
-
-
-.. _Download the extension (.zxp file):
-
-Download the extension (.zxp file)
-==================================
-When you download the extension, it comes as a zxp file to your computer's Downloads folder.
-
-Enter any passwords, or accept any notices your computer’s operating system presents.
-
-
-
-.. _Extension Install Utility:
-
-Extension Install Utility
-=========================
-If you were unable to install your extension using the Creative Cloud desktop app,
-please follow the instructions below to use an extension install utility.
-
-In addition to Adobe's Manage Extensions utility there are various third party utilites
-available that work with Adobe .zxp files, such as Anastasiy’s Extension Manager or ZXPInstaller.
-
-Open the Extension Install Utility.
-
-If you don’t have it on your computer, below are download links for alternative utilities.
-
-Once downloaded and installed, use an extension install utility to install your .zxp files.
-
-Download Manage Extensions utility
-or
-Download Anastasiy’s Extension Manager
-or
-Download ZXPInstaller
-
-After selecting either the Mac or Windows version of your chosen Extension Install Utility,
-download it to your computer and follow the installation instructions from the installer,
-which should be in your Downloads folder.
-
-Install your extension from Adobe Exchange by selecting File > Install extension or
-following the instructions within the install utility and selecting the extension
-from within your computer’s Downloads folder.
-
-Do not use Adobe Extension Manager for CC2015 or later compatible Adobe apps.
-
-It is no longer supported and may create install issues. Use a third party utility
-for extension installation, such as those mentioned above for installation,
-if installation via the Creative Cloud desktop app is not successful.
-
-
-
-.. _Where to Find it:
-
-Where to Find it
-================
-After the installation you can find the extension placed in the extension folder.
-
-Windows:    ``C:\Program Files (x86)\Common Files\Adobe\CEP\extensions``
-
-Mac:        ``/Library/Application Support/Adobe/CEP/extensions``
-
-Source:
--  |adobeexchange_install_instructions|
-
-.. |adobeexchange_install_instructions| raw:: html
-
-   <a href="https://www.adobeexchange.com/creativecloud/install-instructions.20513.html" target="_blank">https://www.adobeexchange.com/creativecloud/install-instructions.20513.html</a>
-
-
+---------
 
 .. _Troubleshooting:
 
-~~~~~~~~~~~~~~~
+***************
 Troubleshooting
-~~~~~~~~~~~~~~~
+***************
 
 .. figure:: ../../modules/ppro_bpmslicer/images/BpmVersionNumberInManifest.png
     :align: center
@@ -484,9 +509,8 @@ Troubleshooting
 
 .. _Other BpmSlicer data pathes:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Other BpmSlicer data pathes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===========================
 
 Other pathes that might help include BpmSlicer data
 
@@ -495,4 +519,126 @@ Other pathes that might help include BpmSlicer data
 - ``/Users/USERNAME/Library/Application Support/Adobe/Extension Manager CC/Log/ExManCoreLibrary.log``
 - ``/Users/USERNAME/Library/Preferences/com.Adobe.Premiere Pro.11.0.plist``
 - ``/Users/USERNAME/Library/Preferences/com.Adobe.Premiere Pro.12.0.plist``
+
+
+---------
+
+.. _Packaging and Signing Adobe Extensions:
+
+**************************************
+Packaging and Signing Adobe Extensions
+**************************************
+
+This documentation of the packaging and signing procedure is based on |Packaging_and_Signing_Adobe_Extensions| pdf reference.
+
+
+1. Download the the ZXPSignCMD tool from either |ZXPSignCMD_Git| or |ZXPSignCMD_Adobe|.
+
+2. If you already have a certificate, you can use that. Otherwise, begin by by creating a self-signed certificate (`Create a self-signed certificate`_)::
+
+    ./ZXPSignCmd -selfSignedCert US NY MyCompany MyCommonName abc123 MyCert.p12
+
+3. This generates a file named ``MyCert.p12`` in the current folder. You can use this certificate to sign your extension (`Create a signed package`_)::
+
+    ./ZXPSignCmd -sign myExtProject myExtension.zxp MyCert.p12 abc123
+
+
+.. _Create a signed package:
+
+Create a signed package
+=======================
+
+.. code-block:: bash
+
+    ZXPSignCmd -sign <inputDir> <outputZxp> <p12> <p12Password> [options]
+
+================  ==========================================================================================
+   Inputs         Output
+================  ==========================================================================================
+``inputDir``      The path to the folder containing the source files to package.
+``outputZxp``     The path and file name for the ZXP package.
+``p12``           The signing certificate; see “How signing works” on page 5.
+``p12Password``   The password for the certificate.
+``options``       -tsa <timestampURL> The timestamp server. For example: https://timestamp.geotrust.com/tsa
+================  ==========================================================================================
+
+
+.. _Verify a ZXP package:
+
+Verify a ZXP package:
+=====================
+
+.. code-block:: bash
+
+    ZXPSignCmd -verify <zxp>|<extensionRootDir> [options]
+
++----------------------+-----------------------------------------------------------------------------------------------------------------------+
+| Arguments            | Description                                                                                                           |
++======================+=======================================================================================================================+
+| ``zxp``              | The path and file name for the ZXP package.                                                                           |
++----------------------+-----------------------------------------------------------------------------------------------------------------------+
+| ``extensionRootDir`` | The path to the folder containing the deployed ZXP.                                                                   |
++----------------------+-----------------------------------------------------------------------------------------------------------------------+
+| ``options``          | - ``-certinfo``                                                                                                       |
+|                      | - If supplied, prints information about the certificate, including timestamp and revocation information.              |
+|                      +-----------------------------------------------------------------------------------------------------------------------+
+|                      | - ``-skipOnlineRevocationChecks``                                                                                     |
+|                      | - If supplied, skips online checks for certificate revocation when -certinfo is set.                                  |
+|                      +-------------------------------------+---------------------------------------------------------------------------------+
+|                      | - ``-addCerts <cert1> <cert2> ...``                                                                                   |
+|                      | - If supplied, verifes the certificate chain and assesses whether the supplied DER-encoded certificates are included. |
++----------------------+-------------------------------------+---------------------------------------------------------------------------------+
+
+
+.. _Create a self-signed certificate:
+
+Create a self-signed certificate
+================================
+
+.. code-block:: bash
+
+    ZXPSignCmd -selfSignedCert <countryCode> <stateOrProvince> <organization> <commonName> <password> <outputPath.p12> [options]
+
++-------------------------+-------------------------------------------------------------------------------------------------+
+| Arguments               | Description                                                                                     |
++=========================+=================================================================================================+
+| - ``countryCode``       | The certificate identifying information.                                                        |
+| - ``stateOrProvince``   |                                                                                                 |
+| - ``organization``      |                                                                                                 |
+| - ``commonName``        |                                                                                                 |
++-------------------------+-------------------------------------------------------------------------------------------------+
+| - ``password``          | The password for the new certificate.                                                           |
++-------------------------+-------------------------------------------------------------------------------------------------+
+| - ``outputPath.p12``    | The path and file name for the new certificate.                                                 |
++-------------------------+-------------------------------------------------------------------------------------------------+
+| - ``options``           | - ``-locality <code>``                                                                          |
+|                         | - If supplied, the locale code to associate with this certificate.                              |
+|                         +-------------------------------------------------------------------------------------------------+
+|                         | - ``-orgUnit <name>``                                                                           |
+|                         | - If supplied, an organizational unit to associate with this certificate.                       |
+|                         +-------------------------------------------------------------------------------------------------+
+|                         | - ``-email <addr>``                                                                             |
+|                         | - If supplied, an email address to associate with this certificate.                             |
+|                         +-------------------------------------------------------------------------------------------------+
+|                         | - ``-validityDays <num>``                                                                       |
+|                         | - If supplied, a number of days from the current date-time that this certificate remains valid. |
++-------------------------+-------------------------------------------------------------------------------------------------+
+
+
+
+.. |Packaging_and_Signing_Adobe_Extensions| raw:: html
+
+   <a href="https://wwwimages2.adobe.com/content/dam/acom/en/devnet/creativesuite/pdfs/SigningTechNote_CC.pdf" target="_blank">this</a>
+
+.. |ZXPSignCMD_Git| raw:: html
+
+   <a href="https://github.com/Adobe-CEP/CEP-Resources/tree/master/ZXPSignCMD" target="_blank">here</a>
+
+.. |ZXPSignCMD_Adobe| raw:: html
+
+   <a href="https://labs.adobe.com/downloads/extensionbuilder3.html" target="_blank">here</a>
+
+
+
+
 

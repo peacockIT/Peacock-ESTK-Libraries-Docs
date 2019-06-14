@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Peacock PPRO Bpm Slicer &mdash; Peacock ESTK Library Documentation</title>
+  <title>Peacock PPRO BpmSlicer &mdash; Peacock ESTK Library Documentation</title>
   
 
   
@@ -104,27 +104,30 @@
 <li class="toctree-l1"><a class="reference internal" href="../Peacock-IN-AnkiParser/readme.html">Peacock IN AnkiParser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Peacock-PS-Converter/readme.html">Peacock PS Converter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Peacock-PS-PhotoSearch/readme.html">Peacock PS PhotoSearch</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Peacock PPRO Bpm Slicer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Peacock PPRO BpmSlicer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#download-the-extension-zxp-file">Download the extension (.zxp file)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#extension-install-utility">Extension Install Utility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exman-command-line-tool">ExMan Command Line Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#where-to-find-it">Where to Find it</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#preparations">Preparations</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#song-preparation">Song preparation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#preparing-the-midi-clip">Preparing the midi clip</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#preparing-your-footage">Preparing your footage</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#generel">Generel</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id9">?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#functionality">Functionality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#bpm">Bpm</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#bars">Bars</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-folders">Create folders</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#clips-and-markers-from-midi">Clips and markers from midi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#clips-and-markers-from-txt">Clips and markers from txt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#subclips-with-random-starttime">Subclips with random starttime</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#create-subclips">Create subclips</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#sequence-markers">Sequence markers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-subclips">Create subclips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sequence-markers">Sequence markers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#clip-markers">Clip markers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#quantize-sequence-markers">Quantize sequence markers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#export-frames-for-markers">Export frames for markers</a></li>
@@ -139,14 +142,16 @@
 <li class="toctree-l3"><a class="reference internal" href="#clipboard">Clipboard</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#install-instructions">Install Instructions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#download-the-extension-zxp-file">Download the extension (.zxp file)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#extension-install-utility">Extension Install Utility</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#where-to-find-it">Where to Find it</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#other-bpmslicer-data-pathes">Other BpmSlicer data pathes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#other-bpmslicer-data-pathes">Other BpmSlicer data pathes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#packaging-and-signing-adobe-extensions">Packaging and Signing Adobe Extensions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-a-signed-package">Create a signed package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verify-a-zxp-package">Verify a ZXP package:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-a-self-signed-certificate">Create a self-signed certificate</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -234,7 +239,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Peacock PPRO Bpm Slicer</li>
+      <li>Peacock PPRO BpmSlicer</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -253,79 +258,155 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="peacock-ppro-bpm-slicer">
-<h1><a class="toc-backref" href="#id43">Peacock PPRO Bpm Slicer</a><a class="headerlink" href="#peacock-ppro-bpm-slicer" title="Permalink to this headline">¶</a></h1>
-<p>A manual for the Premiere Pro extension</p>
-<div class="contents topic" id="table-of-contents">
-<p class="topic-title first">Table of Contents</p>
-<ul class="simple">
-<li><a class="reference internal" href="#peacock-ppro-bpm-slicer" id="id43">Peacock PPRO Bpm Slicer</a><ul>
-<li><a class="reference internal" href="#dependencies" id="id44">Dependencies</a></li>
-<li><a class="reference internal" href="#description" id="id45">Description</a></li>
-<li><a class="reference internal" href="#preparations" id="id46">Preparations</a><ul>
-<li><a class="reference internal" href="#song-preparation" id="id47">Song preparation</a></li>
-<li><a class="reference internal" href="#preparing-the-midi-clip" id="id48">Preparing the midi clip</a></li>
-<li><a class="reference internal" href="#preparing-your-footage" id="id49">Preparing your footage</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#generel" id="id50">Generel</a><ul>
-<li><a class="reference internal" href="#id9" id="id51">?</a></li>
-<li><a class="reference internal" href="#bpm" id="id52">Bpm</a></li>
-<li><a class="reference internal" href="#bars" id="id53">Bars</a></li>
-<li><a class="reference internal" href="#create-folders" id="id54">Create folders</a></li>
-<li><a class="reference internal" href="#clips-and-markers-from-midi" id="id55">Clips and markers from midi</a></li>
-<li><a class="reference internal" href="#clips-and-markers-from-txt" id="id56">Clips and markers from txt</a></li>
-<li><a class="reference internal" href="#subclips-with-random-starttime" id="id57">Subclips with random starttime</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#create-subclips" id="id58">Create subclips</a></li>
-<li><a class="reference internal" href="#sequence-markers" id="id59">Sequence markers</a><ul>
-<li><a class="reference internal" href="#clip-markers" id="id60">Clip markers</a></li>
-<li><a class="reference internal" href="#quantize-sequence-markers" id="id61">Quantize sequence markers</a></li>
-<li><a class="reference internal" href="#export-frames-for-markers" id="id62">Export frames for markers</a></li>
-<li><a class="reference internal" href="#randomize-selection" id="id63">Randomize selection</a></li>
-<li><a class="reference internal" href="#change-blendmode" id="id64">Change blendmode</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#midiconverter-external" id="id65">Midiconverter (external)</a><ul>
-<li><a class="reference internal" href="#midi-converter-button" id="id66">Midi converter button</a></li>
-<li><a class="reference internal" href="#bpm-editor" id="id67">Bpm editor</a></li>
-<li><a class="reference internal" href="#fps-editor" id="id68">Fps editor</a></li>
-<li><a class="reference internal" href="#clipboard" id="id69">Clipboard</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#install-instructions" id="id70">Install Instructions</a><ul>
-<li><a class="reference internal" href="#download-the-extension-zxp-file" id="id71">Download the extension (.zxp file)</a></li>
-<li><a class="reference internal" href="#extension-install-utility" id="id72">Extension Install Utility</a></li>
-<li><a class="reference internal" href="#where-to-find-it" id="id73">Where to Find it</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#troubleshooting" id="id74">Troubleshooting</a></li>
-<li><a class="reference internal" href="#other-bpmslicer-data-pathes" id="id75">Other BpmSlicer data pathes</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="dependencies">
-<span id="id1"></span><h2><a class="toc-backref" href="#id44">Dependencies</a><a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
-<p>No dependencies.</p>
-</div>
-<div class="section" id="description">
-<span id="id2"></span><h2><a class="toc-backref" href="#id45">Description</a><a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-right" id="id34" style="width: 300px">
+  <div class="section" id="peacock-ppro-bpmslicer">
+<h1><a class="toc-backref" href="#id46">Peacock PPRO BpmSlicer</a><a class="headerlink" href="#peacock-ppro-bpmslicer" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-right" id="id37" style="width: 350px">
 <img alt="../../_images/BpmSlicer.png" src="../../_images/BpmSlicer.png" />
 <p class="caption"><span class="caption-text">Premiere Pro BpmSlicer.</span></p>
 </div>
+<p>A manual for the Premiere Pro extension</p>
 <p>This extension is designed for creatively making music videos by developing a special midiclip along with your music production that helps you later in the video editing process.</p>
 <p>Primarily this extension is made for music producers who are familiar with midi and the bpm value of a song.</p>
 <p>Nevertheless you are not into music production and don’t know how to create midiclips you can still use the other functionallity of this extension.</p>
 <p>But you need to take a deeper look at the <a class="reference internal" href="#preparations">Preparations</a>.</p>
+<p>Here you can find the <a href="https://premiere-scripting-guide.readthedocs.io/" target="_blank">Premiere Scripting Guide</a>.</p>
+<hr class="docutils" />
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#peacock-ppro-bpmslicer" id="id46">Peacock PPRO BpmSlicer</a><ul>
+<li><a class="reference internal" href="#installation" id="id47">Installation</a><ul>
+<li><a class="reference internal" href="#download-the-extension-zxp-file" id="id48">Download the extension (.zxp file)</a></li>
+<li><a class="reference internal" href="#extension-install-utility" id="id49">Extension Install Utility</a></li>
+<li><a class="reference internal" href="#exman-command-line-tool" id="id50">ExMan Command Line Tool</a></li>
+<li><a class="reference internal" href="#where-to-find-it" id="id51">Where to Find it</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#preparations" id="id52">Preparations</a><ul>
+<li><a class="reference internal" href="#song-preparation" id="id53">Song preparation</a></li>
+<li><a class="reference internal" href="#preparing-the-midi-clip" id="id54">Preparing the midi clip</a></li>
+<li><a class="reference internal" href="#preparing-your-footage" id="id55">Preparing your footage</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#functionality" id="id56">Functionality</a><ul>
+<li><a class="reference internal" href="#id12" id="id57">?</a></li>
+<li><a class="reference internal" href="#bpm" id="id58">Bpm</a></li>
+<li><a class="reference internal" href="#bars" id="id59">Bars</a></li>
+<li><a class="reference internal" href="#create-folders" id="id60">Create folders</a></li>
+<li><a class="reference internal" href="#clips-and-markers-from-midi" id="id61">Clips and markers from midi</a></li>
+<li><a class="reference internal" href="#clips-and-markers-from-txt" id="id62">Clips and markers from txt</a></li>
+<li><a class="reference internal" href="#subclips-with-random-starttime" id="id63">Subclips with random starttime</a></li>
+<li><a class="reference internal" href="#create-subclips" id="id64">Create subclips</a></li>
+<li><a class="reference internal" href="#sequence-markers" id="id65">Sequence markers</a></li>
+<li><a class="reference internal" href="#clip-markers" id="id66">Clip markers</a></li>
+<li><a class="reference internal" href="#quantize-sequence-markers" id="id67">Quantize sequence markers</a></li>
+<li><a class="reference internal" href="#export-frames-for-markers" id="id68">Export frames for markers</a></li>
+<li><a class="reference internal" href="#randomize-selection" id="id69">Randomize selection</a></li>
+<li><a class="reference internal" href="#change-blendmode" id="id70">Change blendmode</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#midiconverter-external" id="id71">Midiconverter (external)</a><ul>
+<li><a class="reference internal" href="#midi-converter-button" id="id72">Midi converter button</a></li>
+<li><a class="reference internal" href="#bpm-editor" id="id73">Bpm editor</a></li>
+<li><a class="reference internal" href="#fps-editor" id="id74">Fps editor</a></li>
+<li><a class="reference internal" href="#clipboard" id="id75">Clipboard</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#troubleshooting" id="id76">Troubleshooting</a><ul>
+<li><a class="reference internal" href="#other-bpmslicer-data-pathes" id="id77">Other BpmSlicer data pathes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#packaging-and-signing-adobe-extensions" id="id78">Packaging and Signing Adobe Extensions</a><ul>
+<li><a class="reference internal" href="#create-a-signed-package" id="id79">Create a signed package</a></li>
+<li><a class="reference internal" href="#verify-a-zxp-package" id="id80">Verify a ZXP package:</a></li>
+<li><a class="reference internal" href="#create-a-self-signed-certificate" id="id81">Create a self-signed certificate</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="installation">
+<span id="id1"></span><h2><a class="toc-backref" href="#id47">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="download-the-extension-zxp-file">
+<span id="id2"></span><h3><a class="toc-backref" href="#id48">Download the extension (.zxp file)</a><a class="headerlink" href="#download-the-extension-zxp-file" title="Permalink to this headline">¶</a></h3>
+<p>When you download the extension, it comes as a zxp file to your computer’s Downloads folder.
+Enter any passwords, or accept any notices your computer’s operating system presents.</p>
+</div>
+<div class="section" id="extension-install-utility">
+<span id="id3"></span><h3><a class="toc-backref" href="#id49">Extension Install Utility</a><a class="headerlink" href="#extension-install-utility" title="Permalink to this headline">¶</a></h3>
+<p>If you were unable to install your extension using the Creative Cloud desktop app,
+please follow the instructions below to use an extension install utility.
+In addition to Adobe’s Manage Extensions utility there are various third party utilites
+available that work with Adobe .zxp files, such as Anastasiy’s Extension Manager or <a href="https://zxpinstaller.com/" target="_blank">ZXPInstaller</a>.</p>
+<p>Open the Extension Install Utility.
+If you don’t have it on your computer, below are download links for alternative utilities.
+Once downloaded and installed, use an extension install utility to install your .zxp files.</p>
+<ul class="simple">
+<li>Manage Extensions utility</li>
+<li>Anastasiy’s Extension Manager</li>
+<li><a href="https://zxpinstaller.com/" target="_blank">ZXPInstaller</a></li>
+</ul>
+<p>After selecting either the Mac or Windows version of your chosen Extension Install Utility,
+download it to your computer and follow the installation instructions from the installer,
+which should be in your Downloads folder.</p>
+<p>Install your extension from Adobe Exchange by selecting File &gt; Install extension or
+following the instructions within the install utility and selecting the extension
+from within your computer’s Downloads folder.</p>
+<p>Do not use Adobe Extension Manager for CC2015 or later compatible Adobe apps.
+It is no longer supported and may create install issues. Use a third party utility
+for extension installation, such as those mentioned above for installation,
+if installation via the Creative Cloud desktop app is not successful.</p>
+</div>
+<div class="section" id="exman-command-line-tool">
+<span id="id4"></span><h3><a class="toc-backref" href="#id50">ExMan Command Line Tool</a><a class="headerlink" href="#exman-command-line-tool" title="Permalink to this headline">¶</a></h3>
+<p>You can even go a step further and use the command line tool <a href="https://partners.adobe.com/exchangeprogram/creativecloud/support/exman-com-line-tool.html" target="_blank">ExManCmd</a>.</p>
+<ol class="arabic simple">
+<li>Copy the ZXP package to ExMan_root. Let’s call it myextension.zxp.</li>
+<li>Close any Adobe applications that are compatible with the Extension.</li>
+<li>In a command shell (Mac OS Terminal or Windows Command Prompt), go to the ExMan_root folder and run this command for your extension:</li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">In Mac OS: <code class="docutils literal notranslate"><span class="pre">./Contents/MacOS/ExManCmd</span> <span class="pre">––install</span> <span class="pre">myextension.zxp</span></code></p>
+</li>
+<li><p class="first">In Windows: <code class="docutils literal notranslate"><span class="pre">ExManCmd.exe</span> <span class="pre">/install</span> <span class="pre">myextension.zxp</span></code></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Currently, ExManCmd does not support encrypted extensions for enterprise use cases.</p>
+</div>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Check Where to Find it - Follow the instructions in the “Where to find it” section on the detail page. Some extensions may require you to carry out further steps to install.</li>
+</ol>
+<p>This should install the add-on. You can verify the installation with this command:</p>
+<ul class="simple">
+<li>In Mac OS: <code class="docutils literal notranslate"><span class="pre">./Contents/MacOS/ExManCmd</span> <span class="pre">––list</span> <span class="pre">all</span></code></li>
+<li>In Windows: <code class="docutils literal notranslate"><span class="pre">ExManCmd.exe</span> <span class="pre">/list</span> <span class="pre">all</span></code></li>
+</ul>
+</div>
+<div class="section" id="where-to-find-it">
+<span id="id5"></span><h3><a class="toc-backref" href="#id51">Where to Find it</a><a class="headerlink" href="#where-to-find-it" title="Permalink to this headline">¶</a></h3>
+<p>After the installation you can find the extension placed in the extension folder.</p>
+<ul class="simple">
+<li>Windows: <code class="docutils literal notranslate"><span class="pre">C:\Program</span> <span class="pre">Files</span> <span class="pre">(x86)\Common</span> <span class="pre">Files\Adobe\CEP\extensions</span></code></li>
+<li>Mac: <code class="docutils literal notranslate"><span class="pre">/Library/Application</span> <span class="pre">Support/Adobe/CEP/extensions</span></code></li>
+</ul>
+<p><strong>Resources:</strong></p>
+<ul class="simple">
+<li><a href="https://www.adobeexchange.com/creativecloud/install-instructions.20513.html" target="_blank">https://www.adobeexchange.com/creativecloud/install-instructions.20513.html</a></li>
+</ul>
+<hr class="docutils" />
+</div>
 </div>
 <div class="section" id="preparations">
-<span id="id3"></span><h2><a class="toc-backref" href="#id46">Preparations</a><a class="headerlink" href="#preparations" title="Permalink to this headline">¶</a></h2>
+<span id="id6"></span><h2><a class="toc-backref" href="#id52">Preparations</a><a class="headerlink" href="#preparations" title="Permalink to this headline">¶</a></h2>
 <p>Before you can take full advantage of the functionality of the BpmSlicer you need to prepare your footage as follows.</p>
 <div class="section" id="song-preparation">
-<span id="id4"></span><h3><a class="toc-backref" href="#id47">Song preparation</a><a class="headerlink" href="#song-preparation" title="Permalink to this headline">¶</a></h3>
+<span id="id7"></span><h3><a class="toc-backref" href="#id53">Song preparation</a><a class="headerlink" href="#song-preparation" title="Permalink to this headline">¶</a></h3>
 <p>You have to ensure that the following two conditions are met:</p>
 <ul class="simple">
 <li>You need to know the exact bpm value of the song you want to work with and set this value in the <a class="reference internal" href="#bpm">Bpm</a> input field.</li>
@@ -336,27 +417,27 @@ need to find the first beat and place it accordingly.</p>
 <p>If you have the exact bpm rate of the song then it won’t be too difficult to make it fit.</p>
 </div>
 <div class="section" id="preparing-the-midi-clip">
-<span id="id5"></span><h3><a class="toc-backref" href="#id48">Preparing the midi clip</a><a class="headerlink" href="#preparing-the-midi-clip" title="Permalink to this headline">¶</a></h3>
+<span id="id8"></span><h3><a class="toc-backref" href="#id54">Preparing the midi clip</a><a class="headerlink" href="#preparing-the-midi-clip" title="Permalink to this headline">¶</a></h3>
 <p>Please make sure that the midinotes in the midi file are placed in the range between C3 - B3, otherwise the notes won’t be recognized.</p>
-<div class="figure align-center" id="id35" style="width: 500px">
+<div class="figure align-center" id="id38">
 <img alt="../../_images/MidinoteRange1.png" src="../../_images/MidinoteRange1.png" />
 <p class="caption"><span class="caption-text">Midinote range</span></p>
 </div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>C3  -&gt;  videotrack 1
+C#3 -&gt;  videotrack 2
+D3  -&gt;  videotrack 3
+D#3 -&gt;  videotrack 4
+... -&gt;  ...
+B3  -&gt;  videotrack 12
+</pre></div>
+</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>The notes of C3 are placed onto videotrack 1, the notes of C#3 onto videotrack 2 and so on.</p>
-<ul class="last simple">
-<li>C3  -&gt;  videotrack 1</li>
-<li>C#3 -&gt;  videotrack 2</li>
-<li>D3  -&gt;  videotrack 3</li>
-<li>D#3 -&gt;  videotrack 4</li>
-<li>… -&gt;  …</li>
-<li>B3  -&gt;  videotrack 12</li>
-</ul>
+<p class="last">The notes of C3 are placed onto videotrack 1, the notes of C#3 onto videotrack 2 and so on.</p>
 </div>
 </div>
 <div class="section" id="preparing-your-footage">
-<span id="id6"></span><h3><a class="toc-backref" href="#id49">Preparing your footage</a><a class="headerlink" href="#preparing-your-footage" title="Permalink to this headline">¶</a></h3>
+<span id="id9"></span><h3><a class="toc-backref" href="#id55">Preparing your footage</a><a class="headerlink" href="#preparing-your-footage" title="Permalink to this headline">¶</a></h3>
 <p>If there is no BpmSlicer folder structure already you can create one by clicking the <a class="reference internal" href="#create-folders">Create folders</a> Button.</p>
 <p>The next step is to put all your footage you want to be placed into the active sequence, according to the notes in the midi file,
 into the <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">source</span></code> folder and assign the appropriate prefix for each footage item.</p>
@@ -374,24 +455,25 @@ into the <code class="docutils literal notranslate"><span class="pre">1</span> <
 </div>
 <p>As you notice in the example it’s possible to assign the same prefix to as many footage items as you like.</p>
 <p>If you assign the same prefix to more then one footage items, this function selects a random footage item each time it finds a midi note for the appropriate videotrack.</p>
+<hr class="docutils" />
 </div>
 </div>
-<div class="section" id="generel">
-<span id="id7"></span><h2><a class="toc-backref" href="#id50">Generel</a><a class="headerlink" href="#generel" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id9">
-<h3><a class="toc-backref" href="#id51">?</a><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="functionality">
+<span id="id10"></span><h2><a class="toc-backref" href="#id56">Functionality</a><a class="headerlink" href="#functionality" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id12">
+<h3><a class="toc-backref" href="#id57">?</a><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
 <p>Here you can find a short description for all functions of this extension.</p>
 </div>
 <div class="section" id="bpm">
-<span id="id10"></span><h3><a class="toc-backref" href="#id52">Bpm</a><a class="headerlink" href="#bpm" title="Permalink to this headline">¶</a></h3>
+<span id="id13"></span><h3><a class="toc-backref" href="#id58">Bpm</a><a class="headerlink" href="#bpm" title="Permalink to this headline">¶</a></h3>
 <p>Set the bpm rate of the song you want to edit your videos to.</p>
 </div>
 <div class="section" id="bars">
-<span id="id11"></span><h3><a class="toc-backref" href="#id53">Bars</a><a class="headerlink" href="#bars" title="Permalink to this headline">¶</a></h3>
+<span id="id14"></span><h3><a class="toc-backref" href="#id59">Bars</a><a class="headerlink" href="#bars" title="Permalink to this headline">¶</a></h3>
 <p>Set bars in order to determine how many markers are created when creating markers.</p>
 </div>
 <div class="section" id="create-folders">
-<span id="id12"></span><h3><a class="toc-backref" href="#id54">Create folders</a><a class="headerlink" href="#create-folders" title="Permalink to this headline">¶</a></h3>
+<span id="id15"></span><h3><a class="toc-backref" href="#id60">Create folders</a><a class="headerlink" href="#create-folders" title="Permalink to this headline">¶</a></h3>
 <p>Creates the BpmSlicer folder structure:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BpmSlicer</span>
     <span class="mi">1</span> <span class="n">source</span>
@@ -400,7 +482,7 @@ into the <code class="docutils literal notranslate"><span class="pre">1</span> <
 </div>
 </div>
 <div class="section" id="clips-and-markers-from-midi">
-<span id="id13"></span><h3><a class="toc-backref" href="#id55">Clips and markers from midi</a><a class="headerlink" href="#clips-and-markers-from-midi" title="Permalink to this headline">¶</a></h3>
+<span id="id16"></span><h3><a class="toc-backref" href="#id61">Clips and markers from midi</a><a class="headerlink" href="#clips-and-markers-from-midi" title="Permalink to this headline">¶</a></h3>
 <p>Before you can perform this function you need to refer to the chapter <a class="reference internal" href="#preparations">Preparations</a> and make sure all conditions are met.</p>
 <p>This function performs the following actions:</p>
 <ul class="simple">
@@ -411,44 +493,43 @@ into the <code class="docutils literal notranslate"><span class="pre">1</span> <
 </ul>
 </div>
 <div class="section" id="clips-and-markers-from-txt">
-<span id="id14"></span><h3><a class="toc-backref" href="#id56">Clips and markers from txt</a><a class="headerlink" href="#clips-and-markers-from-txt" title="Permalink to this headline">¶</a></h3>
+<span id="id17"></span><h3><a class="toc-backref" href="#id62">Clips and markers from txt</a><a class="headerlink" href="#clips-and-markers-from-txt" title="Permalink to this headline">¶</a></h3>
 <p>Basically this function does the same thing as the function <a class="reference internal" href="#clips-and-markers-from-midi">Clips and markers from midi</a>
 except that a pre converted txt file is the source with all midi note informations included.</p>
 <p>To create such a txt file that contains all required midi note information you need to
 use the external application <a class="reference internal" href="#midiconverter-external">Midiconverter (external)</a>.</p>
 </div>
 <div class="section" id="subclips-with-random-starttime">
-<span id="id15"></span><h3><a class="toc-backref" href="#id57">Subclips with random starttime</a><a class="headerlink" href="#subclips-with-random-starttime" title="Permalink to this headline">¶</a></h3>
+<span id="id18"></span><h3><a class="toc-backref" href="#id63">Subclips with random starttime</a><a class="headerlink" href="#subclips-with-random-starttime" title="Permalink to this headline">¶</a></h3>
 <p>If a subclip is created it matches the duration of the appropriate midi note.</p>
 <p>Note that the start time of the source footage is randomly selected but it is ensured that
 the out points of the subclips are still inside the duration of the source footage.</p>
-<div class="literal-block-wrapper docutils container" id="id36">
-<div class="code-block-caption"><span class="caption-text">Random starttime.</span><a class="headerlink" href="#id36" title="Permalink to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id39">
+<div class="code-block-caption"><span class="caption-text">Random starttime.</span><a class="headerlink" href="#id39" title="Permalink to this code">¶</a></div>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">startTime</span> <span class="o">=</span> <span class="p">((</span><span class="nx">sourceFootageDur</span> <span class="o">-</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="nx">midiNoteDur</span><span class="p">))</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">())</span> <span class="o">+</span> <span class="nx">midiNoteDur</span><span class="p">;</span>
 <span class="nx">endTime</span> <span class="o">=</span> <span class="nx">startTime</span> <span class="o">+</span> <span class="nx">midiNoteDur</span><span class="p">;</span><span class="sb">``</span>
 </pre></div>
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="create-subclips">
-<span id="id16"></span><h2><a class="toc-backref" href="#id58">Create subclips</a><a class="headerlink" href="#create-subclips" title="Permalink to this headline">¶</a></h2>
+<span id="id19"></span><h3><a class="toc-backref" href="#id64">Create subclips</a><a class="headerlink" href="#create-subclips" title="Permalink to this headline">¶</a></h3>
 <p>This function considers all markers in the active sequence and places random clips from
 the <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">source</span></code> folder onto videotrack 1 so that between each marker sits a subclip.</p>
-<div class="figure align-center" id="id37" style="width: 200px">
+<div class="figure align-center" id="id40" style="width: 200px">
 <img alt="../../_images/BpmSlicer_createSubclips2.png" src="../../_images/BpmSlicer_createSubclips2.png" />
-<p class="caption"><span class="caption-text">The <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">source</span></code> folder</span></p>
+<p class="caption"><span class="caption-text">The <strong>1 source</strong> folder</span></p>
 </div>
 <p>In this case the assigned prefixes that were discussed in chapter <a class="reference internal" href="#preparing-your-footage">Preparing your footage</a>
 are immaterial.</p>
-<div class="figure align-center" id="id38">
+<div class="figure align-center" id="id41">
 <img alt="../../_images/BpmSlicer_createSubclips.png" src="../../_images/BpmSlicer_createSubclips.png" />
-<p class="caption"><span class="caption-text">Random clips from the <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">source</span></code> folder placed in the sequence</span></p>
+<p class="caption"><span class="caption-text">Random clips from the <strong>1 source</strong> folder placed in the sequence</span></p>
 </div>
 <p>The starttime of the subclip is randomly set and it is made sure that the out point of
 the subclip is inside the duration of the source footage.</p>
-<div class="literal-block-wrapper docutils container" id="id39">
-<div class="code-block-caption"><span class="caption-text">Random starttime.</span><a class="headerlink" href="#id39" title="Permalink to this code">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id42">
+<div class="code-block-caption"><span class="caption-text">Random starttime.</span><a class="headerlink" href="#id42" title="Permalink to this code">¶</a></div>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">startTimeSeconds</span> <span class="o">=</span> <span class="p">((</span><span class="nx">projectItemDur</span> <span class="o">-</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="nx">duration</span><span class="p">))</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">())</span> <span class="o">+</span> <span class="nx">duration</span><span class="p">;</span>
 <span class="nx">endTimeSeconds</span> <span class="o">=</span> <span class="nx">startTimeSeconds</span> <span class="o">+</span> <span class="nx">duration</span><span class="p">;</span>
 </pre></div>
@@ -456,7 +537,7 @@ the subclip is inside the duration of the source footage.</p>
 </div>
 </div>
 <div class="section" id="sequence-markers">
-<span id="id17"></span><h2><a class="toc-backref" href="#id59">Sequence markers</a><a class="headerlink" href="#sequence-markers" title="Permalink to this headline">¶</a></h2>
+<span id="id20"></span><h3><a class="toc-backref" href="#id65">Sequence markers</a><a class="headerlink" href="#sequence-markers" title="Permalink to this headline">¶</a></h3>
 <p>There are two ways to create markers with the adjusted bpm- and bars-value:</p>
 <ul class="simple">
 <li>If one clip is selected the markers will be placed in the range of the clips in and out point.</li>
@@ -464,43 +545,45 @@ the subclip is inside the duration of the source footage.</p>
 </ul>
 <p>If the in and outpoints of the sequence are set and no clip is selected,
 then the markers will be created inside the time range of the sequences in and out points.</p>
+</div>
 <div class="section" id="clip-markers">
-<span id="id18"></span><h3><a class="toc-backref" href="#id60">Clip markers</a><a class="headerlink" href="#clip-markers" title="Permalink to this headline">¶</a></h3>
+<span id="id21"></span><h3><a class="toc-backref" href="#id66">Clip markers</a><a class="headerlink" href="#clip-markers" title="Permalink to this headline">¶</a></h3>
 <p>To create markers on one or more clips you need to place the clips into
-the <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">source</span></code> folder and give it the prefix <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">``</span> <span class="pre">(e.g.</span> <span class="pre">``0</span> <span class="pre">video.mov</span></code>).</p>
+the <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">source</span></code> folder and give it the prefix ‘0 ‘ (e.g. <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">video.mov</span></code>).</p>
 <p>If you then press the <code class="docutils literal notranslate"><span class="pre">clip</span> <span class="pre">markers</span></code> button, clip markers will be created according
 to the adjusted <code class="docutils literal notranslate"><span class="pre">Bpm</span></code> and <code class="docutils literal notranslate"><span class="pre">Bars</span></code> value for the duration of the whole clip.</p>
 </div>
 <div class="section" id="quantize-sequence-markers">
-<span id="id19"></span><h3><a class="toc-backref" href="#id61">Quantize sequence markers</a><a class="headerlink" href="#quantize-sequence-markers" title="Permalink to this headline">¶</a></h3>
+<span id="id22"></span><h3><a class="toc-backref" href="#id67">Quantize sequence markers</a><a class="headerlink" href="#quantize-sequence-markers" title="Permalink to this headline">¶</a></h3>
 <p>The sequence markers of the active sequence will be quantized to the sequences framerate.</p>
 </div>
 <div class="section" id="export-frames-for-markers">
-<span id="id20"></span><h3><a class="toc-backref" href="#id62">Export frames for markers</a><a class="headerlink" href="#export-frames-for-markers" title="Permalink to this headline">¶</a></h3>
+<span id="id23"></span><h3><a class="toc-backref" href="#id68">Export frames for markers</a><a class="headerlink" href="#export-frames-for-markers" title="Permalink to this headline">¶</a></h3>
 <p>Exports PNG images for each frame a marker is placed.</p>
 </div>
 <div class="section" id="randomize-selection">
-<span id="id21"></span><h3><a class="toc-backref" href="#id63">Randomize selection</a><a class="headerlink" href="#randomize-selection" title="Permalink to this headline">¶</a></h3>
+<span id="id24"></span><h3><a class="toc-backref" href="#id69">Randomize selection</a><a class="headerlink" href="#randomize-selection" title="Permalink to this headline">¶</a></h3>
 <p>Actually this is a randomized deselector.</p>
 <p>You make a selection of clips and/or transitions and this function randomly deselct items from your selection.</p>
 </div>
 <div class="section" id="change-blendmode">
-<span id="id22"></span><h3><a class="toc-backref" href="#id64">Change blendmode</a><a class="headerlink" href="#change-blendmode" title="Permalink to this headline">¶</a></h3>
-<div class="figure align-right" id="id40" style="width: 250px">
+<span id="id25"></span><h3><a class="toc-backref" href="#id70">Change blendmode</a><a class="headerlink" href="#change-blendmode" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-right" id="id43" style="width: 250px">
 <img alt="../../_images/BpmSlicer_changeBlendmode.png" src="../../_images/BpmSlicer_changeBlendmode.png" />
 <p class="caption"><span class="caption-text">Change blendmode</span></p>
 </div>
 <p>You can select one or more blendmodes and apply them to the selected clips in the active sequence.</p>
 <p>If you have more then one blendmodes selected, a random blendmode out of your blendmode
 selection is assigned to the selection of clips in your active sequence.</p>
+<hr class="docutils" />
 </div>
 </div>
 <div class="section" id="midiconverter-external">
-<span id="id23"></span><h2><a class="toc-backref" href="#id65">Midiconverter (external)</a><a class="headerlink" href="#midiconverter-external" title="Permalink to this headline">¶</a></h2>
+<span id="id26"></span><h2><a class="toc-backref" href="#id71">Midiconverter (external)</a><a class="headerlink" href="#midiconverter-external" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="midi-converter-button">
-<span id="id24"></span><h3><a class="toc-backref" href="#id66">Midi converter button</a><a class="headerlink" href="#midi-converter-button" title="Permalink to this headline">¶</a></h3>
+<span id="id27"></span><h3><a class="toc-backref" href="#id72">Midi converter button</a><a class="headerlink" href="#midi-converter-button" title="Permalink to this headline">¶</a></h3>
 <p>The Midi converter interprets 12 note values in the range of C3 - B3.</p>
-<div class="figure align-center" id="id41" style="width: 500px">
+<div class="figure align-center" id="id44" style="width: 500px">
 <img alt="../../_images/MidinoteRange1.png" src="../../_images/MidinoteRange1.png" />
 <p class="caption"><span class="caption-text">Midinote range</span></p>
 </div>
@@ -514,69 +597,29 @@ e.g.:</p>
 </div>
 </div>
 <div class="section" id="bpm-editor">
-<span id="id25"></span><h3><a class="toc-backref" href="#id67">Bpm editor</a><a class="headerlink" href="#bpm-editor" title="Permalink to this headline">¶</a></h3>
+<span id="id28"></span><h3><a class="toc-backref" href="#id73">Bpm editor</a><a class="headerlink" href="#bpm-editor" title="Permalink to this headline">¶</a></h3>
 <p>Before the midi clip is converted, a tempo event with the given <code class="docutils literal notranslate"><span class="pre">bpm</span></code> rate is added to the midi clip.</p>
 <p>If the midi clip has a tempo event already and you want to use it instead of a new one, set the bpm value to <code class="docutils literal notranslate"><span class="pre">-1</span></code>.</p>
 <p>If the bpm editor is empty the default bpm value of 120 is used.</p>
 </div>
 <div class="section" id="fps-editor">
-<span id="id26"></span><h3><a class="toc-backref" href="#id68">Fps editor</a><a class="headerlink" href="#fps-editor" title="Permalink to this headline">¶</a></h3>
+<span id="id29"></span><h3><a class="toc-backref" href="#id74">Fps editor</a><a class="headerlink" href="#fps-editor" title="Permalink to this headline">¶</a></h3>
 <p>The fps value (Frames per seconds) is only needed if you want to use the clipboard to copy keyframes
 directly onto one of After Effects layer properties.</p>
 <p>With help of the fps value the time of the midi note-on values can be transformed to frame values.</p>
 </div>
 <div class="section" id="clipboard">
-<span id="id27"></span><h3><a class="toc-backref" href="#id69">Clipboard</a><a class="headerlink" href="#clipboard" title="Permalink to this headline">¶</a></h3>
+<span id="id30"></span><h3><a class="toc-backref" href="#id75">Clipboard</a><a class="headerlink" href="#clipboard" title="Permalink to this headline">¶</a></h3>
 <p>The velocity values of all midi note-on messages are mapped to the range of 0.0 - 1.0 and
 copied to the systems clipboard so that you can simply paste the values as keyframes
 onto a selected <code class="docutils literal notranslate"><span class="pre">expression</span> <span class="pre">slider</span></code> property in After Effects.</p>
 <p>A <code class="docutils literal notranslate"><span class="pre">expression</span> <span class="pre">slider</span></code> with those keyframes can then be used to manipulate different properties and effects.</p>
-</div>
-</div>
-<div class="section" id="install-instructions">
-<span id="id28"></span><h2><a class="toc-backref" href="#id70">Install Instructions</a><a class="headerlink" href="#install-instructions" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="download-the-extension-zxp-file">
-<span id="id29"></span><h3><a class="toc-backref" href="#id71">Download the extension (.zxp file)</a><a class="headerlink" href="#download-the-extension-zxp-file" title="Permalink to this headline">¶</a></h3>
-<p>When you download the extension, it comes as a zxp file to your computer’s Downloads folder.</p>
-<p>Enter any passwords, or accept any notices your computer’s operating system presents.</p>
-</div>
-<div class="section" id="extension-install-utility">
-<span id="id30"></span><h3><a class="toc-backref" href="#id72">Extension Install Utility</a><a class="headerlink" href="#extension-install-utility" title="Permalink to this headline">¶</a></h3>
-<p>If you were unable to install your extension using the Creative Cloud desktop app,
-please follow the instructions below to use an extension install utility.</p>
-<p>In addition to Adobe’s Manage Extensions utility there are various third party utilites
-available that work with Adobe .zxp files, such as Anastasiy’s Extension Manager or ZXPInstaller.</p>
-<p>Open the Extension Install Utility.</p>
-<p>If you don’t have it on your computer, below are download links for alternative utilities.</p>
-<p>Once downloaded and installed, use an extension install utility to install your .zxp files.</p>
-<p>Download Manage Extensions utility
-or
-Download Anastasiy’s Extension Manager
-or
-Download ZXPInstaller</p>
-<p>After selecting either the Mac or Windows version of your chosen Extension Install Utility,
-download it to your computer and follow the installation instructions from the installer,
-which should be in your Downloads folder.</p>
-<p>Install your extension from Adobe Exchange by selecting File &gt; Install extension or
-following the instructions within the install utility and selecting the extension
-from within your computer’s Downloads folder.</p>
-<p>Do not use Adobe Extension Manager for CC2015 or later compatible Adobe apps.</p>
-<p>It is no longer supported and may create install issues. Use a third party utility
-for extension installation, such as those mentioned above for installation,
-if installation via the Creative Cloud desktop app is not successful.</p>
-</div>
-<div class="section" id="where-to-find-it">
-<span id="id31"></span><h3><a class="toc-backref" href="#id73">Where to Find it</a><a class="headerlink" href="#where-to-find-it" title="Permalink to this headline">¶</a></h3>
-<p>After the installation you can find the extension placed in the extension folder.</p>
-<p>Windows:    <code class="docutils literal notranslate"><span class="pre">C:\Program</span> <span class="pre">Files</span> <span class="pre">(x86)\Common</span> <span class="pre">Files\Adobe\CEP\extensions</span></code></p>
-<p>Mac:        <code class="docutils literal notranslate"><span class="pre">/Library/Application</span> <span class="pre">Support/Adobe/CEP/extensions</span></code></p>
-<p>Source:
--  <a href="https://www.adobeexchange.com/creativecloud/install-instructions.20513.html" target="_blank">https://www.adobeexchange.com/creativecloud/install-instructions.20513.html</a></p>
+<hr class="docutils" />
 </div>
 </div>
 <div class="section" id="troubleshooting">
-<span id="id32"></span><h2><a class="toc-backref" href="#id74">Troubleshooting</a><a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-center" id="id42">
+<span id="id31"></span><h2><a class="toc-backref" href="#id76">Troubleshooting</a><a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" id="id45">
 <img alt="../../_images/BpmVersionNumberInManifest.png" src="../../_images/BpmVersionNumberInManifest.png" />
 <p class="caption"><span class="caption-text">Troubleshooting</span></p>
 </div>
@@ -587,9 +630,8 @@ if installation via the Creative Cloud desktop app is not successful.</p>
 Then create a new .zxp file with <code class="docutils literal notranslate"><span class="pre">ZXPSignCmd</span></code>.</p>
 <p class="last"><strong>Note:</strong> This solution works only for the developer who has the source project files available, not if you only have the <code class="docutils literal notranslate"><span class="pre">BpmSlicer.zxp</span></code> file.</p>
 </div>
-</div>
 <div class="section" id="other-bpmslicer-data-pathes">
-<span id="id33"></span><h2><a class="toc-backref" href="#id75">Other BpmSlicer data pathes</a><a class="headerlink" href="#other-bpmslicer-data-pathes" title="Permalink to this headline">¶</a></h2>
+<span id="id32"></span><h3><a class="toc-backref" href="#id77">Other BpmSlicer data pathes</a><a class="headerlink" href="#other-bpmslicer-data-pathes" title="Permalink to this headline">¶</a></h3>
 <p>Other pathes that might help include BpmSlicer data</p>
 <ul class="simple">
 <li>Win: <code class="docutils literal notranslate"><span class="pre">C:\Users\USERNAME\AppData\Local\Temp</span></code></li>
@@ -598,6 +640,173 @@ Then create a new .zxp file with <code class="docutils literal notranslate"><spa
 <li><code class="docutils literal notranslate"><span class="pre">/Users/USERNAME/Library/Preferences/com.Adobe.Premiere</span> <span class="pre">Pro.11.0.plist</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">/Users/USERNAME/Library/Preferences/com.Adobe.Premiere</span> <span class="pre">Pro.12.0.plist</span></code></li>
 </ul>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="packaging-and-signing-adobe-extensions">
+<span id="id33"></span><h2><a class="toc-backref" href="#id78">Packaging and Signing Adobe Extensions</a><a class="headerlink" href="#packaging-and-signing-adobe-extensions" title="Permalink to this headline">¶</a></h2>
+<p>This documentation of the packaging and signing procedure is based on <a href="https://wwwimages2.adobe.com/content/dam/acom/en/devnet/creativesuite/pdfs/SigningTechNote_CC.pdf" target="_blank">this</a> pdf reference.</p>
+<ol class="arabic">
+<li><p class="first">Download the the ZXPSignCMD tool from either <a href="https://github.com/Adobe-CEP/CEP-Resources/tree/master/ZXPSignCMD" target="_blank">here</a> or <a href="https://labs.adobe.com/downloads/extensionbuilder3.html" target="_blank">here</a>.</p>
+</li>
+<li><p class="first">If you already have a certificate, you can use that. Otherwise, begin by by creating a self-signed certificate (<a class="reference internal" href="#create-a-self-signed-certificate">Create a self-signed certificate</a>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">ZXPSignCmd</span> <span class="o">-</span><span class="n">selfSignedCert</span> <span class="n">US</span> <span class="n">NY</span> <span class="n">MyCompany</span> <span class="n">MyCommonName</span> <span class="n">abc123</span> <span class="n">MyCert</span><span class="o">.</span><span class="n">p12</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">This generates a file named <code class="docutils literal notranslate"><span class="pre">MyCert.p12</span></code> in the current folder. You can use this certificate to sign your extension (<a class="reference internal" href="#create-a-signed-package">Create a signed package</a>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">ZXPSignCmd</span> <span class="o">-</span><span class="n">sign</span> <span class="n">myExtProject</span> <span class="n">myExtension</span><span class="o">.</span><span class="n">zxp</span> <span class="n">MyCert</span><span class="o">.</span><span class="n">p12</span> <span class="n">abc123</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="section" id="create-a-signed-package">
+<span id="id34"></span><h3><a class="toc-backref" href="#id79">Create a signed package</a><a class="headerlink" href="#create-a-signed-package" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ZXPSignCmd -sign &lt;inputDir&gt; &lt;outputZxp&gt; &lt;p12&gt; &lt;p12Password&gt; <span class="o">[</span>options<span class="o">]</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="85%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Inputs</th>
+<th class="head">Output</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">inputDir</span></code></td>
+<td>The path to the folder containing the source files to package.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">outputZxp</span></code></td>
+<td>The path and file name for the ZXP package.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">p12</span></code></td>
+<td>The signing certificate; see “How signing works” on page 5.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">p12Password</span></code></td>
+<td>The password for the certificate.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">options</span></code></td>
+<td>-tsa &lt;timestampURL&gt; The timestamp server. For example: <a class="reference external" href="https://timestamp.geotrust.com/tsa">https://timestamp.geotrust.com/tsa</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="verify-a-zxp-package">
+<span id="id35"></span><h3><a class="toc-backref" href="#id80">Verify a ZXP package:</a><a class="headerlink" href="#verify-a-zxp-package" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ZXPSignCmd -verify &lt;zxp&gt;<span class="p">|</span>&lt;extensionRootDir&gt; <span class="o">[</span>options<span class="o">]</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="26%" />
+<col width="58%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Arguments</th>
+<th class="head" colspan="2">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">zxp</span></code></td>
+<td colspan="2">The path and file name for the ZXP package.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">extensionRootDir</span></code></td>
+<td colspan="2">The path to the folder containing the deployed ZXP.</td>
+</tr>
+<tr class="row-even"><td rowspan="3"><code class="docutils literal notranslate"><span class="pre">options</span></code></td>
+<td colspan="2"><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">-certinfo</span></code></li>
+<li>If supplied, prints information about the certificate, including timestamp and revocation information.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2"><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">-skipOnlineRevocationChecks</span></code></li>
+<li>If supplied, skips online checks for certificate revocation when -certinfo is set.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">-addCerts</span> <span class="pre">&lt;cert1&gt;</span> <span class="pre">&lt;cert2&gt;</span> <span class="pre">...</span></code></li>
+<li>If supplied, verifes the certificate chain and assesses whether the supplied DER-encoded certificates are included.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="create-a-self-signed-certificate">
+<span id="id36"></span><h3><a class="toc-backref" href="#id81">Create a self-signed certificate</a><a class="headerlink" href="#create-a-self-signed-certificate" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ZXPSignCmd -selfSignedCert &lt;countryCode&gt; &lt;stateOrProvince&gt; &lt;organization&gt; &lt;commonName&gt; &lt;password&gt; &lt;outputPath.p12&gt; <span class="o">[</span>options<span class="o">]</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Arguments</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">countryCode</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">stateOrProvince</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">organization</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">commonName</span></code></li>
+</ul>
+</td>
+<td>The certificate identifying information.</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">password</span></code></li>
+</ul>
+</td>
+<td>The password for the new certificate.</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">outputPath.p12</span></code></li>
+</ul>
+</td>
+<td>The path and file name for the new certificate.</td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">options</span></code></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">-locality</span> <span class="pre">&lt;code&gt;</span></code></li>
+<li>If supplied, the locale code to associate with this certificate.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">-orgUnit</span> <span class="pre">&lt;name&gt;</span></code></li>
+<li>If supplied, an organizational unit to associate with this certificate.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">-email</span> <span class="pre">&lt;addr&gt;</span></code></li>
+<li>If supplied, an email address to associate with this certificate.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">-validityDays</span> <span class="pre">&lt;num&gt;</span></code></li>
+<li>If supplied, a number of days from the current date-time that this certificate remains valid.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 
