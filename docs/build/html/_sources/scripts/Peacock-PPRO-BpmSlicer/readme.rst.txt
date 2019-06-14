@@ -523,11 +523,38 @@ Other pathes that might help include BpmSlicer data
 
 ---------
 
+.. _Development:
+
+***********
+Development
+***********
+In this section you can find some useful information about the development of a CEP HTML Extensions.
+Please ignore this section if you're not a developer.
+
+
+|CEP_8_0_HTML_Extension_Cookbook|
+    |Debugging_Unsigned_Extensions|
+
+    You can bypass the check for extension signatures by editing the CSXS preference properties file, located at:
+
+      - Win: regedit > ``HKEY_CURRENT_USER/Software/Adobe/CSXS.8``, then add a new entry PlayerDebugMode of type "string" with the value of "1".
+      - Mac: In the terminal, type: ``defaults write com.adobe.CSXS.8 PlayerDebugMode 1`` (The plist is also located at ``/Users/<username>/Library/Preferences/com.adobe.CSXS.8.plist``)
+
+
+
+.. |CEP_8_0_HTML_Extension_Cookbook| raw:: html
+
+   <a href="https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md" target="_blank">CEP 8.0 HTML Extension Cookbook</a>
+
+.. |Debugging_Unsigned_Extensions| raw:: html
+
+   <a href="https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#debugging-unsigned-extensions" target="_blank">Debugging Unsigned Extensions</a>
+
+
 .. _Packaging and Signing Adobe Extensions:
 
-**************************************
 Packaging and Signing Adobe Extensions
-**************************************
+======================================
 
 This documentation of the packaging and signing procedure is based on |Packaging_and_Signing_Adobe_Extensions| pdf reference.
 
@@ -545,8 +572,9 @@ This documentation of the packaging and signing procedure is based on |Packaging
 
 .. _Create a signed package:
 
+-----------------------
 Create a signed package
-=======================
+-----------------------
 
 .. code-block:: bash
 
@@ -565,8 +593,9 @@ Create a signed package
 
 .. _Verify a ZXP package:
 
+---------------------
 Verify a ZXP package:
-=====================
+---------------------
 
 .. code-block:: bash
 
@@ -592,8 +621,9 @@ Verify a ZXP package:
 
 .. _Create a self-signed certificate:
 
+--------------------------------
 Create a self-signed certificate
-================================
+--------------------------------
 
 .. code-block:: bash
 
