@@ -539,7 +539,12 @@ Please ignore this section if you're not a developer.
 
       - Win: regedit > ``HKEY_CURRENT_USER/Software/Adobe/CSXS.8``, then add a new entry PlayerDebugMode of type "string" with the value of "1".
       - Mac: In the terminal, type: ``defaults write com.adobe.CSXS.8 PlayerDebugMode 1`` (The plist is also located at ``/Users/<username>/Library/Preferences/com.adobe.CSXS.8.plist``)
-
+Miscellaneous
+    - |Tooltip_Documentation|
+    - |Fly_Out_Menu|
+    - |Customize_Context_Menu|
+    - |Getting_and_Changing_Extension_Content_Size|
+    - |Register_an_interest_in_specific_key_events|
 
 
 .. |CEP_8_0_HTML_Extension_Cookbook| raw:: html
@@ -550,6 +555,27 @@ Please ignore this section if you're not a developer.
 
    <a href="https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#debugging-unsigned-extensions" target="_blank">Debugging Unsigned Extensions</a>
 
+.. |Tooltip_Documentation| raw:: html
+
+   <a href="https://github.com/FezVrasta/popper.js/blob/master/docs/_includes/tooltip-documentation.md" target="_blank">Tooltip Documentation</a>
+
+.. |Fly_Out_Menu| raw:: html
+
+   <a href="https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#fly-out-menu" target="_blank">Fly Out Menu</a>
+
+.. |Customize_Context_Menu| raw:: html
+
+   <a href="https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#customize-context-menu" target="_blank">Customize Context Menu</a>
+
+.. |Getting_and_Changing_Extension_Content_Size| raw:: html
+
+   <a href="https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#getting-and-changing-extension-content-size" target="_blank">Getting and Changing Extension Content Size</a>
+
+.. |Register_an_interest_in_specific_key_events| raw:: html
+
+   <a href="https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#register-an-interest-in-specific-key-events" target="_blank">Register an interest in specific key events</a>
+
+---------
 
 .. _Packaging and Signing Adobe Extensions:
 
