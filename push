@@ -10,10 +10,18 @@
 source .functions
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-if [ "$#" -ne 2 ]; then
-	echo "Usage: push <branch, commit message>"
-	exit 1
-else
+if [ "$#" -eq 0 ]; then
+	echo_warn "Using: git push develop 'work in progress'"
+	BRANCH="develop"
+	COMMIT_MSG="work in progress"
+	# echo "Usage: push <branch, commit message>"
+	# exit 1
+elif [ "$#" -eq 1 ]; then
+	echo_warn "Using: git push ${1} 'work in progress'"
+	BRANCH="${1}"
+	COMMIT_MSG="work in progress"
+elif [ "$#" -eq 2 ]; then
+	echo_warn "Using: git push ${1} '${2}'"
 	BRANCH="${1}"
 	COMMIT_MSG="${2}"
 fi

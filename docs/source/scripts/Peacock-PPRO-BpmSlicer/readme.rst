@@ -250,7 +250,7 @@ Set bars in order to determine how many markers are created when creating marker
 
 .. _Create folders:
 
-Create folders
+Create Folders
 ==============
 Creates the BpmSlicer folder structure::
 
@@ -260,9 +260,123 @@ Creates the BpmSlicer folder structure::
 
 
 
-.. _Clips and markers from midi:
+.. _Add Markers:
 
-Clips and markers from midi
+Add Markers
+===========
+The markers are either added to the sequence or to a clip depending on the selection in the right hand side dropdown list.
+
+If the `Marker target selection`_ is 'Sequence'
+  There are two ways to create markers with the adjusted bpm- and bars-value:
+
+  - If one clip is selected the markers will be placed in the range of the clips in and out point.
+
+  - If there are more then one clips selected, the minimum in point and the maximum out point is considered.
+
+  If the in and outpoints of the sequence are set and no clip is selected,
+  then the markers will be created inside the time range of the sequences in and out points.
+
+If the `Marker target selection`_ is 'Clip'
+  In order to create markers on one or more clips you need to place the clips into
+  the ``1 source`` folder and give them the prefix '0 ' (e.g. ``0 video.mov``).
+
+  If you then press the ``Add markers`` button, clip markers will be created according
+  to the adjusted ``Bpm`` and ``Bars`` value for the duration of the whole clip.
+
+
+.. _Marker Target Selection:
+
+Marker Target Selection
+=======================
+Choose the target where the marker actions are getting applied.
+See `Add markers`_ for more information.
+
+
+.. _Quantize Sequence Markers:
+
+Quantize Sequence Markers
+=========================
+The sequence markers of the active sequence will be quantized to the sequences framerate.
+
+
+
+.. _Export Frames for Markers:
+
+Export Frames for Markers
+=========================
+Exports PNG images for each frame a marker is placed.
+
+
+
+.. _Create Subclips:
+
+Create Subclips
+===============
+
+This function considers all markers in the active sequence and places random clips from
+the ``1 source`` folder onto videotrack 1 so that between each marker sits a subclip.
+
+In this case the assigned prefixes that were discussed in chapter `Preparing your footage`_
+are immaterial.
+
+.. figure:: ../../modules/ppro_bpmslicer/images/BpmSlicer_createSubclips2.png
+    :align: center
+    :figwidth: 200px
+
+    The **1 source** folder
+
+.. figure:: ../../modules/ppro_bpmslicer/images/BpmSlicer_createSubclips.png
+    :align: center
+
+    Random clips from the **1 source** folder placed in the sequence
+
+The starttime of the subclip is randomly set and it is made sure that the out point of
+the subclip is inside the duration of the source footage.
+
+.. code-block:: javascript
+    :caption: Random starttime.
+
+    startTimeSeconds = ((projectItemDur - (2*duration)) * Math.random()) + duration;
+    endTimeSeconds = startTimeSeconds + duration;
+
+.. Note:: The function overwriteClip() and insertClip() are only available in Premiere Pro version 12.0 and higher.
+    Please make sure you're running Premiere Pro v12.0 or higher.
+
+
+
+.. _Randomize Selection:
+
+Randomize Selection
+===================
+Actually this is a randomized deselector.
+
+You make a selection of clips and/or transitions and this function randomly deselct items from your selection.
+
+
+
+.. _Change Blendmode:
+
+Change Blendmode
+================
+
+.. figure:: ../../modules/ppro_bpmslicer/images/BpmSlicer_changeBlendmode.png
+    :align: right
+    :figwidth: 250px
+
+    Change blendmode
+
+You can select one or more blendmodes and apply them to the selected clips in the active sequence.
+
+In order to select multiple blendmodes hold down [Option] or [Shift] key.
+
+If you have more then one blendmodes selected, a random blendmode out of your blendmode
+selection is assigned to the selection of clips in your active sequence.
+
+
+
+.. _Clips and Markers from Midi:
+
+Clips and Markers from Midi
 ===========================
 
 Before you can perform this function you need to refer to the chapter Preparations_ and make sure all conditions are met.
@@ -279,9 +393,9 @@ This function performs the following actions:
 
 
 
-.. _Clips and markers from txt:
+.. _Clips and Markers from Txt:
 
-Clips and markers from txt
+Clips and Markers from Txt
 ==========================
 Basically this function does the same thing as the function `Clips and markers from midi`_
 except that a pre converted txt file is the source with all midi note informations included.
@@ -290,127 +404,13 @@ To create such a txt file that contains all required midi note information you n
 use the external application `Midiconverter (external)`_.
 
 
+.. _Midi Target Selection:
 
-.. _Subclips with random starttime:
+Midi Target Selection
+=====================
+Here you can choose wheather you want to create markers from the midi note data or
+to create subclips and insert them directly into the active sequence.
 
-Subclips with random starttime
-==============================
-If a subclip is created it matches the duration of the appropriate midi note.
-
-Note that the start time of the source footage is randomly selected but it is ensured that
-the out points of the subclips are still inside the duration of the source footage.
-
-.. code-block:: javascript
-    :caption: Random starttime.
-
-    startTime = ((sourceFootageDur - (2*midiNoteDur)) * Math.random()) + midiNoteDur;
-    endTime = startTime + midiNoteDur;``
-
-
-
-.. _Create subclips:
-
-Create subclips
-===============
-
-This function considers all markers in the active sequence and places random clips from
-the ``1 source`` folder onto videotrack 1 so that between each marker sits a subclip.
-
-.. figure:: ../../modules/ppro_bpmslicer/images/BpmSlicer_createSubclips2.png
-    :align: center
-    :figwidth: 200px
-
-    The **1 source** folder
-
-In this case the assigned prefixes that were discussed in chapter `Preparing your footage`_
-are immaterial.
-
-.. figure:: ../../modules/ppro_bpmslicer/images/BpmSlicer_createSubclips.png
-    :align: center
-
-    Random clips from the **1 source** folder placed in the sequence
-
-The starttime of the subclip is randomly set and it is made sure that the out point of
-the subclip is inside the duration of the source footage.
-
-.. code-block:: javascript
-    :caption: Random starttime.
-
-    startTimeSeconds = ((projectItemDur - (2*duration)) * Math.random()) + duration;
-    endTimeSeconds = startTimeSeconds + duration;
-
-
-
-.. _Sequence markers:
-
-Sequence markers
-================
-
-There are two ways to create markers with the adjusted bpm- and bars-value:
-
-- If one clip is selected the markers will be placed in the range of the clips in and out point.
-
-- If there are more then one clips selected, the minimum in point and the maximum out point is considered.
-
-If the in and outpoints of the sequence are set and no clip is selected,
-then the markers will be created inside the time range of the sequences in and out points.
-
-
-
-.. _Clip markers:
-
-Clip markers
-============
-
-To create markers on one or more clips you need to place the clips into
-the ``1 source`` folder and give it the prefix '0 ' (e.g. ``0 video.mov``).
-
-If you then press the ``clip markers`` button, clip markers will be created according
-to the adjusted ``Bpm`` and ``Bars`` value for the duration of the whole clip.
-
-
-
-.. _Quantize sequence markers:
-
-Quantize sequence markers
-=========================
-The sequence markers of the active sequence will be quantized to the sequences framerate.
-
-
-
-.. _Export frames for markers:
-
-Export frames for markers
-=========================
-Exports PNG images for each frame a marker is placed.
-
-
-
-.. _Randomize selection:
-
-Randomize selection
-===================
-Actually this is a randomized deselector.
-
-You make a selection of clips and/or transitions and this function randomly deselct items from your selection.
-
-
-
-.. _Change blendmode:
-
-Change blendmode
-================
-
-.. figure:: ../../modules/ppro_bpmslicer/images/BpmSlicer_changeBlendmode.png
-    :align: right
-    :figwidth: 250px
-
-    Change blendmode
-
-You can select one or more blendmodes and apply them to the selected clips in the active sequence.
-
-If you have more then one blendmodes selected, a random blendmode out of your blendmode
-selection is assigned to the selection of clips in your active sequence.
 
 
 ---------
@@ -531,7 +531,19 @@ Development
 In this section you can find some useful information about the development of a CEP HTML Extensions.
 Please ignore this section if you're not a developer.
 
-
+|Premiere_Scripting_Guide|
+    - |Premiere_Scripting_Guide_Application|
+    - |Premiere_Scripting_Guide_Project|
+    - |Premiere_Scripting_Guide_ProjectItem|
+    - |Premiere_Scripting_Guide_Sequence|
+    - |Premiere_Scripting_Guide_Track|
+    - |Premiere_Scripting_Guide_TrackItem|
+    - |Premiere_Scripting_Guide_Component|
+    - |Premiere_Scripting_Guide_ComponentParameter|
+    - |Premiere_Scripting_Guide_Anywhere|
+    - |Premiere_Scripting_Guide_Encoder|
+    - |Premiere_Scripting_Guide_Marker|
+    - |Premiere_Scripting_Guide_Source|
 |CEP_8_0_HTML_Extension_Cookbook|
     |Debugging_Unsigned_Extensions|
 
@@ -545,8 +557,63 @@ Miscellaneous
     - |Customize_Context_Menu|
     - |Getting_and_Changing_Extension_Content_Size|
     - |Register_an_interest_in_specific_key_events|
+    - |Remote_Debugging|
+
+.. PREMIERE PRO
+.. |Premiere_Scripting_Guide| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/" target="_blank">Premiere Scripting Guide</a>
+
+.. |Premiere_Scripting_Guide_Application| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/2%20-%20App%20object/application.html" target="_blank">Application</a>
+
+.. |Premiere_Scripting_Guide_Project| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/3%20-%20Project%20object/project.html" target="_blank">Project</a>
+
+.. |Premiere_Scripting_Guide_ProjectItem| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/4%20-%20Project%20Item%20object/projectItem.html" target="_blank">Project Item</a>
+
+.. |Premiere_Scripting_Guide_Sequence| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/5%20-%20Sequence%20object/sequence.html" target="_blank">Sequence</a>
+
+.. |Premiere_Scripting_Guide_Track| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/6%20-%20Track%20object/track.html" target="_blank">Track</a>
+
+.. |Premiere_Scripting_Guide_TrackItem| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/7%20-%20Track%20Item%20object/trackitem.html" target="_blank">Track Item</a>
+
+.. |Premiere_Scripting_Guide_Component| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/8%20-%20Component%20object/component.html" target="_blank">Component</a>
+
+.. |Premiere_Scripting_Guide_ComponentParameter| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/9%20-%20Component%20Parameter%20object/componentparam.html" target="_blank">Component Parameter</a>
+
+.. |Premiere_Scripting_Guide_Anywhere| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/10%20-%20Anywhere%20object/anywhere.html" target="_blank">Anywhere</a>
+
+.. |Premiere_Scripting_Guide_Encoder| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/11%20-%20Encoder%20object/encoder.html" target="_blank">Encoder</a>
+
+.. |Premiere_Scripting_Guide_Marker| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/12%20-%20Marker%20object/marker.html" target="_blank">Marker</a>
+
+.. |Premiere_Scripting_Guide_Source| raw:: html
+
+   <a href="https://premiere-scripting-guide.readthedocs.io/13%20-%20Source%20object/source.html" target="_blank">Source</a>
 
 
+.. CEP
 .. |CEP_8_0_HTML_Extension_Cookbook| raw:: html
 
    <a href="https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md" target="_blank">CEP 8.0 HTML Extension Cookbook</a>
@@ -574,6 +641,10 @@ Miscellaneous
 .. |Register_an_interest_in_specific_key_events| raw:: html
 
    <a href="https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#register-an-interest-in-specific-key-events" target="_blank">Register an interest in specific key events</a>
+
+.. |Remote_Debugging| raw:: html
+
+   <a href="https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#remote-debugging" target="_blank">Remote Debugging</a>
 
 ---------
 
