@@ -374,43 +374,57 @@ selection is assigned to the selection of clips in your active sequence.
 
 
 
-.. _Clips and Markers from Midi:
+.. _Import Midi:
 
-Clips and Markers from Midi
-===========================
+Import Midi
+===========
+The midi data you want to import may either be available as a ``.mid`` or as a ``.txt`` file.
+In the file open dialog you can choose either of those file formats and it is been taking care intenally to import those correctly.
 
-Before you can perform this function you need to refer to the chapter Preparations_ and make sure all conditions are met.
+---------
 
-This function performs the following actions:
+.mid
+  Before you import a midi file please refer to the chapter Preparations_ and make sure all conditions are met.
 
-- Reads a midi file and interprets all midi notes in the range of C3 - B3.
+  - Interprets all midi notes (previously only notes in the range of C3 - B3 were considered but that has changed in the new version)::
 
-- Creates a marker for each note-on event in the active sequence.
+      midi_notes = {
+        bpm:bpm,
+        notes: [
+          { track:track, midiNr:midiNr, noteOn:noteOn, noteOff:noteOff, velocity:velocity },
+          { track:track, midiNr:midiNr, noteOn:noteOn, noteOff:noteOff, velocity:velocity }
+        ]
+      }
 
-- Creates subclips and moves them into the ``1 subclips`` folder. See paragraph `Subclips with random starttime`_ to understand how the starttime is randomly set.
+    .. note:: Note that the ``track`` attribute of each note is by default 0 and only contains other track numbers if the note is in the range C3 - B3::
 
-- Places footage that is arranged in the BpmSlicer ``1 source`` folder onto the appropriate videotrack of the active sequence.
+        - C3  -> 1
+        - C#3 -> 2
+        - ...
+        - B3  -> 12
+.txt
+  Such a .txt file that contains midi note information was previously created by the external application `Midiconverter (external)`_.
+
+See `Midi Target Selection`_ for information about what happens next.
 
 
-
-.. _Clips and Markers from Txt:
-
-Clips and Markers from Txt
-==========================
-Basically this function does the same thing as the function `Clips and markers from midi`_
-except that a pre converted txt file is the source with all midi note informations included.
-
-To create such a txt file that contains all required midi note information you need to
-use the external application `Midiconverter (external)`_.
-
+---------
 
 .. _Midi Target Selection:
 
 Midi Target Selection
 =====================
-Here you can choose wheather you want to create markers from the midi note data or
-to create subclips and insert them directly into the active sequence.
+After the midi note data was successfully imported the options of this dropdown list decide what happens next.
 
+Markers
+  - Creates a marker for each note-on event in the active sequence.
+
+Subclips
+  - Creates a new subclip for each marker in the sequence.
+  - Adjusts the inpoint, outpoint of the subclip.
+  - Sets the starttime of the subclip randomly (`Subclips with random starttime`_).
+  - Moves the subclip into the ``1 subclips`` folder.
+  - Places the subclip onto the appropriate videotrack of the active sequence.
 
 
 ---------
@@ -551,13 +565,16 @@ Please ignore this section if you're not a developer.
 
       - Win: regedit > ``HKEY_CURRENT_USER/Software/Adobe/CSXS.8``, then add a new entry PlayerDebugMode of type "string" with the value of "1".
       - Mac: In the terminal, type: ``defaults write com.adobe.CSXS.8 PlayerDebugMode 1`` (The plist is also located at ``/Users/<username>/Library/Preferences/com.adobe.CSXS.8.plist``)
-Miscellaneous
     - |Tooltip_Documentation|
     - |Fly_Out_Menu|
     - |Customize_Context_Menu|
     - |Getting_and_Changing_Extension_Content_Size|
     - |Register_an_interest_in_specific_key_events|
     - |Remote_Debugging|
+    - |Node_JS|
+Miscellaneous
+    - |Adobe_CEP_Jsx_Functions|
+    - |Javascript_Tools_Guide|
 
 .. PREMIERE PRO
 .. |Premiere_Scripting_Guide| raw:: html
@@ -645,6 +662,18 @@ Miscellaneous
 .. |Remote_Debugging| raw:: html
 
    <a href="https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#remote-debugging" target="_blank">Remote Debugging</a>
+
+.. |Node_JS| raw:: html
+
+   <a href="https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#nodejs" target="_blank">Node JS</a>
+
+.. |Adobe_CEP_Jsx_Functions| raw:: html
+
+   <a href="https://autoedit.gitbook.io/documentation/adobe-panel/adobe-cep-jsx-functions-for-autoedit-adobe-panel" target="_blank">Adobe CEP Jsx Functions</a>
+
+.. |Javascript_Tools_Guide| raw:: html
+
+   <a href="http://estk.aenhancers.com/index.html" target="_blank">Javascript Tools Guide</a>
 
 ---------
 
