@@ -545,6 +545,8 @@ Development
 In this section you can find some useful information about the development of a CEP HTML Extensions.
 Please ignore this section if you're not a developer.
 
+|PREMIERE_PRO_SDK_Forum|
+    - |PREMIERE_PRO_SDK|
 |Premiere_Scripting_Guide|
     - |Premiere_Scripting_Guide_Application|
     - |Premiere_Scripting_Guide_Project|
@@ -577,6 +579,10 @@ Miscellaneous
     - |Javascript_Tools_Guide|
 
 .. PREMIERE PRO
+.. |PREMIERE_PRO_SDK_Forum| raw:: html
+
+   <a href="https://forums.adobe.com/community/premiere/sdk/content" target="_blank">PREMIERE PRO SDK Forum</a>
+
 .. |Premiere_Scripting_Guide| raw:: html
 
    <a href="https://premiere-scripting-guide.readthedocs.io/" target="_blank">Premiere Scripting Guide</a>
