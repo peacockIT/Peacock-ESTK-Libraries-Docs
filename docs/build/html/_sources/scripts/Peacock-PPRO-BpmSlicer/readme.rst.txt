@@ -298,6 +298,11 @@ Quantize Sequence Markers
 =========================
 The sequence markers of the active sequence will be quantized to the sequences framerate.
 
+This function only works correct if the frames per seconds of the active sequence is 25.::
+
+    var framerate = 25;
+    var frameDuration = 0.04;
+
 
 
 .. _Export Frames for Markers:
@@ -546,7 +551,7 @@ In this section you can find some useful information about the development of a 
 Please ignore this section if you're not a developer.
 
 |PREMIERE_PRO_SDK_Forum|
-    - |PREMIERE_PRO_SDK|
+    - |PREMIERE_PRO_SDK_Forum|
 |Premiere_Scripting_Guide|
     - |Premiere_Scripting_Guide_Application|
     - |Premiere_Scripting_Guide_Project|
