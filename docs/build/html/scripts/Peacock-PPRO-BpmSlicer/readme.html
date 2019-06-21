@@ -452,6 +452,65 @@ The following table shows the mapping of the midi properties to the properties o
 </table>
 <p>While <code class="docutils literal notranslate"><span class="pre">noteOn</span></code> and <code class="docutils literal notranslate"><span class="pre">noteOff</span></code> is self explaining <code class="docutils literal notranslate"><span class="pre">track</span></code> needs a little more detailed explanation.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">velocity</span></code> is exponentially interpreted which means it is easier to make tiny adjustment (Exponent is 3).</p>
+<p>Modulations are also included in a midi file and can be accessed to manipulate video clips.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Modulations</th>
+<th class="head">Video Clip</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">modulation</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">breath</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">controller</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">footpedal</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">portamento</span> <span class="pre">time</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">entry</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">volume</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">balance</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">controller</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">pan</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">expression</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">effect</span> <span class="pre">control</span> <span class="pre">1</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">effect</span> <span class="pre">control</span> <span class="pre">2</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">pitchbend</span></code></td>
+<td>.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">channel</span> <span class="pre">pressure</span></code></td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
 <hr class="docutils" />
 <p>You can control the <code class="docutils literal notranslate"><span class="pre">track</span></code> property in the midi file by adjusting the midi note value of the midi note (Possible midi note values would be for example C3, D4, A#4 etc.).</p>
 <p>Because I figured you only need a hand full of tracks in video production, I specified a range of midi note values in order to set the corresponding <code class="docutils literal notranslate"><span class="pre">track</span></code>.</p>

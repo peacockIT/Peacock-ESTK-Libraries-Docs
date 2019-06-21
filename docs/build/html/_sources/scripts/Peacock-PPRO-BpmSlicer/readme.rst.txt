@@ -177,6 +177,29 @@ While ``noteOn`` and ``noteOff`` is self explaining ``track`` needs a little mor
 
 The ``velocity`` is exponentially interpreted which means it is easier to make tiny adjustment (Exponent is 3).
 
+
+Modulations are also included in a midi file and can be accessed to manipulate video clips.
+
+======================  =====================================================================
+Modulations             Video Clip
+======================  =====================================================================
+``modulation``          .
+``breath``              .
+``controller``          .
+``footpedal``           .
+``portamento time``     .
+``data entry``          .
+``volume``              .
+``balance``             .
+``controller``          .
+``pan``                 .
+``expression``          .
+``effect control 1``    .
+``effect control 2``    .
+``pitchbend``           .
+``channel pressure``    .
+======================  =====================================================================
+
 ---------
 
 You can control the ``track`` property in the midi file by adjusting the midi note value of the midi note (Possible midi note values would be for example C3, D4, A#4 etc.).
