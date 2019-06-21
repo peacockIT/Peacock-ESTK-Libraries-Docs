@@ -164,54 +164,91 @@ If you have the exact bpm rate of the song then it won't be too difficult to mak
 Preparing the midi clip
 =======================
 
-Please make sure that the midinotes in the midi file are placed in the range between C3 - B3, otherwise the notes won't be recognized.
+The best way to create a midi clip for the BpmSlicer is to have in mind what will happen later in Premiere Pro with it.
+Basically what we are trying here is to convert a midi note to a video clip.
+The following table shows the mapping of the midi properties to the properties of the video clip.
+
+================  =====================================================================
+Midi Note         Video Clip
+================  =====================================================================
+``track``         The prefix that determines which footage can be used for the clip.
+``noteOn``        The clips in point in the active sequence.
+``noteOff``       The clips out point in the active sequence.
+``velocity``      Not set yet.
+================  =====================================================================
+
+While ``noteOn`` and ``noteOff`` is self explaining ``track`` needs a little more detailed explanation.
+
+---------
+
+You can control the ``track`` property in the midi file by adjusting the midi note value of the midi note (Possible midi note values would be for example C3, D4, A#4 etc.).
+
+Because I figured you only need a hand full of tracks in video production, I specified a range of midi note values in order to set the corresponding ``track``.
 
 .. figure:: ../../modules/ppro_bpmslicer/images/MidinoteRange.png
-    :align: center
+    :align: right
+    :figwidth: 450px
 
-    Midinote range
+    Midinote range that will set the ``track`` property to other than ``0``.
 
-.. code-block:: text
+================  =========
+Midi Note         Track
+================  =========
+...               0
+B2                0
+``C3``            ``1``
+``C#3``           ``2``
+``D3``            ``3``
+...               ...
+``A#3``           ``11``
+``B3``            ``12``
+C4                0
+...               0
+================  =========
 
-    C3  ->  videotrack 1
-    C#3 ->  videotrack 2
-    D3  ->  videotrack 3
-    D#3 ->  videotrack 4
-    ... ->  ...
-    B3  ->  videotrack 12
 
-.. Note:: The notes of C3 are placed onto videotrack 1, the notes of C#3 onto videotrack 2 and so on.
+.. _Preparing your footage in Premiere Pro:
 
+Preparing your footage in Premiere Pro
+======================================
 
+If there is no BpmSlicer folder structure already you can create one by clicking the `Create Folder Structure`_ Button::
 
-.. _Preparing your footage:
+    BpmSlicer
+        1 source
+        2 subclips
 
-Preparing your footage
-======================
-
-If there is no BpmSlicer folder structure already you can create one by clicking the `Create folders`_ Button.
-
-The next step is to put all your footage you want to be placed into the active sequence, according to the notes in the midi file,
+Put all your footage you want to be placed into the active sequence
 into the ``1 source`` folder and assign the appropriate prefix for each footage item.
 
 Make sure the prefix is a number between 1 - 12 and make sure there is a white space between the prefix number and the footage name.
 
-The next thing you want to make sure is that you add as much videotracks to the active sequence as your highest assigned prefix is.
+Lets assume you have named your footage in the ``1 source`` folder as displayed below::
 
-In the following example the highest assigned prefix is 4, so you need to make sure there are at least 4 videotracks available::
+    1 source
+      1 clip_1.mov
+      1 video_10.mp4
+      2 myMovie.mov
+      2 IMG_6211.m4v
+      2 VID_20190613_120613.3gp
+      2 5DM35478.MOV
+      3 5DM35479.MOV
+      4 5DM35480.MOV
+      5 5DM35481.MOV
+      6 5DM35482.MOV
+      7 5DM35483.MOV
+      8 5DM35484.MOV
+      9 5DM35485.MOV
+      10 5DM35486.MOV
+      11 5DM35487.MOV
+      12 5DM35487.MOV
+      IMG_6212.m4v      ->  (will be omited)
+      IMG_6213.m4v      ->  (will be omited)
+      IMG_6214.m4v      ->  (will be omited)
 
-    BpmSlicer
-        1 source
-            1 VideoClip2.mov
-            2 LensFlare2.mov
-            3 Transition_1.mov
-            4 PaperTexture_9.png
-            4 PaperTexture_1.mov
+Everytime the **BpmSlicer** requires a footage item from the ``1 source`` folder, it will look for a random item that has the ``track`` value of the current midi note as a prefix assigned.
 
-As you notice in the example it's possible to assign the same prefix to as many footage items as you like.
-
-If you assign the same prefix to more then one footage items, this function selects a random footage item each time it finds a midi note for the appropriate videotrack.
-
+.. note:: Footage items in the ``1 source`` folder, that have no prefix assigned will be omitted.
 
 
 ---------
@@ -248,10 +285,10 @@ Set bars in order to determine how many markers are created when creating marker
 
 
 
-.. _Create folders:
+.. _Create Folder Structure:
 
-Create Folders
-==============
+Create Folder Structure
+=======================
 Creates the BpmSlicer folder structure::
 
     BpmSlicer
@@ -298,12 +335,6 @@ Quantize Sequence Markers
 =========================
 The sequence markers of the active sequence will be quantized to the sequences framerate.
 
-This function only works correct if the frames per seconds of the active sequence is 25.::
-
-    var framerate = 25;
-    var frameDuration = 0.04;
-
-
 
 .. _Export Frames for Markers:
 
@@ -321,7 +352,7 @@ Create Subclips
 This function considers all markers in the active sequence and places random clips from
 the ``1 source`` folder onto videotrack 1 so that between each marker sits a subclip.
 
-In this case the assigned prefixes that were discussed in chapter `Preparing your footage`_
+In this case the assigned prefixes that were discussed in chapter `Preparing your footage in Premiere Pro`_
 are immaterial.
 
 .. figure:: ../../modules/ppro_bpmslicer/images/BpmSlicer_createSubclips2.png
@@ -523,6 +554,18 @@ Troubleshooting
    Then create a new .zxp file with ``ZXPSignCmd``.
 
    **Note:** This solution works only for the developer who has the source project files available, not if you only have the ``BpmSlicer.zxp`` file.
+
+
+
+.. Error::
+   The extension is not showing up in the extension tab in premiere pro due to a crash that was caused by the extension.
+
+   **Solution:** After I created a new project the problem was gone. Somehow a crash report might be saved within the project file.
+   But before I figured that out I also made changes to the manifest.xml:
+
+   - I changed the ``<RequiredRuntime Name="CSXS" Version="9.0" />`` from 6.0 to 9.0
+   - I removed the icons tag with 4 of those ``<Icon Type="Normal">../css/images/PeacockLogo_20x20.png</Icon>``.
+   - I also changed the identifier from ``ExtensionBundleId="com.adobe.BpmSlicer"`` to ``ExtensionBundleId="com.adobe.PeacockBpmSlicer"``
 
 
 

@@ -115,14 +115,14 @@
 <li class="toctree-l2"><a class="reference internal" href="#preparations">Preparations</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#song-preparation">Song preparation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#preparing-the-midi-clip">Preparing the midi clip</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#preparing-your-footage">Preparing your footage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#preparing-your-footage-in-premiere-pro">Preparing your footage in Premiere Pro</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#functionality">Functionality</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id12">?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#bpm">Bpm</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#bars">Bars</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#create-folders">Create Folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-folder-structure">Create Folder Structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#add-markers">Add Markers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#marker-target-selection">Marker Target Selection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#quantize-sequence-markers">Quantize Sequence Markers</a></li>
@@ -287,14 +287,14 @@
 <li><a class="reference internal" href="#preparations" id="id51">Preparations</a><ul>
 <li><a class="reference internal" href="#song-preparation" id="id52">Song preparation</a></li>
 <li><a class="reference internal" href="#preparing-the-midi-clip" id="id53">Preparing the midi clip</a></li>
-<li><a class="reference internal" href="#preparing-your-footage" id="id54">Preparing your footage</a></li>
+<li><a class="reference internal" href="#preparing-your-footage-in-premiere-pro" id="id54">Preparing your footage in Premiere Pro</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#functionality" id="id55">Functionality</a><ul>
 <li><a class="reference internal" href="#id12" id="id56">?</a></li>
 <li><a class="reference internal" href="#bpm" id="id57">Bpm</a></li>
 <li><a class="reference internal" href="#bars" id="id58">Bars</a></li>
-<li><a class="reference internal" href="#create-folders" id="id59">Create Folders</a></li>
+<li><a class="reference internal" href="#create-folder-structure" id="id59">Create Folder Structure</a></li>
 <li><a class="reference internal" href="#add-markers" id="id60">Add Markers</a></li>
 <li><a class="reference internal" href="#marker-target-selection" id="id61">Marker Target Selection</a></li>
 <li><a class="reference internal" href="#quantize-sequence-markers" id="id62">Quantize Sequence Markers</a></li>
@@ -422,43 +422,125 @@ need to find the first beat and place it accordingly.</p>
 </div>
 <div class="section" id="preparing-the-midi-clip">
 <span id="id8"></span><h3><a class="toc-backref" href="#id53">Preparing the midi clip</a><a class="headerlink" href="#preparing-the-midi-clip" title="Permalink to this headline">¶</a></h3>
-<p>Please make sure that the midinotes in the midi file are placed in the range between C3 - B3, otherwise the notes won’t be recognized.</p>
-<div class="figure align-center" id="id38">
+<p>The best way to create a midi clip for the BpmSlicer is to have in mind what will happen later in Premiere Pro with it.
+Basically what we are trying here is to convert a midi note to a video clip.
+The following table shows the mapping of the midi properties to the properties of the video clip.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="81%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Midi Note</th>
+<th class="head">Video Clip</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">track</span></code></td>
+<td>The prefix that determines which footage can be used for the clip.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">noteOn</span></code></td>
+<td>The clips in point in the active sequence.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">noteOff</span></code></td>
+<td>The clips out point in the active sequence.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">velocity</span></code></td>
+<td>Not set yet.</td>
+</tr>
+</tbody>
+</table>
+<p>While <code class="docutils literal notranslate"><span class="pre">noteOn</span></code> and <code class="docutils literal notranslate"><span class="pre">noteOff</span></code> is self explaining <code class="docutils literal notranslate"><span class="pre">track</span></code> needs a little more detailed explanation.</p>
+<hr class="docutils" />
+<p>You can control the <code class="docutils literal notranslate"><span class="pre">track</span></code> property in the midi file by adjusting the midi note value of the midi note (Possible midi note values would be for example C3, D4, A#4 etc.).</p>
+<p>Because I figured you only need a hand full of tracks in video production, I specified a range of midi note values in order to set the corresponding <code class="docutils literal notranslate"><span class="pre">track</span></code>.</p>
+<div class="figure align-right" id="id38" style="width: 450px">
 <img alt="../../_images/MidinoteRange1.png" src="../../_images/MidinoteRange1.png" />
-<p class="caption"><span class="caption-text">Midinote range</span></p>
+<p class="caption"><span class="caption-text">Midinote range that will set the <code class="docutils literal notranslate"><span class="pre">track</span></code> property to other than <code class="docutils literal notranslate"><span class="pre">0</span></code>.</span></p>
 </div>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>C3  -&gt;  videotrack 1
-C#3 -&gt;  videotrack 2
-D3  -&gt;  videotrack 3
-D#3 -&gt;  videotrack 4
-... -&gt;  ...
-B3  -&gt;  videotrack 12
-</pre></div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="64%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Midi Note</th>
+<th class="head">Track</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>…</td>
+<td>0</td>
+</tr>
+<tr class="row-odd"><td>B2</td>
+<td>0</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">C3</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">1</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">C#3</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">2</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">D3</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">3</span></code></td>
+</tr>
+<tr class="row-odd"><td>…</td>
+<td>…</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">A#3</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">11</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">B3</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">12</span></code></td>
+</tr>
+<tr class="row-even"><td>C4</td>
+<td>0</td>
+</tr>
+<tr class="row-odd"><td>…</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The notes of C3 are placed onto videotrack 1, the notes of C#3 onto videotrack 2 and so on.</p>
-</div>
-</div>
-<div class="section" id="preparing-your-footage">
-<span id="id9"></span><h3><a class="toc-backref" href="#id54">Preparing your footage</a><a class="headerlink" href="#preparing-your-footage" title="Permalink to this headline">¶</a></h3>
-<p>If there is no BpmSlicer folder structure already you can create one by clicking the <a class="reference internal" href="#create-folders">Create folders</a> Button.</p>
-<p>The next step is to put all your footage you want to be placed into the active sequence, according to the notes in the midi file,
-into the <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">source</span></code> folder and assign the appropriate prefix for each footage item.</p>
-<p>Make sure the prefix is a number between 1 - 12 and make sure there is a white space between the prefix number and the footage name.</p>
-<p>The next thing you want to make sure is that you add as much videotracks to the active sequence as your highest assigned prefix is.</p>
-<p>In the following example the highest assigned prefix is 4, so you need to make sure there are at least 4 videotracks available:</p>
+<div class="section" id="preparing-your-footage-in-premiere-pro">
+<span id="id9"></span><h3><a class="toc-backref" href="#id54">Preparing your footage in Premiere Pro</a><a class="headerlink" href="#preparing-your-footage-in-premiere-pro" title="Permalink to this headline">¶</a></h3>
+<p>If there is no BpmSlicer folder structure already you can create one by clicking the <a class="reference internal" href="#create-folder-structure">Create Folder Structure</a> Button:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BpmSlicer</span>
     <span class="mi">1</span> <span class="n">source</span>
-        <span class="mi">1</span> <span class="n">VideoClip2</span><span class="o">.</span><span class="n">mov</span>
-        <span class="mi">2</span> <span class="n">LensFlare2</span><span class="o">.</span><span class="n">mov</span>
-        <span class="mi">3</span> <span class="n">Transition_1</span><span class="o">.</span><span class="n">mov</span>
-        <span class="mi">4</span> <span class="n">PaperTexture_9</span><span class="o">.</span><span class="n">png</span>
-        <span class="mi">4</span> <span class="n">PaperTexture_1</span><span class="o">.</span><span class="n">mov</span>
+    <span class="mi">2</span> <span class="n">subclips</span>
 </pre></div>
 </div>
-<p>As you notice in the example it’s possible to assign the same prefix to as many footage items as you like.</p>
-<p>If you assign the same prefix to more then one footage items, this function selects a random footage item each time it finds a midi note for the appropriate videotrack.</p>
+<p>Put all your footage you want to be placed into the active sequence
+into the <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">source</span></code> folder and assign the appropriate prefix for each footage item.</p>
+<p>Make sure the prefix is a number between 1 - 12 and make sure there is a white space between the prefix number and the footage name.</p>
+<p>Lets assume you have named your footage in the <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">source</span></code> folder as displayed below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="n">source</span>
+  <span class="mi">1</span> <span class="n">clip_1</span><span class="o">.</span><span class="n">mov</span>
+  <span class="mi">1</span> <span class="n">video_10</span><span class="o">.</span><span class="n">mp4</span>
+  <span class="mi">2</span> <span class="n">myMovie</span><span class="o">.</span><span class="n">mov</span>
+  <span class="mi">2</span> <span class="n">IMG_6211</span><span class="o">.</span><span class="n">m4v</span>
+  <span class="mi">2</span> <span class="n">VID_20190613_120613</span><span class="o">.</span><span class="mi">3</span><span class="n">gp</span>
+  <span class="mi">2</span> <span class="mi">5</span><span class="n">DM35478</span><span class="o">.</span><span class="n">MOV</span>
+  <span class="mi">3</span> <span class="mi">5</span><span class="n">DM35479</span><span class="o">.</span><span class="n">MOV</span>
+  <span class="mi">4</span> <span class="mi">5</span><span class="n">DM35480</span><span class="o">.</span><span class="n">MOV</span>
+  <span class="mi">5</span> <span class="mi">5</span><span class="n">DM35481</span><span class="o">.</span><span class="n">MOV</span>
+  <span class="mi">6</span> <span class="mi">5</span><span class="n">DM35482</span><span class="o">.</span><span class="n">MOV</span>
+  <span class="mi">7</span> <span class="mi">5</span><span class="n">DM35483</span><span class="o">.</span><span class="n">MOV</span>
+  <span class="mi">8</span> <span class="mi">5</span><span class="n">DM35484</span><span class="o">.</span><span class="n">MOV</span>
+  <span class="mi">9</span> <span class="mi">5</span><span class="n">DM35485</span><span class="o">.</span><span class="n">MOV</span>
+  <span class="mi">10</span> <span class="mi">5</span><span class="n">DM35486</span><span class="o">.</span><span class="n">MOV</span>
+  <span class="mi">11</span> <span class="mi">5</span><span class="n">DM35487</span><span class="o">.</span><span class="n">MOV</span>
+  <span class="mi">12</span> <span class="mi">5</span><span class="n">DM35487</span><span class="o">.</span><span class="n">MOV</span>
+  <span class="n">IMG_6212</span><span class="o">.</span><span class="n">m4v</span>      <span class="o">-&gt;</span>  <span class="p">(</span><span class="n">will</span> <span class="n">be</span> <span class="n">omited</span><span class="p">)</span>
+  <span class="n">IMG_6213</span><span class="o">.</span><span class="n">m4v</span>      <span class="o">-&gt;</span>  <span class="p">(</span><span class="n">will</span> <span class="n">be</span> <span class="n">omited</span><span class="p">)</span>
+  <span class="n">IMG_6214</span><span class="o">.</span><span class="n">m4v</span>      <span class="o">-&gt;</span>  <span class="p">(</span><span class="n">will</span> <span class="n">be</span> <span class="n">omited</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Everytime the <strong>BpmSlicer</strong> requires a footage item from the <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">source</span></code> folder, it will look for a random item that has the <code class="docutils literal notranslate"><span class="pre">track</span></code> value of the current midi note as a prefix assigned.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Footage items in the <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">source</span></code> folder, that have no prefix assigned will be omitted.</p>
+</div>
 <hr class="docutils" />
 </div>
 </div>
@@ -476,8 +558,8 @@ into the <code class="docutils literal notranslate"><span class="pre">1</span> <
 <span id="id14"></span><h3><a class="toc-backref" href="#id58">Bars</a><a class="headerlink" href="#bars" title="Permalink to this headline">¶</a></h3>
 <p>Set bars in order to determine how many markers are created when creating markers.</p>
 </div>
-<div class="section" id="create-folders">
-<span id="id15"></span><h3><a class="toc-backref" href="#id59">Create Folders</a><a class="headerlink" href="#create-folders" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="create-folder-structure">
+<span id="id15"></span><h3><a class="toc-backref" href="#id59">Create Folder Structure</a><a class="headerlink" href="#create-folder-structure" title="Permalink to this headline">¶</a></h3>
 <p>Creates the BpmSlicer folder structure:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BpmSlicer</span>
     <span class="mi">1</span> <span class="n">source</span>
@@ -514,11 +596,6 @@ See <a class="reference internal" href="#add-markers">Add markers</a> for more i
 <div class="section" id="quantize-sequence-markers">
 <span id="id18"></span><h3><a class="toc-backref" href="#id62">Quantize Sequence Markers</a><a class="headerlink" href="#quantize-sequence-markers" title="Permalink to this headline">¶</a></h3>
 <p>The sequence markers of the active sequence will be quantized to the sequences framerate.</p>
-<p>This function only works correct if the frames per seconds of the active sequence is 25.:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="n">framerate</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
-<span class="n">var</span> <span class="n">frameDuration</span> <span class="o">=</span> <span class="mf">0.04</span><span class="p">;</span>
-</pre></div>
-</div>
 </div>
 <div class="section" id="export-frames-for-markers">
 <span id="id19"></span><h3><a class="toc-backref" href="#id63">Export Frames for Markers</a><a class="headerlink" href="#export-frames-for-markers" title="Permalink to this headline">¶</a></h3>
@@ -528,7 +605,7 @@ See <a class="reference internal" href="#add-markers">Add markers</a> for more i
 <span id="id20"></span><h3><a class="toc-backref" href="#id64">Create Subclips</a><a class="headerlink" href="#create-subclips" title="Permalink to this headline">¶</a></h3>
 <p>This function considers all markers in the active sequence and places random clips from
 the <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">source</span></code> folder onto videotrack 1 so that between each marker sits a subclip.</p>
-<p>In this case the assigned prefixes that were discussed in chapter <a class="reference internal" href="#preparing-your-footage">Preparing your footage</a>
+<p>In this case the assigned prefixes that were discussed in chapter <a class="reference internal" href="#preparing-your-footage-in-premiere-pro">Preparing your footage in Premiere Pro</a>
 are immaterial.</p>
 <div class="figure align-center" id="id39" style="width: 200px">
 <img alt="../../_images/BpmSlicer_createSubclips2.png" src="../../_images/BpmSlicer_createSubclips2.png" />
@@ -680,6 +757,17 @@ onto a selected <code class="docutils literal notranslate"><span class="pre">exp
 <p><strong>Solution:</strong> Change the ExtensionBundleVersion and the Extension version in the manifest.xml to a higher number then before.
 Then create a new .zxp file with <code class="docutils literal notranslate"><span class="pre">ZXPSignCmd</span></code>.</p>
 <p class="last"><strong>Note:</strong> This solution works only for the developer who has the source project files available, not if you only have the <code class="docutils literal notranslate"><span class="pre">BpmSlicer.zxp</span></code> file.</p>
+</div>
+<div class="admonition error">
+<p class="first admonition-title">Error</p>
+<p>The extension is not showing up in the extension tab in premiere pro due to a crash that was caused by the extension.</p>
+<p><strong>Solution:</strong> After I created a new project the problem was gone. Somehow a crash report might be saved within the project file.
+But before I figured that out I also made changes to the manifest.xml:</p>
+<ul class="last simple">
+<li>I changed the <code class="docutils literal notranslate"><span class="pre">&lt;RequiredRuntime</span> <span class="pre">Name=&quot;CSXS&quot;</span> <span class="pre">Version=&quot;9.0&quot;</span> <span class="pre">/&gt;</span></code> from 6.0 to 9.0</li>
+<li>I removed the icons tag with 4 of those <code class="docutils literal notranslate"><span class="pre">&lt;Icon</span> <span class="pre">Type=&quot;Normal&quot;&gt;../css/images/PeacockLogo_20x20.png&lt;/Icon&gt;</span></code>.</li>
+<li>I also changed the identifier from <code class="docutils literal notranslate"><span class="pre">ExtensionBundleId=&quot;com.adobe.BpmSlicer&quot;</span></code> to <code class="docutils literal notranslate"><span class="pre">ExtensionBundleId=&quot;com.adobe.PeacockBpmSlicer&quot;</span></code></li>
+</ul>
 </div>
 <div class="section" id="other-bpmslicer-data-pathes">
 <span id="id31"></span><h3><a class="toc-backref" href="#id75">Other BpmSlicer data pathes</a><a class="headerlink" href="#other-bpmslicer-data-pathes" title="Permalink to this headline">¶</a></h3>
