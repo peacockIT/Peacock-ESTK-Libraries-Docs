@@ -446,11 +446,12 @@ The following table shows the mapping of the midi properties to the properties o
 <td>The clips out point in the active sequence.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">velocity</span></code></td>
-<td>Not set yet.</td>
+<td>A value between 0.0 - 1.0 sets the start time of the current clip.</td>
 </tr>
 </tbody>
 </table>
 <p>While <code class="docutils literal notranslate"><span class="pre">noteOn</span></code> and <code class="docutils literal notranslate"><span class="pre">noteOff</span></code> is self explaining <code class="docutils literal notranslate"><span class="pre">track</span></code> needs a little more detailed explanation.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">velocity</span></code> is exponentially interpreted which means it is easier to make tiny adjustment (Exponent is 3).</p>
 <hr class="docutils" />
 <p>You can control the <code class="docutils literal notranslate"><span class="pre">track</span></code> property in the midi file by adjusting the midi note value of the midi note (Possible midi note values would be for example C3, D4, A#4 etc.).</p>
 <p>Because I figured you only need a hand full of tracks in video production, I specified a range of midi note values in order to set the corresponding <code class="docutils literal notranslate"><span class="pre">track</span></code>.</p>
@@ -697,7 +698,7 @@ In the file open dialog you can choose either of those file formats and it is be
 <dd><ul class="first last simple">
 <li>Creates a new subclip for each marker in the sequence.</li>
 <li>Adjusts the inpoint, outpoint of the subclip.</li>
-<li>Sets the starttime of the subclip randomly (<a href="#id81"><span class="problematic" id="id82">`Subclips with random starttime`_</span></a>).</li>
+<li>Sets the starttime of the subclip randomly (<a class="reference internal" href="#create-subclips">Create Subclips</a>).</li>
 <li>Moves the subclip into the <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">subclips</span></code> folder.</li>
 <li>Places the subclip onto the appropriate videotrack of the active sequence.</li>
 </ul>

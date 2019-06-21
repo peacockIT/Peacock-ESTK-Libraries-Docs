@@ -19,10 +19,6 @@ But you need to take a deeper look at the Preparations_.
 
 Here you can find the |Premiere_Scripting_Guide|.
 
-.. |Premiere_Scripting_Guide| raw:: html
-
-   <a href="https://premiere-scripting-guide.readthedocs.io/" target="_blank">Premiere Scripting Guide</a>
-
 
 ---------
 
@@ -174,10 +170,12 @@ Midi Note         Video Clip
 ``track``         The prefix that determines which footage can be used for the clip.
 ``noteOn``        The clips in point in the active sequence.
 ``noteOff``       The clips out point in the active sequence.
-``velocity``      Not set yet.
+``velocity``      A value between 0.0 - 1.0 sets the start time of the current clip.
 ================  =====================================================================
 
 While ``noteOn`` and ``noteOff`` is self explaining ``track`` needs a little more detailed explanation.
+
+The ``velocity`` is exponentially interpreted which means it is easier to make tiny adjustment (Exponent is 3).
 
 ---------
 
@@ -458,7 +456,7 @@ Markers
 Subclips
   - Creates a new subclip for each marker in the sequence.
   - Adjusts the inpoint, outpoint of the subclip.
-  - Sets the starttime of the subclip randomly (`Subclips with random starttime`_).
+  - Sets the starttime of the subclip randomly (`Create Subclips`_).
   - Moves the subclip into the ``1 subclips`` folder.
   - Places the subclip onto the appropriate videotrack of the active sequence.
 
@@ -615,6 +613,7 @@ Please ignore this section if you're not a developer.
 
       - Win: regedit > ``HKEY_CURRENT_USER/Software/Adobe/CSXS.8``, then add a new entry PlayerDebugMode of type "string" with the value of "1".
       - Mac: In the terminal, type: ``defaults write com.adobe.CSXS.8 PlayerDebugMode 1`` (The plist is also located at ``/Users/<username>/Library/Preferences/com.adobe.CSXS.8.plist``)
+
     - |Tooltip_Documentation|
     - |Fly_Out_Menu|
     - |Customize_Context_Menu|
