@@ -178,27 +178,6 @@ While ``noteOn`` and ``noteOff`` is self explaining ``track`` needs a little mor
 The ``velocity`` is exponentially interpreted which means it is easier to make tiny adjustment (Exponent is 3).
 
 
-Modulations are also included in a midi file and can be accessed to manipulate video clips.
-
-======================  =====================================================================
-Modulations             Video Clip
-======================  =====================================================================
-``modulation``          .
-``breath``              .
-``controller``          .
-``footpedal``           .
-``portamento time``     .
-``data entry``          .
-``volume``              .
-``balance``             .
-``controller``          .
-``pan``                 .
-``expression``          .
-``effect control 1``    .
-``effect control 2``    .
-``pitchbend``           .
-``channel pressure``    .
-======================  =====================================================================
 
 ---------
 
@@ -227,6 +206,79 @@ C4                0
 ...               0
 ================  =========
 
+
+.. _Midi Modulations:
+
+Midi Modulations
+================
+
+Modulations are also included in a midi file and can be accessed to manipulate video clips.
+
+If any of the envelopes in the list below are set in the midi file, they are available in Premiere Pro.
+Note that not every envelope has a function yet.
+
+The modulation evelopes in the midi file have values between 0 - 127.
+In Premiere Pro these values are getting mapped to a value range of 0.0 - 1.0.
+
+The following list shows all available midi envelopes with a description about how they are used.
+Envelopes that have no description are not mapped to any function in Premiere Pro yet.
+
+``pitch bend``
+  Not set yet::
+
+    .
+``1 modulation``
+  Sets the start time of the current clip::
+
+    start_seconds = map(modulation, 0.0, 1.0, 0.0, (media_duration - note_duration))
+``2 breath``
+  Not set yet::
+
+    .
+``3 controller``
+  Not set yet::
+
+    .
+``4 footpedal``
+  Not set yet::
+
+    .
+``5 portamento time``
+  Not set yet::
+
+    .
+``6 data entry``
+  Not set yet::
+
+    .
+``7 volume``
+  Not set yet::
+
+    .
+``8 balance``
+  Not set yet::
+
+    .
+``9 controller``
+  Not set yet::
+
+    .
+``10 pan``
+  Not set yet::
+
+    .
+``11 expression``
+  Not set yet::
+
+    .
+``12 effect control 1``
+  Not set yet::
+
+    .
+``13 effect control 2``
+  Not set yet::
+
+    .
 
 .. _Preparing your footage in Premiere Pro:
 
