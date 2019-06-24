@@ -186,8 +186,7 @@ You can control the ``track`` property in the midi file by adjusting the midi no
 Because I figured you only need a hand full of tracks in video production, I specified a range of midi note values in order to set the corresponding ``track``.
 
 .. figure:: ../../modules/ppro_bpmslicer/images/MidinoteRange.png
-    :align: right
-    :figwidth: 450px
+    :align: center
 
     Midinote range that will set the ``track`` property to other than ``0``.
 
@@ -217,20 +216,25 @@ Modulations are also included in a midi file and can be accessed to manipulate v
 If any of the envelopes in the list below are set in the midi file, they are available in Premiere Pro.
 Note that not every envelope has a function yet.
 
-The modulation evelopes in the midi file have values between 0 - 127.
+The modulation evelopes in the midi file so as the velocity of a midi note have values between 0 - 127.
 In Premiere Pro these values are getting mapped to a value range of 0.0 - 1.0.
 
-The following list shows all available midi envelopes with a description about how they are used.
-Envelopes that have no description are not mapped to any function in Premiere Pro yet.
+The following list shows all available midi envelopes including the velocity with a description about how they are used.
+Entries that have no description are not mapped to any function in Premiere Pro yet.
 
+
+``velocity``
+  Sets the **opacity** of the current clip::
+
+    opacity = velocity * 100
 ``pitch bend``
   Not set yet::
 
     .
 ``1 modulation``
-  Sets the start time of the current clip::
+  Sets the **start time** of the current clip::
 
-    start_seconds = map(modulation, 0.0, 1.0, 0.0, (media_duration - note_duration))
+    startTime = map(modulation, 0.0, 1.0, 0.0, (footage_duration - note_duration))
 ``2 breath``
   Not set yet::
 
@@ -280,10 +284,24 @@ Envelopes that have no description are not mapped to any function in Premiere Pr
 
     .
 
+.. note::
+
+    - ``footage_duration`` is the duration of the original video file.
+    - ``note_duration`` is the duration of the current midi note.
+
 .. _Preparing your footage in Premiere Pro:
 
 Preparing your footage in Premiere Pro
 ======================================
+
+.. sidebar:: Footage Interpretation
+
+    .. image:: ../../modules/ppro_bpmslicer/images/premiere_interpretfootage1.png
+
+    .. image:: ../../modules/ppro_bpmslicer/images/premiere_interpretfootage2.png
+
+    If you want to adjust the speed of your footage you can do so by adjusting the footage interpretation.
+    Note that if you adjust the speed of the footage the BpmSlicer can not interpret the footage correctly.
 
 If there is no BpmSlicer folder structure already you can create one by clicking the `Create Folder Structure`_ Button::
 
@@ -322,6 +340,7 @@ Lets assume you have named your footage in the ``1 source`` folder as displayed 
 Everytime the **BpmSlicer** requires a footage item from the ``1 source`` folder, it will look for a random item that has the ``track`` value of the current midi note as a prefix assigned.
 
 .. note:: Footage items in the ``1 source`` folder, that have no prefix assigned will be omitted.
+
 
 
 ---------
