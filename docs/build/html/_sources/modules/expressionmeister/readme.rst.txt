@@ -1,15 +1,17 @@
 Peacock Expression Meister
 --------------------------
 
+.. contents:: Table of Contents
+
 ~~~~~~~~~~~~
 Dependencies
 ~~~~~~~~~~~~
 
-* Peacock Univarsal Utility :doc:`../utils/readme`
-* Peacock AE Utility :doc:`../ae_utils/readme`
-* Peacock UI Utility :doc:`../ui_utils/readme`
-* Peacock Preferences :doc:`../preferences/readme`
-
+* :doc:`../utils/readme`
+* :doc:`../ui_utils/readme`
+* :doc:`../ae_utils/readme`
+* :doc:`../preferences/readme`
+* :doc:`../header/readme`
 
 .. sidebar:: Main Window
 
