@@ -222,43 +222,56 @@ In Premiere Pro these values are getting mapped to a value range of 0.0 - 1.0.
 The following list shows all available midi envelopes including the velocity with a description about how they are used.
 Entries that have no description are not mapped to any function in Premiere Pro yet.
 
+.. note:: If the value of an envelope event in the midifile is 63 it is getting mapped to 0.5 which is exactly the center point. This is important when you use the ``pitch bend`` in order to control the scaling where 0.5 (63) is exactly 100% which probably is your default scaling value you want to use.
+
+    This also applies to the ``controller`` and ``footpedal`` envelopes that are getting mapped to the x- and y-Position.
+
 
 ``velocity``
   Sets the **opacity** of the current clip::
 
     opacity = velocity * 100
-``pitch bend``
-  Not set yet::
 
-    .
+``pitch bend``
+  Sets the **scale** of the current clip::
+
+    scale = pitchbend * 200
+
 ``1 modulation``
   Sets the **start time** of the current clip::
 
     startTime = map(modulation, 0.0, 1.0, 0.0, (footage_duration - note_duration))
+
 ``2 breath``
-  Not set yet::
+  Sets the **rotation** of the current clip::
 
-    .
+    rotation = breath * 360
+
 ``3 controller``
-  Not set yet::
+  Sets the **x position** of the current clip::
 
-    .
+    xPosition = controller
+
 ``4 footpedal``
-  Not set yet::
+  Sets the **y position** of the current clip::
 
-    .
+    yPosition = footpedal
+
 ``5 portamento time``
-  Not set yet::
+  Sets the **x anchor** of the current clip::
 
-    .
+    xAnchor = portamentotime
+
 ``6 data entry``
-  Not set yet::
+  Sets the **y anchor** of the current clip::
 
-    .
+    yAnchor = dataentry
+
 ``7 volume``
   Not set yet::
 
     .
+
 ``8 balance``
   Not set yet::
 

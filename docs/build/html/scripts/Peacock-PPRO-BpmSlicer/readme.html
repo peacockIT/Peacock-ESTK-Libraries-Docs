@@ -514,6 +514,11 @@ Note that not every envelope has a function yet.</p>
 In Premiere Pro these values are getting mapped to a value range of 0.0 - 1.0.</p>
 <p>The following list shows all available midi envelopes including the velocity with a description about how they are used.
 Entries that have no description are not mapped to any function in Premiere Pro yet.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>If the value of an envelope event in the midifile is 63 it is getting mapped to 0.5 which is exactly the center point. This is important when you use the <code class="docutils literal notranslate"><span class="pre">pitch</span> <span class="pre">bend</span></code> in order to control the scaling where 0.5 (63) is exactly 100% which probably is your default scaling value you want to use.</p>
+<p class="last">This also applies to the <code class="docutils literal notranslate"><span class="pre">controller</span></code> and <code class="docutils literal notranslate"><span class="pre">footpedal</span></code> envelopes that are getting mapped to the x- and y-Position.</p>
+</div>
 <dl class="docutils">
 <dt><code class="docutils literal notranslate"><span class="pre">velocity</span></code></dt>
 <dd><p class="first">Sets the <strong>opacity</strong> of the current clip:</p>
@@ -522,8 +527,8 @@ Entries that have no description are not mapped to any function in Premiere Pro 
 </div>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">pitch</span> <span class="pre">bend</span></code></dt>
-<dd><p class="first">Not set yet:</p>
-<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
+<dd><p class="first">Sets the <strong>scale</strong> of the current clip:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scale</span> <span class="o">=</span> <span class="n">pitchbend</span> <span class="o">*</span> <span class="mi">200</span>
 </pre></div>
 </div>
 </dd>
@@ -534,32 +539,32 @@ Entries that have no description are not mapped to any function in Premiere Pro 
 </div>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">breath</span></code></dt>
-<dd><p class="first">Not set yet:</p>
-<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
+<dd><p class="first">Sets the <strong>rotation</strong> of the current clip:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotation</span> <span class="o">=</span> <span class="n">breath</span> <span class="o">*</span> <span class="mi">360</span>
 </pre></div>
 </div>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">controller</span></code></dt>
-<dd><p class="first">Not set yet:</p>
-<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
+<dd><p class="first">Sets the <strong>x position</strong> of the current clip:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xPosition</span> <span class="o">=</span> <span class="n">controller</span>
 </pre></div>
 </div>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">4</span> <span class="pre">footpedal</span></code></dt>
-<dd><p class="first">Not set yet:</p>
-<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
+<dd><p class="first">Sets the <strong>y position</strong> of the current clip:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">yPosition</span> <span class="o">=</span> <span class="n">footpedal</span>
 </pre></div>
 </div>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">portamento</span> <span class="pre">time</span></code></dt>
-<dd><p class="first">Not set yet:</p>
-<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
+<dd><p class="first">Sets the <strong>x anchor</strong> of the current clip:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xAnchor</span> <span class="o">=</span> <span class="n">portamentotime</span>
 </pre></div>
 </div>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">6</span> <span class="pre">data</span> <span class="pre">entry</span></code></dt>
-<dd><p class="first">Not set yet:</p>
-<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>
+<dd><p class="first">Sets the <strong>y anchor</strong> of the current clip:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">yAnchor</span> <span class="o">=</span> <span class="n">dataentry</span>
 </pre></div>
 </div>
 </dd>
