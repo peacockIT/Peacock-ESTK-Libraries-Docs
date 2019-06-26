@@ -15,16 +15,24 @@ Copy the **Peacock ESTK Library** folder into one of the application folders as 
 appData
 ~~~~~~~~
 
-In Windows, the value of %APPDATA% (by default, ``C:\Documents and Settings\All Users\Application Data``)
+- Mac: ``/Library/Application Support/``
+- Win: ``C:\ProgramData\``
 
--  (Windows) ``C:\Documents and Settings\All Users\Application Data\Peacock ESTK Library``
--  (Windows) ``C:\ProgramData\Peacock ESTK Library``
-
--  (Mac OS) ``/Library/Application Support/Peacock ESTK Library``
+  .. note:: The |The_Javascript_Tools_Guide| mentions that the appData path on windows is the value of %APPDATA% which is by default ``C:\Documents and Settings\All Users\Application Data``.
+    However on my windows 10 machine the appData path was as displayed above ``C:\ProgramData\``
 
 userData
 ~~~~~~~~
 
--  (Windows) ``C:\Documents and Settings\username\Application Data\Peacock ESTK Library``
--  (Mac OS) ``~/Library/Application Support/Peacock ESTK Library``
+- Mac: ``~/Library/Application Support/``
+- Win: ``~\AppData\Roaming\``
+
+  .. note:: The |The_Javascript_Tools_Guide| mentions that the userData path on windows is the value of %USERDATA% which is by default ``C:\Documents and Settings\username\Application Data``.
+    However on my windows 10 machine the appData path was as displayed above ``~\AppData\Roaming\``
+
+
+
+.. |The_Javascript_Tools_Guide| raw:: html
+
+   <a href="http://estk.aenhancers.com/3%20-%20File%20System%20Access/folder-object.html#folder-class-properties" target="_blank">The Javascript Tools Guide</a>
 
