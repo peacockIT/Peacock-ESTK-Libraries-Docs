@@ -145,10 +145,14 @@ If you click on the peacock logo the peacock homepage opens in the default inter
 Preferences
 ^^^^^^^^^^^
 
-Opens a new window to quickly edit the settings from the preferences.json file in the following location:
+``Left Click``
+  Opens a new window to quickly edit the settings from the preferences.json file in the following location:
 
-- Mac: ``~/Documents/Peacock ExpressionMeister/preferences.json``
-- Win: ``C:\Users\USERNAME\Documents\Peacock ExpressionMeister\preferences.json``
+  - Mac: ``~/Documents/Peacock ExpressionMeister/preferences.json``
+  - Win: ``C:\Users\USERNAME\Documents\Peacock ExpressionMeister\preferences.json``
+
+``Right Click``
+  Reveals the preferences folder in the systems file explorer.
 
 .. figure:: ../../modules/expressionmeister/images/ExpressionMeister_03.png
     :align: center
